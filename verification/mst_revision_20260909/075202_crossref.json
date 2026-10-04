@@ -1,0 +1,307 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2026-06-13T17:12:12Z",
+    "timestamp": 1781370732645,
+    "version": "3.54.1"
+  },
+  "reference-count": 22,
+  "publisher": "IOP Publishing",
+  "issue": "7",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Meas. Sci. Technol."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2008,
+        7,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1088/0957-0233/19/7/075202",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2008,
+        5,
+        30
+      ]
+    ],
+    "date-time": "2008-05-30T03:17:49Z",
+    "timestamp": 1212117469000
+  },
+  "page": "075202",
+  "source": "Crossref",
+  "is-referenced-by-count": 185,
+  "title": [
+    "Foot mounted inertial system for pedestrian navigation"
+  ],
+  "prefix": "10.1088",
+  "volume": "19",
+  "author": [
+    {
+      "given": "S",
+      "family": "Godha",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "G",
+      "family": "Lachapelle",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "266",
+  "published-online": {
+    "date-parts": [
+      [
+        2008,
+        5,
+        29
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "1",
+      "doi-asserted-by": "crossref",
+      "first-page": "910",
+      "DOI": "10.1109/ITSC.2002.1041341",
+      "author": "Cao F X",
+      "year": "2002",
+      "journal-title": "Proc. Int. Transp. Syst. IEEE"
+    },
+    {
+      "key": "2",
+      "first-page": "1187",
+      "author": "Cavallo F Sabatini A M Genovese V",
+      "year": "2005",
+      "journal-title": "IEEE/RSJ Int. Conf."
+    },
+    {
+      "key": "3",
+      "author": "Chai H M",
+      "year": "2004",
+      "journal-title": "Applications of Kinesiology-Gait During Ambulation"
+    },
+    {
+      "key": "4",
+      "author": "",
+      "year": "2004"
+    },
+    {
+      "key": "5",
+      "author": "El-Sheimy N",
+      "year": "2004"
+    },
+    {
+      "key": "6",
+      "author": "Farrell J A",
+      "year": "2001",
+      "journal-title": "The Global Positioning System & Inertial Navigation"
+    },
+    {
+      "key": "7",
+      "author": "Godha S",
+      "year": "2006"
+    },
+    {
+      "key": "8",
+      "author": "Godha S Lachapelle G Cannon M E",
+      "year": "2006",
+      "journal-title": "Proc. ION GNSS"
+    },
+    {
+      "key": "9",
+      "first-page": "2416",
+      "author": "Karunanayake D Cannon M E Lachapelle G Cox G",
+      "year": "2004",
+      "journal-title": "Proc. ION GPS/GNSS"
+    },
+    {
+      "key": "10",
+      "first-page": "1394",
+      "author": "Kealy A Young S Leahy F Cross P",
+      "year": "2001",
+      "journal-title": "Proc. ION GPS"
+    },
+    {
+      "key": "11",
+      "author": "Lachapelle G",
+      "year": "2006",
+      "journal-title": "J. Personal Ubiquitous Comput."
+    },
+    {
+      "key": "12",
+      "author": "Lachapelle G Mezentsev O Collin J MacGougan G",
+      "year": "2003",
+      "journal-title": "11th World Congress"
+    },
+    {
+      "key": "13",
+      "first-page": "1735",
+      "author": "Ladetto Q",
+      "year": "2000",
+      "journal-title": "Proc. ION GPS/GNSS"
+    },
+    {
+      "key": "14",
+      "author": "MacGougan G",
+      "year": "2003"
+    },
+    {
+      "key": "15",
+      "first-page": "179",
+      "volume": "6",
+      "author": "MacGougan G",
+      "year": "2002",
+      "journal-title": "Performance Analysis of A Stand-Alone High Sensitivity Receiver. GPS Solutions"
+    },
+    {
+      "key": "16",
+      "author": "Mezentsev O",
+      "year": "2005"
+    },
+    {
+      "key": "17",
+      "first-page": "175",
+      "volume": "59",
+      "author": "Mezentsev O",
+      "year": "2005",
+      "journal-title": "Geomatica",
+      "ISSN": "https://id.crossref.org/issn/1195-1036",
+      "issn-type": "print"
+    },
+    {
+      "key": "18",
+      "author": "Petovello M",
+      "year": "2000",
+      "journal-title": "C3NavG2TM Operating Manual"
+    },
+    {
+      "key": "19",
+      "author": "Salychev O S",
+      "year": "1998",
+      "journal-title": "Inertial Systems in Navigation and Geophysics"
+    },
+    {
+      "key": "20",
+      "volume": "1",
+      "author": "Savage P G",
+      "year": "2000",
+      "journal-title": "Strapdown Analytics"
+    },
+    {
+      "key": "21",
+      "author": "Scherzinger B",
+      "year": "2004",
+      "journal-title": "Estimation with Application to Navigation"
+    },
+    {
+      "key": "22",
+      "author": "Stirling R J Collin K Fyfe Lachapelle G",
+      "year": "2003",
+      "journal-title": "Proc. GNSS 2003"
+    }
+  ],
+  "container-title": [
+    "Measurement Science and Technology"
+  ],
+  "original-title": [],
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        4,
+        11
+      ]
+    ],
+    "date-time": "2020-04-11T04:50:01Z",
+    "timestamp": 1586580601000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://iopscience.iop.org/article/10.1088/0957-0233/19/7/075202"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2008,
+        5,
+        29
+      ]
+    ]
+  },
+  "references-count": 22,
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2008,
+          7,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0957-0233(08)59608-1"
+  ],
+  "URL": "https://doi.org/10.1088/0957-0233/19/7/075202",
+  "relation": {},
+  "ISSN": [
+    "0957-0233",
+    "1361-6501"
+  ],
+  "issn-type": [
+    {
+      "value": "0957-0233",
+      "type": "print"
+    },
+    {
+      "value": "1361-6501",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2008,
+        5,
+        29
+      ]
+    ]
+  }
+}

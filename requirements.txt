@@ -1,0 +1,12 @@
+# Python 3.11.9 (the versions below were used for all results in the paper)
+numpy==2.4.6
+scipy==1.17.1
+torch==2.13.0
+matplotlib==3.11.0
+pandas==3.0.3
+h5py==3.16.0
+pillow==12.3.0
+# Only for building the IMUNet phone caches (level B):
+# numpy-quaternion==2024.0.13
+# Only for the EqNIO comparison (level B/C):
+# einops==0.8.2

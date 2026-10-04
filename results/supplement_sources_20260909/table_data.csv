@@ -1,0 +1,6 @@
+Partition,Subjects,Sequences,Role
+RoNIN train,34,74,Parameter fitting
+RoNIN validation,8,14,Checkpoint selection
+RoNIN unseen,15,32,Primary within-dataset evaluation
+RIDI,11,94,Primary cross-dataset evaluation
+RoNIN seen,31,32,Descriptive evaluation

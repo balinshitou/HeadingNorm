@@ -1,0 +1,13 @@
+Setting,Published RoNIN recipe,Controlled frontend experiment
+Training provenance,Released pretrained checkpoint,74 sequences from 34 subjects
+Validation,Original validation protocol,14 sequences from eight disjoint subjects
+Loss,Coordinate MSE,"Coordinate Huber, threshold 0.27"
+Optimizer,Adam,"AdamW, weight decay 0.0001"
+Learning rate,"Initial 0.0001, validation plateau reduction","OneCycle, maximum 0.001"
+Budget,"Epoch-based training, typically about 100 epochs","20,000 updates"
+Batch size,128,256
+Window sampling,Shuffled strided windows and random shifts,Matched random windows across four seeds
+Fixed input standardization,No added GN in replay,Same GN constants in every arm
+Yaw augmentation,Used in original training,Yaw control only
+Primary reporting,Published sequence summary,Subject-macro mean and seed variability
+RIDI interpretation,Separate published benchmark protocol,Transfer from RoNIN without fine-tuning

@@ -1,0 +1,21 @@
+{
+  "reports": [
+    {
+      "file": "manuscript_en.md",
+      "sentences": 401,
+      "maximum_sentence_words": 19,
+      "errors": []
+    },
+    {
+      "file": "supplementary_materials_en.md",
+      "sentences": 279,
+      "maximum_sentence_words": 16,
+      "errors": []
+    }
+  ],
+  "manual_checks": [
+    "one assertion per sentence",
+    "at most one subordinate clause",
+    "no nested subordinate clauses"
+  ]
+}

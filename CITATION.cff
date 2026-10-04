@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or the archived results, please cite the article."
+title: "HeadingNorm: code, archived results and checkpoints"
+type: software
+authors:
+  - family-names: Li
+    given-names: Yanlin
+    affiliation: "School of Economics and Management, Yanbian University"
+  - family-names: Cui
+    given-names: Xichen
+    affiliation: "School of Economics and Management, Yanbian University"
+  - family-names: Quan
+    given-names: Yu
+    affiliation: "School of Economics and Management, Yanbian University"
+    email: yuquan@ybu.edu.cn
+preferred-citation:
+  type: article
+  title: "HeadingNorm: Closed-Form Yaw Canonicalization for Inertial Velocity Regression without Retraining"
+  authors:
+    - family-names: Li
+      given-names: Yanlin
+    - family-names: Cui
+      given-names: Xichen
+    - family-names: Quan
+      given-names: Yu
+  journal: "Sensors"
+  status: submitted

@@ -1,0 +1,10 @@
+Backbone / frontend,U median range,R median range,Seen median range
+ResNet18 / GN only,5.68e+00,2.82e+00,5.62e+00
+ResNet18 / Yaw augmentation,2.38e+00,1.20e+00,1.96e+00
+ResNet18 / Adapted mixed-sensor PCA,2.79e+00,1.35e+00,2.74e+00
+ResNet18 / HN without sign rule,2.82e+00,1.21e+00,2.59e+00
+ResNet18 / HN,6.86e-07,4.30e-07,7.65e-07
+Transformer / Yaw augmentation,1.89e+00,1.07e+00,1.61e+00
+Transformer / HN,6.52e-07,3.35e-07,6.66e-07
+IMUNet / Yaw augmentation,2.83e+00,1.26e+00,2.31e+00
+IMUNet / HN,6.32e-07,3.47e-07,7.68e-07

@@ -1,0 +1,42 @@
+{
+ "sequence": "467106657072642",
+ "mean_rel_shape_reduction": 0.733641886490989,
+ "min_path_m": 100.0,
+ "rule": "TLIO-confirm, GT path >= 100 m, all 4 networks reduce shape error (psi=0, alpha=0, seed 0); max mean relative reduction",
+ "metrics": {
+  "ResNet18-YawAug|U0": {
+   "ate_u": 8.357038415481295,
+   "ate_shape": 7.936418704741454
+  },
+  "ResNet18-YawAug|H0": {
+   "ate_u": 4.7114558674725,
+   "ate_shape": 1.7160695057542057
+  },
+  "Transformer-YawAug|U0": {
+   "ate_u": 8.437348212032486,
+   "ate_shape": 5.156669635848512
+  },
+  "Transformer-YawAug|H0": {
+   "ate_u": 2.304564443946379,
+   "ate_shape": 1.2331307878792048
+  },
+  "IMUNet-YawAug|U0": {
+   "ate_u": 10.614558427059736,
+   "ate_shape": 8.869324354482291
+  },
+  "IMUNet-YawAug|H0": {
+   "ate_u": 6.4083120456821305,
+   "ate_shape": 2.0526286769217257
+  },
+  "RoNIN ResNet (released)|U0": {
+   "ate_u": 2.217876177297946,
+   "ate_shape": 2.137366714848639
+  },
+  "RoNIN ResNet (released)|H0": {
+   "ate_u": 2.167799772941149,
+   "ate_shape": 0.8092975054809044
+  }
+ },
+ "check": "ate_u, ate_shape match results/confirm_anglefair_20260927 within 1e-4 m",
+ "script_sha256": "bf4d0aa222335ce6c98cce0f8cb6658a5e6cfd6980046b7f8173ebec8a8ac601"
+}

@@ -1,0 +1,90 @@
+{
+ "tolerance_rad": 0.0001,
+ "angles": 8,
+ "windows": 72,
+ "window_source": "results/sensors_v4/diagnostics.json",
+ "script_sha256": "ff6d6f66640a11d7155d3e9230a8bdee3570ef4773aa0b2c7d3820bd09da69fb",
+ "note": "Frame-angle property only; no network weights are involved, so the result is independent of training.",
+ "rows": [
+  {
+   "angle_rad": 0.0,
+   "angle_deg": 0.0,
+   "windows": 72,
+   "signed_max_error_rad": 0.0,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 0.0,
+   "unsigned_inconsistent": 0,
+   "unsigned_max_error_mod_pi_rad": 0.0
+  },
+  {
+   "angle_rad": 0.7853981633974483,
+   "angle_deg": 45.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 16,
+   "unsigned_max_error_mod_pi_rad": 1.1920928955078125e-07
+  },
+  {
+   "angle_rad": 1.5707963267948966,
+   "angle_deg": 90.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 35,
+   "unsigned_max_error_mod_pi_rad": 2.384185791015625e-07
+  },
+  {
+   "angle_rad": 2.356194490192345,
+   "angle_deg": 135.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 52,
+   "unsigned_max_error_mod_pi_rad": 2.384185791015625e-07
+  },
+  {
+   "angle_rad": 3.141592653589793,
+   "angle_deg": 180.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 72,
+   "unsigned_max_error_mod_pi_rad": 0.0
+  },
+  {
+   "angle_rad": 3.9269908169872414,
+   "angle_deg": 225.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 56,
+   "unsigned_max_error_mod_pi_rad": 5.960464477539062e-07
+  },
+  {
+   "angle_rad": 4.71238898038469,
+   "angle_deg": 270.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.1415927410125732,
+   "unsigned_inconsistent": 37,
+   "unsigned_max_error_mod_pi_rad": 5.960464477539062e-07
+  },
+  {
+   "angle_rad": 5.497787143782138,
+   "angle_deg": 315.0,
+   "windows": 72,
+   "signed_max_error_rad": 4.76837158203125e-07,
+   "signed_inconsistent": 0,
+   "unsigned_max_error_rad": 3.141592502593994,
+   "unsigned_inconsistent": 20,
+   "unsigned_max_error_mod_pi_rad": 5.960464477539062e-07
+  }
+ ]
+}

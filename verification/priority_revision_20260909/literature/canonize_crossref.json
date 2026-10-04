@@ -1,0 +1,424 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 1755568,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              13
+            ]
+          ],
+          "date-time": "2024-09-13T08:26:52Z",
+          "timestamp": 1726216012262
+        },
+        "edition-number": "3",
+        "reference-count": 0,
+        "publisher": "Oxford University Press",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "DOI": "10.1093/oed/5879612343",
+        "type": "book-chapter",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              20
+            ]
+          ],
+          "date-time": "2023-07-20T20:01:36Z",
+          "timestamp": 1689883296000
+        },
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "canonize, v."
+        ],
+        "prefix": "10.1093",
+        "member": "286",
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "language": "en",
+        "deposited": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              20
+            ]
+          ],
+          "date-time": "2023-07-20T20:09:58Z",
+          "timestamp": 1689883798000
+        },
+        "score": 22.796158,
+        "resource": {
+          "primary": {
+            "URL": "https://oed.com/dictionary/canonize_v"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.1093/oed/5879612343",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              5
+            ]
+          ],
+          "date-time": "2024-06-05T00:55:48Z",
+          "timestamp": 1717548948476
+        },
+        "reference-count": 12,
+        "publisher": "Elsevier BV",
+        "issue": "1",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Journal of the American Medical Directors Association"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2013,
+              1
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.jamda.2012.09.020",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2012,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2012-11-02T06:01:01Z",
+          "timestamp": 1351836061000
+        },
+        "page": "66-67",
+        "source": "Crossref",
+        "is-referenced-by-count": 12,
+        "title": [
+          "Perspective: Protein: What Kind, How Much, When?"
+        ],
+        "prefix": "10.1016",
+        "volume": "14",
+        "author": [
+          {
+            "given": "Francesco",
+            "family": "Landi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Emanuele",
+            "family": "Marzetti",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Roberto",
+            "family": "Bernabei",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib1",
+            "doi-asserted-by": "crossref",
+            "first-page": "2891",
+            "DOI": "10.1001/jama.299.24.2891",
+            "article-title": "The recommended dietary allowance of protein: A\u00a0misunderstood concept",
+            "volume": "299",
+            "author": "Wolfe",
+            "year": "2008",
+            "journal-title": "JAMA"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib2",
+            "doi-asserted-by": "crossref",
+            "first-page": "720",
+            "DOI": "10.1016/j.jamda.2012.07.005",
+            "article-title": "Protein supplementation improves physical performance in frail elderly people: A randomized, double-blind, placebo-controlled trial",
+            "volume": "13",
+            "author": "Tieland",
+            "year": "2012",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          },
+          {
+            "issue": "8",
+            "key": "10.1016/j.jamda.2012.09.020_bib3",
+            "doi-asserted-by": "crossref",
+            "first-page": "713",
+            "DOI": "10.1016/j.jamda.2012.05.020",
+            "article-title": "Protein supplementation increases muscle mass gain during prolonged resistance-type exercise training in frail elderly people: A randomized, double-blind, placebo-controlled trial",
+            "volume": "13",
+            "author": "Tieland",
+            "year": "2012",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib4",
+            "doi-asserted-by": "crossref",
+            "first-page": "391",
+            "DOI": "10.1016/j.jamda.2010.04.014",
+            "article-title": "Nutritional recommendations for the management of sarcopenia",
+            "volume": "11",
+            "author": "Morley",
+            "year": "2010",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib5",
+            "doi-asserted-by": "crossref",
+            "first-page": "86",
+            "DOI": "10.1097/MCO.0b013e32831cef8b",
+            "article-title": "Dietary protein recommendations and the prevention of sarcopenia: Protein, amino acid metabolism and therapy",
+            "volume": "12",
+            "author": "Paddon-Jones",
+            "year": "2009",
+            "journal-title": "Curr Opin Clin Nutr Metab Care"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib6",
+            "doi-asserted-by": "crossref",
+            "first-page": "E1409",
+            "DOI": "10.1152/ajpendo.90530.2008",
+            "article-title": "Attenuation of depression of muscle protein synthesis induced by lipopolysaccharide, tumor necrosis factor, and angiotensin II by \u03b2-hydroxy-\u03b2-methylbutyrate",
+            "volume": "295",
+            "author": "Eley",
+            "year": "2008",
+            "journal-title": "Am J Physiol Endocrinol Metab"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib7",
+            "first-page": "2049",
+            "article-title": "Body composition in 70-year old adults responds to dietary \u03b2-hydroxy-\u03b2-methylbutyrate similarly to that of young adults",
+            "volume": "131",
+            "author": "Vukovich",
+            "year": "2001",
+            "journal-title": "J\u00a0Nutr"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib8",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1097/MCO.0b013e328333c1c1",
+            "article-title": "Understanding sarcopenia as a geriatric syndrome",
+            "volume": "13",
+            "author": "Cruz-Jentoft",
+            "year": "2010",
+            "journal-title": "Curr Opin Clin Nutr Metab Care"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib9",
+            "doi-asserted-by": "crossref",
+            "first-page": "1562S",
+            "DOI": "10.1093/ajcn/87.5.1562S",
+            "article-title": "Role of dietary protein in the sarcopenia of aging",
+            "volume": "87",
+            "author": "Paddon-Jones",
+            "year": "2008",
+            "journal-title": "Am J Clin Nutr"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib10",
+            "doi-asserted-by": "crossref",
+            "first-page": "268",
+            "DOI": "10.1016/j.jamda.2009.12.088",
+            "article-title": "Anorexia, physical function, and incident disability among the frail elderly population: Results from the ilSIRENTE study",
+            "volume": "11",
+            "author": "Landi",
+            "year": "2010",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib11",
+            "doi-asserted-by": "crossref",
+            "first-page": "153",
+            "DOI": "10.1016/j.jamda.2009.09.003",
+            "article-title": "The anorexia of aging: Is it a geriatric syndrome?",
+            "volume": "11",
+            "author": "Landi",
+            "year": "2010",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          },
+          {
+            "key": "10.1016/j.jamda.2012.09.020_bib12",
+            "doi-asserted-by": "crossref",
+            "first-page": "121",
+            "DOI": "10.1016/j.jamda.2011.07.004",
+            "article-title": "Sarcopenia and mortality among older nursing home residents",
+            "volume": "13",
+            "author": "Landi",
+            "year": "2012",
+            "journal-title": "J\u00a0Am Med Dir Assoc"
+          }
+        ],
+        "container-title": [
+          "Journal of the American Medical Directors Association"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S152586101200343X?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S152586101200343X?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2019,
+              7,
+              5
+            ]
+          ],
+          "date-time": "2019-07-05T05:18:39Z",
+          "timestamp": 1562303919000
+        },
+        "score": 20.595524,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S152586101200343X"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2013,
+              1
+            ]
+          ]
+        },
+        "references-count": 12,
+        "journal-issue": {
+          "issue": "1",
+          "published-print": {
+            "date-parts": [
+              [
+                2013,
+                1
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "S152586101200343X"
+        ],
+        "URL": "https://doi.org/10.1016/j.jamda.2012.09.020",
+        "ISSN": [
+          "1525-8610"
+        ],
+        "issn-type": [
+          {
+            "value": "1525-8610",
+            "type": "print"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "items-per-page": 2,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

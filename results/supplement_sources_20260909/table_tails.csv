@@ -1,0 +1,11 @@
+Subset,Frontend,Mean (m/s),P95 (m/s),Above 1 m/s (%)
+All windows,Yaw,0.230,0.632,1.83
+All windows,HN,0.251,0.696,2.55
+Low eigenvalue gap,Yaw,0.223,0.636,1.69
+Low eigenvalue gap,HN,0.251,0.705,2.50
+Other eigenvalue gaps,Yaw,0.230,0.632,1.84
+Other eigenvalue gaps,HN,0.251,0.695,2.55
+Low third moment,Yaw,0.231,0.635,1.97
+Low third moment,HN,0.252,0.715,2.81
+Other third moments,Yaw,0.230,0.632,1.83
+Other third moments,HN,0.251,0.694,2.54

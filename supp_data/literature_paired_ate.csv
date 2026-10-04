@@ -1,0 +1,21 @@
+﻿Comparison,Test set,Subjects,Treatment,Control,Difference (rel.),Subject cluster CI,Result,Subjects improved,Sequence CI
+HN − YawAug,RoNIN-seen,31,4.936,5.009,−0.073 (−1.5%),"[−0.310, +0.185]",ns,18/31,"[−0.312, +0.180]"
+HN − YawAug,RoNIN-unseen,15,5.825,6.195,−0.370 (−6.0%),"[−0.866, +0.156]",ns,10/15,"[−0.831, +0.020]"
+HN − YawAug,RIDI,11,3.099,3.122,−0.023 (−0.7%),"[−0.179, +0.186]",ns,7/11,"[−0.128, +0.149]"
+HN − YawAug,TLIO-test,36,4.680,5.105,−0.425 (−8.3%),"[−0.945, +0.015]",ns,18/36,same as subject CI
+HN − YawAug,Phone-test,4,9.638,9.925,−0.287 (−2.9%),"[−0.707, +0.102]",ns,3/4,"[−0.866, +0.163]"
+HN − GN only,RoNIN-seen,31,4.936,5.640,−0.704 (−12.5%),"[−1.722, +0.323]",ns,20/31,"[−1.680, +0.306]"
+HN − GN only,RoNIN-unseen,15,5.825,8.055,−2.229 (−27.7%),"[−3.316, −1.238]",lower,13/15,"[−3.652, −1.243]"
+HN − GN only,RIDI,11,3.099,4.282,−1.183 (−27.6%),"[−1.762, −0.773]",lower,11/11,"[−1.591, −0.731]"
+HN − GN only,TLIO-test,36,4.680,6.088,−1.408 (−23.1%),"[−2.607, −0.469]",lower,27/36,same as subject CI
+HN − GN only,Phone-test,4,9.638,11.180,−1.542 (−13.8%),"[−2.545, −0.539]",lower,4/4,"[−2.990, −0.355]"
+HN − PCA frame,RoNIN-seen,31,4.936,5.574,−0.637 (−11.4%),"[−1.066, −0.226]",lower,23/31,"[−1.041, −0.211]"
+HN − PCA frame,RoNIN-unseen,15,5.825,7.239,−1.414 (−19.5%),"[−2.179, −0.756]",lower,14/15,"[−2.139, −0.862]"
+HN − PCA frame,RIDI,11,3.099,3.743,−0.644 (−17.2%),"[−0.857, −0.444]",lower,11/11,"[−0.823, −0.406]"
+HN − PCA frame,TLIO-test,36,4.680,5.445,−0.765 (−14.0%),"[−1.358, −0.284]",lower,26/36,same as subject CI
+HN − PCA frame,Phone-test,4,9.638,11.434,−1.795 (−15.7%),"[−2.457, −0.985]",lower,4/4,"[−2.883, −0.773]"
+RoNIN ResNet: Plug-in HN − Unmodified,RoNIN-seen,31,3.527,3.687,−0.160 (−4.3%),"[−0.325, +0.009]",ns,19/31,"[−0.332, −0.004]"
+RoNIN ResNet: Plug-in HN − Unmodified,RoNIN-unseen,15,5.041,5.309,−0.268 (−5.0%),"[−0.996, +0.251]",ns,7/15,"[−1.042, +0.136]"
+RoNIN ResNet: Plug-in HN − Unmodified,RIDI,11,2.741,2.822,−0.081 (−2.9%),"[−0.161, +0.016]",ns,8/11,"[−0.237, +0.015]"
+RoNIN ResNet: Plug-in HN − Unmodified,TLIO-test,36,3.949,4.146,−0.197 (−4.7%),"[−0.689, +0.182]",ns,19/36,same as subject CI
+RoNIN ResNet: Plug-in HN − Unmodified,Phone-test,4,7.886,8.321,−0.435 (−5.2%),"[−0.893, +0.023]",ns,3/4,"[−0.992, +0.068]"

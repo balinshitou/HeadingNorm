@@ -1,0 +1,9 @@
+Frontend / group,Protocol range,Start-yaw-aligned range
+GN only / U,5.68e+00,5.40e+00
+GN only / R,2.82e+00,2.50e+00
+Yaw augmentation / U,2.38e+00,2.39e+00
+Yaw augmentation / R,1.20e+00,1.11e+00
+Adapted mixed-sensor PCA / U,2.79e+00,2.64e+00
+Adapted mixed-sensor PCA / R,1.35e+00,1.22e+00
+HN / U,6.86e-07,6.81e-07
+HN / R,4.30e-07,3.51e-07

@@ -1,0 +1,17 @@
+ResNet18 frontend,Angle (degrees),Mean discrepancy (m/s),Maximum discrepancy (m/s)
+GN only,30,1.40e-01,7.71e-01
+GN only,90,1.70e-01,1.49e+00
+GN only,180,1.64e-01,1.37e+00
+GN only,300,1.81e-01,1.39e+00
+Yaw augmentation,30,4.58e-02,2.58e-01
+Yaw augmentation,90,6.46e-02,5.28e-01
+Yaw augmentation,180,5.67e-02,3.85e-01
+Yaw augmentation,300,6.21e-02,5.59e-01
+Adapted mixed-sensor PCA,30,1.18e-02,2.22e-01
+Adapted mixed-sensor PCA,90,8.10e-02,1.54e+00
+Adapted mixed-sensor PCA,180,1.32e-01,1.54e+00
+Adapted mixed-sensor PCA,300,3.29e-02,6.87e-01
+HN,30,1.21e-07,5.20e-07
+HN,90,1.22e-07,6.14e-07
+HN,180,1.19e-07,5.96e-07
+HN,300,9.78e-08,5.27e-07

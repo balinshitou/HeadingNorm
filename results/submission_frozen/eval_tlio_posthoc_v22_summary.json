@@ -1,0 +1,287 @@
+{
+  "schema": "tlio-posthoc-summary-v2.2",
+  "source": "results/generated/eval_tlio_posthoc_v22.json",
+  "analysis_status": "post_hoc_exploratory_not_confirmatory",
+  "dataset_role": "cross_device_form_factor_stress_test_only",
+  "device_form_factor": "head_mounted_imu",
+  "input_attitude_source": "VIO-derived processed world frame",
+  "alignment": "10-second scale-free reflection-free SE(2) prefix",
+  "per_run": [
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "seed": 0,
+      "n_sequences": 36,
+      "mean_ate": 4.339880061586353,
+      "mean_rte": 3.491921862705252,
+      "mean_tlr": 0.7502623842219094,
+      "mean_mcs": 0.20655802016298574
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "seed": 1,
+      "n_sequences": 36,
+      "mean_ate": 4.293289138162546,
+      "mean_rte": 3.5310630321555414,
+      "mean_tlr": 0.7149982865490592,
+      "mean_mcs": 0.21141043056054987
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "seed": 2,
+      "n_sequences": 36,
+      "mean_ate": 4.29426108614577,
+      "mean_rte": 3.5145106846530307,
+      "mean_tlr": 0.7180805906522586,
+      "mean_mcs": 0.21301381006681921
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "seed": 3,
+      "n_sequences": 36,
+      "mean_ate": 4.27365014095134,
+      "mean_rte": 3.5797070048652717,
+      "mean_tlr": 0.7217532557525169,
+      "mean_mcs": 0.22415836714851364
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "seed": 0,
+      "n_sequences": 36,
+      "mean_ate": 6.9879171049503235,
+      "mean_rte": 5.024397876720439,
+      "mean_tlr": 0.7025806961175605,
+      "mean_mcs": 0.21634647119154324
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "seed": 1,
+      "n_sequences": 36,
+      "mean_ate": 7.014616589856051,
+      "mean_rte": 5.371857914777426,
+      "mean_tlr": 0.7103105466645052,
+      "mean_mcs": 0.18207091530388464
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "seed": 2,
+      "n_sequences": 36,
+      "mean_ate": 6.1427816631685985,
+      "mean_rte": 4.734286926601303,
+      "mean_tlr": 0.6985991788533688,
+      "mean_mcs": 0.18872960632938507
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "seed": 3,
+      "n_sequences": 36,
+      "mean_ate": 6.4933782729709115,
+      "mean_rte": 4.938557392794081,
+      "mean_tlr": 0.6944447266135656,
+      "mean_mcs": 0.22227048415508513
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "seed": 0,
+      "n_sequences": 36,
+      "mean_ate": 7.1267721042379195,
+      "mean_rte": 5.459004493092905,
+      "mean_tlr": 0.6444765471652204,
+      "mean_mcs": 0.15628206405950235
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "seed": 1,
+      "n_sequences": 36,
+      "mean_ate": 6.247321087398671,
+      "mean_rte": 5.173831826449905,
+      "mean_tlr": 0.6952061018449098,
+      "mean_mcs": 0.1815836450116889
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "seed": 2,
+      "n_sequences": 36,
+      "mean_ate": 5.16822105057092,
+      "mean_rte": 3.990539156916841,
+      "mean_tlr": 0.6877294316793887,
+      "mean_mcs": 0.1764627304507054
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "seed": 3,
+      "n_sequences": 36,
+      "mean_ate": 5.875068410554639,
+      "mean_rte": 4.601899825008706,
+      "mean_tlr": 0.6782710124342849,
+      "mean_mcs": 0.20120752093393932
+    }
+  ],
+  "aggregate": [
+    {
+      "family": "A6-100%",
+      "n_runs": 4,
+      "n_sequences_per_run": 36,
+      "mean_ate": 4.300270106711502,
+      "sd_ate_across_runs": 0.028061915783381595,
+      "run_values_ate": [
+        4.339880061586353,
+        4.293289138162546,
+        4.29426108614577,
+        4.27365014095134
+      ],
+      "mean_rte": 3.529300646094774,
+      "sd_rte_across_runs": 0.03723718310262993,
+      "run_values_rte": [
+        3.491921862705252,
+        3.5310630321555414,
+        3.5145106846530307,
+        3.5797070048652717
+      ],
+      "mean_tlr": 0.726273629293936,
+      "sd_tlr_across_runs": 0.016229123781510764,
+      "run_values_tlr": [
+        0.7502623842219094,
+        0.7149982865490592,
+        0.7180805906522586,
+        0.7217532557525169
+      ],
+      "mean_mcs": 0.21378515698471712,
+      "sd_mcs_across_runs": 0.007440190351501,
+      "run_values_mcs": [
+        0.20655802016298574,
+        0.21141043056054987,
+        0.21301381006681921,
+        0.22415836714851364
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "n_runs": 4,
+      "n_sequences_per_run": 36,
+      "mean_ate": 6.1043456631905375,
+      "sd_ate_across_runs": 0.8154130135926633,
+      "run_values_ate": [
+        7.1267721042379195,
+        6.247321087398671,
+        5.16822105057092,
+        5.875068410554639
+      ],
+      "mean_rte": 4.806318825367089,
+      "sd_rte_across_runs": 0.6502173949236542,
+      "run_values_rte": [
+        5.459004493092905,
+        5.173831826449905,
+        3.990539156916841,
+        4.601899825008706
+      ],
+      "mean_tlr": 0.676420773280951,
+      "sd_tlr_across_runs": 0.022395172776634237,
+      "run_values_tlr": [
+        0.6444765471652204,
+        0.6952061018449098,
+        0.6877294316793887,
+        0.6782710124342849
+      ],
+      "mean_mcs": 0.178883990113959,
+      "sd_mcs_across_runs": 0.018460206973970376,
+      "run_values_mcs": [
+        0.15628206405950235,
+        0.1815836450116889,
+        0.1764627304507054,
+        0.20120752093393932
+      ]
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "n_runs": 4,
+      "n_sequences_per_run": 36,
+      "mean_ate": 6.659673407736471,
+      "sd_ate_across_runs": 0.41974584958952926,
+      "run_values_ate": [
+        6.9879171049503235,
+        7.014616589856051,
+        6.1427816631685985,
+        6.4933782729709115
+      ],
+      "mean_rte": 5.017275027723312,
+      "sd_rte_across_runs": 0.26586869578481664,
+      "run_values_rte": [
+        5.024397876720439,
+        5.371857914777426,
+        4.734286926601303,
+        4.938557392794081
+      ],
+      "mean_tlr": 0.70148378706225,
+      "sd_tlr_across_runs": 0.006757322721083276,
+      "run_values_tlr": [
+        0.7025806961175605,
+        0.7103105466645052,
+        0.6985991788533688,
+        0.6944447266135656
+      ],
+      "mean_mcs": 0.20235436924497452,
+      "sd_mcs_across_runs": 0.019912167287718316,
+      "run_values_mcs": [
+        0.21634647119154324,
+        0.18207091530388464,
+        0.18872960632938507,
+        0.22227048415508513
+      ]
+    }
+  ],
+  "paired_effect_summary": [
+    {
+      "comparison": "A6-100% minus RoNIN-ResNet18-matched",
+      "comparator_family": "RoNIN-ResNet18-matched",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -2.7868920426515666,
+        -1.9540319492361249,
+        -0.8739599644251497,
+        -1.6014182696032986
+      ],
+      "mean_difference_ate": -1.804075556479035,
+      "sd_difference_ate": 0.7946907481796142,
+      "ci95_mean_difference_ate": [
+        -3.0686058741729347,
+        -0.5395452387851352
+      ],
+      "relative_mean_reduction_percent": 29.553954772870856,
+      "a6_better_pairs": 4,
+      "interpretation": "negative_difference_favors_a6_exploratory"
+    },
+    {
+      "comparison": "A6-100% minus IMUNet-2024-matched",
+      "comparator_family": "IMUNet-2024-matched",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -2.6480370433639706,
+        -2.7213274516935053,
+        -1.8485205770228283,
+        -2.219728132019571
+      ],
+      "mean_difference_ate": -2.359403301024969,
+      "sd_difference_ate": 0.40612347817475924,
+      "ci95_mean_difference_ate": [
+        -3.005636382328197,
+        -1.7131702197217407
+      ],
+      "relative_mean_reduction_percent": 35.428213315747215,
+      "a6_better_pairs": 4,
+      "interpretation": "negative_difference_favors_a6_exploratory"
+    }
+  ],
+  "complete": true
+}

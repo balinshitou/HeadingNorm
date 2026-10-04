@@ -1,0 +1,6 @@
+order,operation
+1,Input IMU window
+2,Signed frame and rotation
+3,GlobalNorm
+4,Velocity backbone
+5,Rotate output back

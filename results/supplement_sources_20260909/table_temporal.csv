@@ -1,0 +1,13 @@
+Quantity,Result
+Windows,"364,724"
+Transitions,"364,692"
+Events above 90 degrees,"31,252 (8.57%)"
+Events above 60 degrees,"32,378"
+Events above 120 degrees,"30,191"
+Low-moment endpoint event rate,39.93%
+Other endpoint event rate,4.88%
+Raw branch crossings without frame events,"9,051"
+HN minus yaw near events (m/s),"+0.0206 [+0.0138, +0.0278]"
+HN minus yaw away from events (m/s),"+0.0197 [+0.0117, +0.0284]"
+Event-associated excess contrast (m/s),"+0.0008 [-0.0043, +0.0057]"
+Speed-adjusted excess contrast (m/s),"+0.0040 [-0.0002, +0.0083]"

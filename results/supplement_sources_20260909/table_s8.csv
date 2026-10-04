@@ -1,0 +1,9 @@
+Yaw (degrees),Unsigned failures / 72,Signed failures / 72,Unsigned modulo-π error (rad)
+0,0,0,0.00e+00
+45,16,0,1.19e-07
+90,35,0,2.38e-07
+135,52,0,2.38e-07
+180,72,0,0.00e+00
+225,56,0,5.96e-07
+270,37,0,5.96e-07
+315,20,0,5.96e-07

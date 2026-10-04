@@ -1,0 +1,12 @@
+# outputs of reproduce/run_all.py
+reproduce/output/
+# local environments and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# datasets and third-party code are placed here by the user (see data/README.md and external/README.md)
+data/*
+!data/README.md
+external/*
+!external/README.md

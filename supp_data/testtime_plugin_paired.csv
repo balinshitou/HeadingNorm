@@ -1,0 +1,31 @@
+﻿Comparison,Metric,Test set,Subjects,Treatment,Control,Difference (rel.),Subject cluster CI,Result,Subjects improved,Sequence CI
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol ATE,RoNIN-seen,31,4.749,5.002,−0.254 (−5.1%),"[−0.406, −0.092]",lower,26/31,"[−0.415, −0.100]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol ATE,RoNIN-unseen,15,5.216,6.202,−0.986 (−15.9%),"[−1.452, −0.574]",lower,15/15,"[−1.462, −0.533]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol ATE,RIDI,11,3.006,3.145,−0.139 (−4.4%),"[−0.249, +0.003]",ns,10/11,"[−0.282, −0.082]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol ATE,TLIO-test,36,3.963,4.742,−0.779 (−16.4%),"[−1.474, −0.235]",lower,23/36,same as subject CI
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol ATE,Phone-test,4,10.225,10.278,−0.053 (−0.5%),"[−0.403, +0.298]",ns,2/4,"[−0.382, +0.314]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol RTE,RoNIN-seen,31,3.584,3.630,−0.047 (−1.3%),"[−0.133, +0.041]",ns,16/31,"[−0.135, +0.044]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol RTE,RoNIN-unseen,15,4.740,4.806,−0.066 (−1.4%),"[−0.150, +0.012]",ns,11/15,"[−0.145, +0.016]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol RTE,RIDI,11,3.396,3.611,−0.215 (−6.0%),"[−0.363, −0.055]",lower,10/11,"[−0.391, −0.135]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol RTE,TLIO-test,36,3.367,3.744,−0.377 (−10.1%),"[−0.673, −0.140]",lower,27/36,same as subject CI
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Unified-protocol RTE,Phone-test,4,9.263,9.331,−0.069 (−0.7%),"[−0.230, +0.092]",ns,2/4,"[−0.302, +0.176]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Official-protocol ATE,RoNIN-seen,31,4.796,5.009,−0.213 (−4.2%),"[−0.362, −0.055]",lower,25/31,"[−0.369, −0.061]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Official-protocol ATE,RoNIN-unseen,15,5.246,6.195,−0.949 (−15.3%),"[−1.386, −0.563]",lower,14/15,"[−1.391, −0.540]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Official-protocol ATE,RIDI,11,2.973,3.122,−0.150 (−4.8%),"[−0.266, +0.000]",ns,10/11,"[−0.292, −0.093]"
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Official-protocol ATE,TLIO-test,36,4.510,5.105,−0.595 (−11.7%),"[−1.179, −0.146]",lower,25/36,same as subject CI
+ResNet18-YawAug plug-in HN − ResNet18-YawAug,Official-protocol ATE,Phone-test,4,9.847,9.925,−0.079 (−0.8%),"[−0.503, +0.346]",ns,2/4,"[−0.447, +0.312]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol ATE,RoNIN-seen,31,4.749,4.948,−0.199 (−4.0%),"[−0.459, +0.066]",ns,19/31,"[−0.443, +0.064]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol ATE,RoNIN-unseen,15,5.216,5.766,−0.550 (−9.5%),"[−1.185, +0.000]",ns,8/15,"[−1.048, +0.001]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol ATE,RIDI,11,3.006,3.106,−0.100 (−3.2%),"[−0.230, +0.029]",ns,7/11,"[−0.268, −0.057]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol ATE,TLIO-test,36,3.963,4.332,−0.370 (−8.5%),"[−0.765, −0.023]",lower,21/36,same as subject CI
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol ATE,Phone-test,4,10.225,9.895,+0.330 (+3.3%),"[−0.032, +0.691]",ns,1/4,"[−0.116, +0.925]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol RTE,RoNIN-seen,31,3.584,3.553,+0.030 (+0.9%),"[−0.124, +0.194]",ns,19/31,"[−0.105, +0.192]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol RTE,RoNIN-unseen,15,4.740,5.020,−0.280 (−5.6%),"[−0.535, −0.052]",lower,11/15,"[−0.432, −0.040]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol RTE,RIDI,11,3.396,3.573,−0.177 (−5.0%),"[−0.351, −0.014]",lower,6/11,"[−0.422, −0.089]"
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol RTE,TLIO-test,36,3.367,3.655,−0.288 (−7.9%),"[−0.510, −0.088]",lower,27/36,same as subject CI
+ResNet18-YawAug plug-in HN − training-time HN,Unified-protocol RTE,Phone-test,4,9.263,8.843,+0.420 (+4.7%),"[+0.247, +0.619]",higher,0/4,"[−0.042, +0.932]"
+ResNet18-YawAug plug-in HN − training-time HN,Official-protocol ATE,RoNIN-seen,31,4.796,4.936,−0.140 (−2.8%),"[−0.394, +0.117]",ns,18/31,"[−0.383, +0.111]"
+ResNet18-YawAug plug-in HN − training-time HN,Official-protocol ATE,RoNIN-unseen,15,5.246,5.825,−0.580 (−10.0%),"[−1.220, −0.039]",lower,8/15,"[−1.078, −0.042]"
+ResNet18-YawAug plug-in HN − training-time HN,Official-protocol ATE,RIDI,11,2.973,3.099,−0.126 (−4.1%),"[−0.259, +0.008]",ns,8/11,"[−0.317, −0.086]"
+ResNet18-YawAug plug-in HN − training-time HN,Official-protocol ATE,TLIO-test,36,4.510,4.680,−0.170 (−3.6%),"[−0.565, +0.180]",ns,19/36,same as subject CI
+ResNet18-YawAug plug-in HN − training-time HN,Official-protocol ATE,Phone-test,4,9.847,9.638,+0.208 (+2.2%),"[−0.215, +0.582]",ns,1/4,"[−0.300, +0.852]"

@@ -1,0 +1,1957 @@
+{
+  "source": "results/generated/eval_submission_v2_v21_registered.json",
+  "alignment": "registered",
+  "per_run": [
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.109374508371442
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.5750973120913825
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 4.801159897611059
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.121927495200468
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.78705293851438
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.7670945574711316
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.017425075524287
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.41097020202359
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.329371915781062
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.7588353986790835
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 4.8702102785496555
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.341633198730275
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.618557784675662
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.616430726486039
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.259037614283695
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.393012191580507
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.769903527905319
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.6149006891163658
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.823672111551026
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.068907539342892
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.55884669720564
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.808670432598134
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.679160834986087
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.0636153428575765
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.458312524624093
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.8993201547700034
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.742599052579554
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 6.8852315798515615
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.482795246188838
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.6047193452117243
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.9178838302006636
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.479236385297734
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.236709893211826
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.533605167756207
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.221723304233019
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 6.738944271771845
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.44367050763233
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.154239927288743
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.3318444049494165
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 6.143146657775173
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.49699291222288
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.0376410298217333
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.485468942814672
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 6.56103402546204
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.033149970843507
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.121528402988665
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.394938523371114
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 6.75018180124772
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.38959120634959
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.410329994456727
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.163749034973952
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.6146358249490875
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.383312129070957
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.9331397032822486
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.49919029899295
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.54241376104461
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.406571856271709
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.019130442616103
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.052992207787513
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 8.22868204016273
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.294704188147525
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 3.8129424782093335
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.109842168137675
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.774319697719333
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.763568668567638
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 5.483918734332252
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 7.243647076698109
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 10.929439501753492
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 16.270069586089384
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.34861781673266
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 6.415367853093492
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 9.686661278916702
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.65945279414808
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.175034010469869
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 9.643604562999109
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 10.728689773991935
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.573016565291924
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.9027597957347275
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 9.606234530687239
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 11.655652877456621
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.088860960543254
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.023228127594864
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.8960835405494745
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.891924609143292
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 15.72234872596342
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.021840657287312
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.271866273800731
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 7.644277361407322
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.965932837623503
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.227541000215491
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.523322961205809
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 8.239762071648757
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "dataset": "oxiod",
+      "split": "",
+      "n_sequences": 28,
+      "mean_ate": 14.47943448608367
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 4.214912168419034
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.410723305878598
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 8.608391526653747
+    }
+  ],
+  "aggregate": [
+    {
+      "family": "A6-100%",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 14.711089286835637,
+      "sd_across_runs": 0.32592014580619394,
+      "run_values": [
+        15.109374508371442,
+        14.78705293851438,
+        14.329371915781062,
+        14.618557784675662
+      ]
+    },
+    {
+      "family": "A6-100%",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 2.679364498681909,
+      "sd_across_runs": 0.09805524470730208,
+      "run_values": [
+        2.5750973120913825,
+        2.7670945574711316,
+        2.7588353986790835,
+        2.616430726486039
+      ]
+    },
+    {
+      "family": "A6-100%",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 4.986958216492174,
+      "sd_across_runs": 0.20257222951724155,
+      "run_values": [
+        4.801159897611059,
+        5.017425075524287,
+        4.8702102785496555,
+        5.259037614283695
+      ]
+    },
+    {
+      "family": "A6-100%",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 5.31688577188371,
+      "sd_across_runs": 0.133251987544182,
+      "run_values": [
+        5.121927495200468,
+        5.41097020202359,
+        5.341633198730275,
+        5.393012191580507
+      ]
+    },
+    {
+      "family": "A6-25%",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 14.567464498980971,
+      "sd_across_runs": 0.1415849130541511,
+      "run_values": [
+        14.769903527905319,
+        14.55884669720564,
+        14.458312524624093,
+        14.482795246188838
+      ]
+    },
+    {
+      "family": "A6-25%",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 3.731902655424057,
+      "sd_across_runs": 0.1458160544612415,
+      "run_values": [
+        3.6149006891163658,
+        3.808670432598134,
+        3.8993201547700034,
+        3.6047193452117243
+      ]
+    },
+    {
+      "family": "A6-25%",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 6.7908289573293334,
+      "sd_across_runs": 0.10330780344746278,
+      "run_values": [
+        6.823672111551026,
+        6.679160834986087,
+        6.742599052579554,
+        6.9178838302006636
+      ]
+    },
+    {
+      "family": "A6-25%",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 7.124247711837442,
+      "sd_across_runs": 0.25158463684840204,
+      "run_values": [
+        7.068907539342892,
+        7.0636153428575765,
+        6.8852315798515615,
+        7.479236385297734
+      ]
+    },
+    {
+      "family": "A6-50%",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 14.302630820977637,
+      "sd_across_runs": 0.2118445287086709,
+      "run_values": [
+        14.236709893211826,
+        14.44367050763233,
+        14.49699291222288,
+        14.033149970843507
+      ]
+    },
+    {
+      "family": "A6-50%",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 3.2117536319638376,
+      "sd_across_runs": 0.22011514220643527,
+      "run_values": [
+        3.533605167756207,
+        3.154239927288743,
+        3.0376410298217333,
+        3.121528402988665
+      ]
+    },
+    {
+      "family": "A6-50%",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 6.358493793842055,
+      "sd_across_runs": 0.11085615833639399,
+      "run_values": [
+        6.221723304233019,
+        6.3318444049494165,
+        6.485468942814672,
+        6.394938523371114
+      ]
+    },
+    {
+      "family": "A6-50%",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 6.5483266890641945,
+      "sd_across_runs": 0.2836740402325836,
+      "run_values": [
+        6.738944271771845,
+        6.143146657775173,
+        6.56103402546204,
+        6.75018180124772
+      ]
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 14.618544844959946,
+      "sd_across_runs": 0.516285528551415,
+      "run_values": [
+        15.38959120634959,
+        14.383312129070957,
+        14.406571856271709,
+        14.294704188147525
+      ]
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 4.043885654641103,
+      "sd_across_runs": 0.258517369621517,
+      "run_values": [
+        4.410329994456727,
+        3.9331397032822486,
+        4.019130442616103,
+        3.8129424782093335
+      ]
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 5.2064434274730225,
+      "sd_across_runs": 0.20033523742609965,
+      "run_values": [
+        5.163749034973952,
+        5.49919029899295,
+        5.052992207787513,
+        5.109842168137675
+      ]
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 7.790012830968941,
+      "sd_across_runs": 0.3080797208482326,
+      "run_values": [
+        7.6146358249490875,
+        7.54241376104461,
+        8.22868204016273,
+        7.774319697719333
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 15.816526903524256,
+      "sd_across_runs": 0.31223660911795537,
+      "run_values": [
+        15.763568668567638,
+        16.270069586089384,
+        15.65945279414808,
+        15.573016565291924
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 4.727582589317377,
+      "sd_across_runs": 0.592074220783942,
+      "run_values": [
+        5.483918734332252,
+        4.34861781673266,
+        4.175034010469869,
+        4.9027597957347275
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 8.227213505869488,
+      "sd_across_runs": 1.6490451988633075,
+      "run_values": [
+        7.243647076698109,
+        6.415367853093492,
+        9.643604562999109,
+        9.606234530687239
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 10.750110858029688,
+      "sd_across_runs": 0.8131315968862945,
+      "run_values": [
+        10.929439501753492,
+        9.686661278916702,
+        10.728689773991935,
+        11.655652877456621
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "dataset": "oxiod",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 15.064144252553461,
+      "sd_across_runs": 0.5116558210028933,
+      "run_values": [
+        15.088860960543254,
+        15.72234872596342,
+        14.965932837623503,
+        14.47943448608367
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 4.121880488379175,
+      "sd_across_runs": 0.1148321867563815,
+      "run_values": [
+        4.023228127594864,
+        4.021840657287312,
+        4.227541000215491,
+        4.214912168419034
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 5.525499020358653,
+      "sd_across_runs": 0.26760708548132056,
+      "run_values": [
+        5.8960835405494745,
+        5.271866273800731,
+        5.523322961205809,
+        5.410723305878598
+      ]
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 8.09608889221328,
+      "sd_across_runs": 0.4198859708676661,
+      "run_values": [
+        7.891924609143292,
+        7.644277361407322,
+        8.239762071648757,
+        8.608391526653747
+      ]
+    }
+  ],
+  "training_runs": [
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s0",
+      "seed": 0,
+      "train_hours": 2.8217013889009093,
+      "n_train_seq": 22,
+      "n_train_subjects": 7,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.02012057388201356,
+      "best_step": 16000,
+      "selected_val_verr": 0.2281734399497509,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.0008708616344828125,
+        0.0,
+        0.0,
+        9.813017882264521
+      ],
+      "gnorm_sd": [
+        0.8315888129872577,
+        0.8315888129872577,
+        1.02051624782264,
+        2.1601140934467407,
+        2.1601140934467407,
+        2.7327831786977286
+      ],
+      "minutes": 27.986246132850646
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s1",
+      "seed": 1,
+      "train_hours": 2.8217013889009093,
+      "n_train_seq": 22,
+      "n_train_subjects": 7,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.02005801731720567,
+      "best_step": 18000,
+      "selected_val_verr": 0.2284101750701666,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.0008708616344828125,
+        0.0,
+        0.0,
+        9.813017882264521
+      ],
+      "gnorm_sd": [
+        0.8315888129872577,
+        0.8315888129872577,
+        1.02051624782264,
+        2.1601140934467407,
+        2.1601140934467407,
+        2.7327831786977286
+      ],
+      "minutes": 18.975083498160043
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s2",
+      "seed": 2,
+      "train_hours": 2.8217013889009093,
+      "n_train_seq": 22,
+      "n_train_subjects": 7,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.020436041336506606,
+      "best_step": 14000,
+      "selected_val_verr": 0.23115878738462925,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.0008708616344828125,
+        0.0,
+        0.0,
+        9.813017882264521
+      ],
+      "gnorm_sd": [
+        0.8315888129872577,
+        0.8315888129872577,
+        1.02051624782264,
+        2.1601140934467407,
+        2.1601140934467407,
+        2.7327831786977286
+      ],
+      "minutes": 18.932120450337727
+    },
+    {
+      "family": "A6-25%",
+      "model": "A6_v2_f025_s3",
+      "seed": 3,
+      "train_hours": 2.8217013889009093,
+      "n_train_seq": 22,
+      "n_train_subjects": 7,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.020759085891768336,
+      "best_step": 16000,
+      "selected_val_verr": 0.23384703285992145,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.0008708616344828125,
+        0.0,
+        0.0,
+        9.813017882264521
+      ],
+      "gnorm_sd": [
+        0.8315888129872577,
+        0.8315888129872577,
+        1.02051624782264,
+        2.1601140934467407,
+        2.1601140934467407,
+        2.7327831786977286
+      ],
+      "minutes": 18.947439511617024
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s0",
+      "seed": 0,
+      "train_hours": 5.588372222606863,
+      "n_train_seq": 40,
+      "n_train_subjects": 16,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.016678998130373657,
+      "best_step": 12000,
+      "selected_val_verr": 0.20290680564939975,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.005039675209779654,
+        0.0,
+        0.0,
+        9.812154160205035
+      ],
+      "gnorm_sd": [
+        0.8777024977138037,
+        0.8777024977138037,
+        1.0110191530416963,
+        2.261530438797951,
+        2.261530438797951,
+        2.700283712087039
+      ],
+      "minutes": 18.917547512054444
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s1",
+      "seed": 1,
+      "train_hours": 5.588372222606863,
+      "n_train_seq": 40,
+      "n_train_subjects": 16,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.015244981460273265,
+      "best_step": 20000,
+      "selected_val_verr": 0.19124866761267184,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.005039675209779654,
+        0.0,
+        0.0,
+        9.812154160205035
+      ],
+      "gnorm_sd": [
+        0.8777024977138037,
+        0.8777024977138037,
+        1.0110191530416963,
+        2.261530438797951,
+        2.261530438797951,
+        2.700283712087039
+      ],
+      "minutes": 18.853600986798604
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s2",
+      "seed": 2,
+      "train_hours": 5.588372222606863,
+      "n_train_seq": 40,
+      "n_train_subjects": 16,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.016234135860577224,
+      "best_step": 18000,
+      "selected_val_verr": 0.19829097986221314,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.005039675209779654,
+        0.0,
+        0.0,
+        9.812154160205035
+      ],
+      "gnorm_sd": [
+        0.8777024977138037,
+        0.8777024977138037,
+        1.0110191530416963,
+        2.261530438797951,
+        2.261530438797951,
+        2.700283712087039
+      ],
+      "minutes": 25.151471467812858
+    },
+    {
+      "family": "A6-50%",
+      "model": "A6_v2_f050_s3",
+      "seed": 3,
+      "train_hours": 5.588372222606863,
+      "n_train_seq": 40,
+      "n_train_subjects": 16,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.01581775201484561,
+      "best_step": 14000,
+      "selected_val_verr": 0.19627722650766372,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        0.005039675209779654,
+        0.0,
+        0.0,
+        9.812154160205035
+      ],
+      "gnorm_sd": [
+        0.8777024977138037,
+        0.8777024977138037,
+        1.0110191530416963,
+        2.261530438797951,
+        2.261530438797951,
+        2.700283712087039
+      ],
+      "minutes": 21.22104618549347
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s0",
+      "seed": 0,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.013056629197672009,
+      "best_step": 20000,
+      "selected_val_verr": 0.17251804918050767,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        -0.0012345310182332312,
+        0.0,
+        0.0,
+        9.81180490321222
+      ],
+      "gnorm_sd": [
+        0.8632386647913857,
+        0.8632386647913857,
+        1.0407804540887449,
+        2.2453415002198502,
+        2.2453415002198502,
+        2.790995418192022
+      ],
+      "minutes": 18.73392468293508
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s1",
+      "seed": 1,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.012412970652803779,
+      "best_step": 16000,
+      "selected_val_verr": 0.1690150909125805,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        -0.0012345310182332312,
+        0.0,
+        0.0,
+        9.81180490321222
+      ],
+      "gnorm_sd": [
+        0.8632386647913857,
+        0.8632386647913857,
+        1.0407804540887449,
+        2.2453415002198502,
+        2.2453415002198502,
+        2.790995418192022
+      ],
+      "minutes": 18.919482866923016
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s2",
+      "seed": 2,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.012606173497624695,
+      "best_step": 16000,
+      "selected_val_verr": 0.16892335750162601,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        -0.0012345310182332312,
+        0.0,
+        0.0,
+        9.81180490321222
+      ],
+      "gnorm_sd": [
+        0.8632386647913857,
+        0.8632386647913857,
+        1.0407804540887449,
+        2.2453415002198502,
+        2.2453415002198502,
+        2.790995418192022
+      ],
+      "minutes": 19.03134548664093
+    },
+    {
+      "family": "A6-100%",
+      "model": "A6_v2_f100_s3",
+      "seed": 3,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.012759064650163054,
+      "best_step": 18000,
+      "selected_val_verr": 0.17018187306821347,
+      "parameters": 3275522,
+      "gnorm_mu": [
+        0.0,
+        0.0,
+        -0.0012345310182332312,
+        0.0,
+        0.0,
+        9.81180490321222
+      ],
+      "gnorm_sd": [
+        0.8632386647913857,
+        0.8632386647913857,
+        1.0407804540887449,
+        2.2453415002198502,
+        2.2453415002198502,
+        2.790995418192022
+      ],
+      "minutes": 18.842996116479238
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s0",
+      "seed": 0,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.015007556905038655,
+      "best_step": 20000,
+      "selected_val_verr": 0.18896545395255088,
+      "parameters": 3661618,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 15.129066264629364
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s1",
+      "seed": 1,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.01435244302265346,
+      "best_step": 20000,
+      "selected_val_verr": 0.18365314416587353,
+      "parameters": 3661618,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 15.127331868807476
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s2",
+      "seed": 2,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.014388531725853682,
+      "best_step": 20000,
+      "selected_val_verr": 0.1835115622729063,
+      "parameters": 3661618,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 15.119090735912323
+    },
+    {
+      "family": "IMUNet-2024-matched",
+      "model": "IMUNet2024_v21_matched_s3",
+      "seed": 3,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.014931608084589243,
+      "best_step": 20000,
+      "selected_val_verr": 0.18772794231772422,
+      "parameters": 3661618,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 14.024292266368866
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s0",
+      "seed": 0,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.01453585757408291,
+      "best_step": 18000,
+      "selected_val_verr": 0.18320896923542024,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 12.594280282656351
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s1",
+      "seed": 1,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.014821283426135779,
+      "best_step": 20000,
+      "selected_val_verr": 0.18494945354759693,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 12.53482174873352
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s2",
+      "seed": 2,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.014672101614996791,
+      "best_step": 16000,
+      "selected_val_verr": 0.18329314030706884,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 12.60680730342865
+    },
+    {
+      "family": "RoNIN-ResNet18-matched",
+      "model": "ResNet18_v2_matched_s3",
+      "seed": 3,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.014853164949454368,
+      "best_step": 18000,
+      "selected_val_verr": 0.18494948782026768,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 144.65055298407873
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s0",
+      "seed": 0,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.04110092432238162,
+      "best_step": 10000,
+      "selected_val_verr": 0.18862779773771762,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 14.621623547871907
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s1",
+      "seed": 1,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.04341931156814098,
+      "best_step": 12000,
+      "selected_val_verr": 0.1917302519083023,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 19.761645233631135
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s2",
+      "seed": 2,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.04461919483728707,
+      "best_step": 12000,
+      "selected_val_verr": 0.19456693083047866,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 12.436485135555268
+    },
+    {
+      "family": "RoNIN-ResNet18-MSE-Adam",
+      "model": "ResNet18_v2_official_s3",
+      "seed": 3,
+      "train_hours": 11.063751389217094,
+      "n_train_seq": 74,
+      "n_train_subjects": 34,
+      "n_val_subjects": 8,
+      "best_val_loss": 0.04241054393351078,
+      "best_step": 8000,
+      "selected_val_verr": 0.1943079624325037,
+      "parameters": 4634882,
+      "gnorm_mu": null,
+      "gnorm_sd": null,
+      "minutes": 15.599467027187348
+    }
+  ],
+  "paired_a6_minus_matched_resnet": [
+    {
+      "seed": 0,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_resnet_ate": -1.094923642938415
+    },
+    {
+      "seed": 0,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_resnet_ate": -2.769997113942824
+    },
+    {
+      "seed": 0,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_resnet_ate": -1.4481308155034815
+    },
+    {
+      "seed": 1,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_resnet_ate": -0.25444119827644407
+    },
+    {
+      "seed": 1,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_resnet_ate": -2.233307159383732
+    },
+    {
+      "seed": 1,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_resnet_ate": -1.2547460998161801
+    },
+    {
+      "seed": 2,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_resnet_ate": -0.6531126826561531
+    },
+    {
+      "seed": 2,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_resnet_ate": -2.898128872918482
+    },
+    {
+      "seed": 2,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_resnet_ate": -1.4687056015364077
+    },
+    {
+      "seed": 3,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_resnet_ate": -0.15168569159490275
+    },
+    {
+      "seed": 3,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_resnet_ate": -3.2153793350732407
+    },
+    {
+      "seed": 3,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_resnet_ate": -1.5984814419329951
+    }
+  ],
+  "paired_a6_minus_imunet": [
+    {
+      "seed": 0,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_imunet_ate": -0.36258913736289244
+    },
+    {
+      "seed": 0,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_imunet_ate": -2.49270832974862
+    },
+    {
+      "seed": 0,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_imunet_ate": -1.8352326823653442
+    },
+    {
+      "seed": 1,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_imunet_ate": -0.48176522346866335
+    },
+    {
+      "seed": 1,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_imunet_ate": -2.1314435590210206
+    },
+    {
+      "seed": 1,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_imunet_ate": -1.166045145811117
+    },
+    {
+      "seed": 2,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_imunet_ate": -0.18278192923785763
+    },
+    {
+      "seed": 2,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_imunet_ate": -2.8870488414324544
+    },
+    {
+      "seed": 2,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_imunet_ate": -1.26029504393702
+    },
+    {
+      "seed": 3,
+      "dataset": "ronin",
+      "split": "seen",
+      "a6_minus_imunet_ate": 0.14919544614602032
+    },
+    {
+      "seed": 3,
+      "dataset": "ronin",
+      "split": "unseen",
+      "a6_minus_imunet_ate": -2.3813075061388265
+    },
+    {
+      "seed": 3,
+      "dataset": "ridi",
+      "split": "",
+      "a6_minus_imunet_ate": -1.1965117517232944
+    }
+  ],
+  "paired_effect_summary": [
+    {
+      "comparison": "A6-100% minus RoNIN-ResNet18-matched",
+      "comparator_family": "RoNIN-ResNet18-matched",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -1.094923642938415,
+        -0.25444119827644407,
+        -0.6531126826561531,
+        -0.15168569159490275
+      ],
+      "mean_difference_ate": -0.5385408038664787,
+      "sd_difference_ate": 0.4293631108243196,
+      "ci95_mean_difference_ate": [
+        -1.2217533267005853,
+        0.14467171896762798
+      ],
+      "relative_mean_reduction_percent": 9.74646456152159,
+      "a6_better_pairs": 4,
+      "a6_worse_pairs": 0,
+      "interpretation": "negative_difference_favors_a6"
+    },
+    {
+      "comparison": "A6-100% minus RoNIN-ResNet18-matched",
+      "comparator_family": "RoNIN-ResNet18-matched",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -2.769997113942824,
+        -2.233307159383732,
+        -2.898128872918482,
+        -3.2153793350732407
+      ],
+      "mean_difference_ate": -2.7792031203295697,
+      "sd_difference_ate": 0.40925956542172137,
+      "ci95_mean_difference_ate": [
+        -3.43042641626887,
+        -2.1279798243902697
+      ],
+      "relative_mean_reduction_percent": 34.32772487222286,
+      "a6_better_pairs": 4,
+      "a6_worse_pairs": 0,
+      "interpretation": "negative_difference_favors_a6"
+    },
+    {
+      "comparison": "A6-100% minus RoNIN-ResNet18-matched",
+      "comparator_family": "RoNIN-ResNet18-matched",
+      "dataset": "ridi",
+      "split": "",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -1.4481308155034815,
+        -1.2547460998161801,
+        -1.4687056015364077,
+        -1.5984814419329951
+      ],
+      "mean_difference_ate": -1.4425159896972661,
+      "sd_difference_ate": 0.14177467554088502,
+      "ci95_mean_difference_ate": [
+        -1.6681111358762486,
+        -1.2169208435182837
+      ],
+      "relative_mean_reduction_percent": 34.99655057355869,
+      "a6_better_pairs": 4,
+      "a6_worse_pairs": 0,
+      "interpretation": "negative_difference_favors_a6"
+    },
+    {
+      "comparison": "A6-100% minus IMUNet-2024-matched",
+      "comparator_family": "IMUNet-2024-matched",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -0.36258913736289244,
+        -0.48176522346866335,
+        -0.18278192923785763,
+        0.14919544614602032
+      ],
+      "mean_difference_ate": -0.21948521098084828,
+      "sd_difference_ate": 0.2747981662522338,
+      "ci95_mean_difference_ate": [
+        -0.6567504154250043,
+        0.21777999346330773
+      ],
+      "relative_mean_reduction_percent": 4.2156457481643415,
+      "a6_better_pairs": 3,
+      "a6_worse_pairs": 1,
+      "interpretation": "negative_difference_favors_a6"
+    },
+    {
+      "comparison": "A6-100% minus IMUNet-2024-matched",
+      "comparator_family": "IMUNet-2024-matched",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -2.49270832974862,
+        -2.1314435590210206,
+        -2.8870488414324544,
+        -2.3813075061388265
+      ],
+      "mean_difference_ate": -2.4731270590852303,
+      "sd_difference_ate": 0.3145860309367969,
+      "ci95_mean_difference_ate": [
+        -2.9737036350096555,
+        -1.9725504831608052
+      ],
+      "relative_mean_reduction_percent": 31.747406746923378,
+      "a6_better_pairs": 4,
+      "a6_worse_pairs": 0,
+      "interpretation": "negative_difference_favors_a6"
+    },
+    {
+      "comparison": "A6-100% minus IMUNet-2024-matched",
+      "comparator_family": "IMUNet-2024-matched",
+      "dataset": "ridi",
+      "split": "",
+      "n_pairs": 4,
+      "raw_differences_ate": [
+        -1.8352326823653442,
+        -1.166045145811117,
+        -1.26029504393702,
+        -1.1965117517232944
+      ],
+      "mean_difference_ate": -1.3645211559591939,
+      "sd_difference_ate": 0.316255334624239,
+      "ci95_mean_difference_ate": [
+        -1.8677539665598677,
+        -0.8612883453585201
+      ],
+      "relative_mean_reduction_percent": 33.74282243596959,
+      "a6_better_pairs": 4,
+      "a6_worse_pairs": 0,
+      "interpretation": "negative_difference_favors_a6"
+    }
+  ],
+  "includes_imunet_extension": true,
+  "matrix_complete": true,
+  "failed_runs_retained": true
+}

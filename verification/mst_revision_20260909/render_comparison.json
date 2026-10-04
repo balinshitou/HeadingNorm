@@ -1,0 +1,16 @@
+{
+  "main": {
+    "pages": 14,
+    "changed_pages": [
+      "page-10.png",
+      "page-13.png",
+      "page-14.png",
+      "page-4.png",
+      "page-9.png"
+    ]
+  },
+  "supplement": {
+    "pages": 12,
+    "changed_pages": []
+  }
+}

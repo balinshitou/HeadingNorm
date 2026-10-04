@@ -1,0 +1,25 @@
+{
+  "protocol_id": "e6-sign-ablation-20260907",
+  "status": "locked_before_training",
+  "question": "Does the third-moment sign rule account for the exact yaw invariance reported in the merged manuscript, holding the rest of the HeadingNorm construction fixed?",
+  "registered_prediction": "Without the sign rule the frame is defined modulo pi. Under an input rotation psi the principal axis flips whenever theta+psi crosses pi/2, so the canonicalized input differs and exact invariance fails, as a structured function of the angle rather than uniformly. Accuracy is not predicted to change materially.",
+  "common": {
+    "arch": "ronin_resnet18",
+    "gnorm": true,
+    "pre": false,
+    "width": 1.0,
+    "steps": 20000,
+    "bs": 256,
+    "lr": 0.001,
+    "frontend": "heading_nosign",
+    "yaw_augmentation": false
+  },
+  "families": [
+    {"id": "heading_nosign", "phase": "main",
+     "tag_template": "E6_resnet_heading_nosign_s{seed}", "seeds": [0, 1, 2, 3], "args": {}}
+  ],
+  "reference_arm": "ResNet18_v3_hn_gn_s{seed}",
+  "primary": ["RoNIN unseen subject-macro ATE", "per-sequence ATE spread across eight yaw angles"],
+  "selection": "Same 8-subject validation split, same validation windows, Huber loss for checkpoint selection every 2000 steps. No test-based selection. All seeds retained.",
+  "frozen_code_note": "src/models.py and src/sensors_frontend.py are unmodified; the ablated frontend lives in src/e6_frontend.py so that existing sensors_v4 run metadata still verifies."
+}

@@ -1,0 +1,4682 @@
+[
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.947558317224033,
+  "control_mean": 5.002332960941408,
+  "difference": -0.05477464371737508,
+  "rel_pct": -1.094981964316642,
+  "subject_ci95": [
+   -0.3020331691215517,
+   0.21785905787694973
+  ],
+  "sig": "ns",
+  "improved_subjects": 17,
+  "seq_difference": -0.06486155484659556,
+  "seq_ci95": [
+   -0.3116274957206221,
+   0.20773527758189853
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5531323726524087,
+  "control_mean": 3.6303976540977687,
+  "difference": -0.077265281445361,
+  "rel_pct": -2.128287003440208,
+  "subject_ci95": [
+   -0.28438779816653753,
+   0.11655366234624819
+  ],
+  "sig": "ns",
+  "improved_subjects": 15,
+  "seq_difference": -0.08397830204056518,
+  "seq_ci95": [
+   -0.2817924762738481,
+   0.09579341669307849
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.936215300889703,
+  "control_mean": 5.008997149676625,
+  "difference": -0.07278184878692417,
+  "rel_pct": -1.4530223638003645,
+  "subject_ci95": [
+   -0.30986088793112093,
+   0.1850353792088304
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.08039624869928363,
+  "seq_ci95": [
+   -0.3124942493098703,
+   0.18023918148445714
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.765719694579007,
+  "control_mean": 6.202315861809593,
+  "difference": -0.43659616723058503,
+  "rel_pct": -7.039244323542132,
+  "subject_ci95": [
+   -0.9360251291333821,
+   0.07551950435033641
+  ],
+  "sig": "ns",
+  "improved_subjects": 10,
+  "seq_difference": -0.48604037143149204,
+  "seq_ci95": [
+   -0.8911466938244164,
+   -0.0463521458944291
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.020168499156117,
+  "control_mean": 4.80584950887173,
+  "difference": 0.21431899028438667,
+  "rel_pct": 4.459544350873824,
+  "subject_ci95": [
+   0.013760030345313016,
+   0.43950987830213917
+  ],
+  "sig": "worse",
+  "improved_subjects": 4,
+  "seq_difference": 0.1650204140308834,
+  "seq_ci95": [
+   -0.013511212970333397,
+   0.35867256610544235
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.825385045645053,
+  "control_mean": 6.195012827908969,
+  "difference": -0.3696277822639162,
+  "rel_pct": -5.966537802774467,
+  "subject_ci95": [
+   -0.8664879629955601,
+   0.15606132747915005
+  ],
+  "sig": "ns",
+  "improved_subjects": 10,
+  "seq_difference": -0.4238585721928809,
+  "seq_ci95": [
+   -0.8312908368446723,
+   0.01968406995308222
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.1055969795630953,
+  "control_mean": 3.144646970758105,
+  "difference": -0.03904999119500909,
+  "rel_pct": -1.2417925305489856,
+  "subject_ci95": [
+   -0.19358808944859407,
+   0.18311105262564586
+  ],
+  "sig": "ns",
+  "improved_subjects": 9,
+  "seq_difference": -0.028275199795231725,
+  "seq_ci95": [
+   -0.15702260384813696,
+   0.11967735758425235
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.5731223460806096,
+  "control_mean": 3.6112983850750235,
+  "difference": -0.038176038994413825,
+  "rel_pct": -1.0571277951495202,
+  "subject_ci95": [
+   -0.20147320424760096,
+   0.1609869172793178
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": -0.01340986725872655,
+  "seq_ci95": [
+   -0.16199924987624723,
+   0.14947224517552785
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.0989839014810867,
+  "control_mean": 3.1223153200696574,
+  "difference": -0.02333141858857042,
+  "rel_pct": -0.7472473532253594,
+  "subject_ci95": [
+   -0.17887559935520944,
+   0.1859906068550324
+  ],
+  "sig": "ns",
+  "improved_subjects": 7,
+  "seq_difference": 0.0006925660408719544,
+  "seq_ci95": [
+   -0.12845395239501733,
+   0.14931238226387522
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.332129051891191,
+  "control_mean": 4.741534174980525,
+  "difference": -0.4094051230893332,
+  "rel_pct": -8.634444211108418,
+  "subject_ci95": [
+   -0.9782163789671783,
+   0.0720916554253234
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.4094051230893332,
+  "seq_ci95": [
+   -0.9782163789671783,
+   0.0720916554253234
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.6550161372240506,
+  "control_mean": 3.7436906827663146,
+  "difference": -0.08867454554226299,
+  "rel_pct": -2.3686397476817973,
+  "subject_ci95": [
+   -0.3072020802698541,
+   0.1252938992946194
+  ],
+  "sig": "ns",
+  "improved_subjects": 16,
+  "seq_difference": -0.08867454554226299,
+  "seq_ci95": [
+   -0.3072020802698541,
+   0.1252938992946194
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.68011662363658,
+  "control_mean": 5.105108675726712,
+  "difference": -0.4249920520901316,
+  "rel_pct": -8.324838491898195,
+  "subject_ci95": [
+   -0.945163450373286,
+   0.014888999271079265
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.4249920520901316,
+  "seq_ci95": [
+   -0.945163450373286,
+   0.014888999271079265
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.895478542184286,
+  "control_mean": 10.277594502009478,
+  "difference": -0.3821159598251913,
+  "rel_pct": -3.717951313904045,
+  "subject_ci95": [
+   -0.7035499449659524,
+   0.06738850590517198
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.4230605356567752,
+  "seq_ci95": [
+   -0.9146831678668572,
+   0.04217726640069311
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 8.842972989681696,
+  "control_mean": 9.331297621811604,
+  "difference": -0.4883246321299086,
+  "rel_pct": -5.233191051461757,
+  "subject_ci95": [
+   -0.6413027967845313,
+   -0.33534646747528596
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -0.5144775720067345,
+  "seq_ci95": [
+   -0.8511417189303798,
+   -0.18080526802356917
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.638303338301458,
+  "control_mean": 9.92518939250316,
+  "difference": -0.2868860542017011,
+  "rel_pct": -2.8904844316461715,
+  "subject_ci95": [
+   -0.7068496776027295,
+   0.10172945714581538
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.3374259583667458,
+  "seq_ci95": [
+   -0.8656829962094245,
+   0.16332251106606469
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.947558317224033,
+  "control_mean": 5.515701153565024,
+  "difference": -0.5681428363409904,
+  "rel_pct": -10.300464447276598,
+  "subject_ci95": [
+   -1.4700981412117833,
+   0.3912764336173713
+  ],
+  "sig": "ns",
+  "improved_subjects": 20,
+  "seq_difference": -0.5630789127098784,
+  "seq_ci95": [
+   -1.431548478905926,
+   0.37771254798121306
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5531323726524087,
+  "control_mean": 3.6264821301482884,
+  "difference": -0.07334975749588026,
+  "rel_pct": -2.022614612825376,
+  "subject_ci95": [
+   -0.26610720174918595,
+   0.12763531092937838
+  ],
+  "sig": "ns",
+  "improved_subjects": 20,
+  "seq_difference": -0.0770408456862477,
+  "seq_ci95": [
+   -0.2738051864670668,
+   0.12360517359728211
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.936215300889703,
+  "control_mean": 5.640221234577687,
+  "difference": -0.7040059336879847,
+  "rel_pct": -12.481885096492979,
+  "subject_ci95": [
+   -1.7220863397993202,
+   0.3229231101697809
+  ],
+  "sig": "ns",
+  "improved_subjects": 20,
+  "seq_difference": -0.688705749851424,
+  "seq_ci95": [
+   -1.6801775125921752,
+   0.30623200142783824
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.765719694579007,
+  "control_mean": 8.021704491562259,
+  "difference": -2.255984796983253,
+  "rel_pct": -28.12350915389917,
+  "subject_ci95": [
+   -3.3672886054615576,
+   -1.252485966865327
+  ],
+  "sig": "better",
+  "improved_subjects": 13,
+  "seq_difference": -2.412080407784023,
+  "seq_ci95": [
+   -3.6734579224168824,
+   -1.3194708823808416
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.020168499156117,
+  "control_mean": 5.275887340636371,
+  "difference": -0.2557188414802529,
+  "rel_pct": -4.846935216198313,
+  "subject_ci95": [
+   -0.5028889726578895,
+   -0.009173176936008803
+  ],
+  "sig": "better",
+  "improved_subjects": 12,
+  "seq_difference": -0.2767386078195275,
+  "seq_ci95": [
+   -0.5251080292428273,
+   -0.01819852785113349
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.825385045645053,
+  "control_mean": 8.054516716172587,
+  "difference": -2.229131670527534,
+  "rel_pct": -27.675548379602738,
+  "subject_ci95": [
+   -3.316438458759252,
+   -1.237657593224852
+  ],
+  "sig": "better",
+  "improved_subjects": 13,
+  "seq_difference": -2.3640007602626865,
+  "seq_ci95": [
+   -3.6522104128049326,
+   -1.2430148409147843
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.1055969795630953,
+  "control_mean": 4.321394343886286,
+  "difference": -1.2157973643231914,
+  "rel_pct": -28.134376721329463,
+  "subject_ci95": [
+   -1.7864036722231076,
+   -0.8084977151688513
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -1.1449410536908955,
+  "seq_ci95": [
+   -1.620224445310688,
+   -0.7672599323233008
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.5731223460806096,
+  "control_mean": 4.9642697370062345,
+  "difference": -1.3911473909256251,
+  "rel_pct": -28.02320310186396,
+  "subject_ci95": [
+   -2.055194777140762,
+   -0.8544206592700423
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -1.2986012097961612,
+  "seq_ci95": [
+   -1.8076426532342544,
+   -0.8534155791127283
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.0989839014810867,
+  "control_mean": 4.28243017358301,
+  "difference": -1.1834462721019234,
+  "rel_pct": -27.634922792255626,
+  "subject_ci95": [
+   -1.7622228338376846,
+   -0.7733414157686155
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -1.1107149455885839,
+  "seq_ci95": [
+   -1.590886091314991,
+   -0.7306151119828036
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.332129051891191,
+  "control_mean": 5.772150238482647,
+  "difference": -1.4400211865914545,
+  "rel_pct": -24.947742645208763,
+  "subject_ci95": [
+   -2.686957351011401,
+   -0.5007256061530667
+  ],
+  "sig": "better",
+  "improved_subjects": 29,
+  "seq_difference": -1.4400211865914545,
+  "seq_ci95": [
+   -2.686957351011401,
+   -0.5007256061530667
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.6550161372240506,
+  "control_mean": 4.439824102824101,
+  "difference": -0.78480796560005,
+  "rel_pct": -17.676555364002958,
+  "subject_ci95": [
+   -1.3291091642070767,
+   -0.377026753667485
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.78480796560005,
+  "seq_ci95": [
+   -1.3291091642070767,
+   -0.377026753667485
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.68011662363658,
+  "control_mean": 6.088223781804552,
+  "difference": -1.4081071581679732,
+  "rel_pct": -23.128373867864127,
+  "subject_ci95": [
+   -2.6071670513001286,
+   -0.4689447215005912
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -1.4081071581679732,
+  "seq_ci95": [
+   -2.6071670513001286,
+   -0.4689447215005912
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.895478542184286,
+  "control_mean": 11.457144857363538,
+  "difference": -1.5616663151792507,
+  "rel_pct": -13.630501618172032,
+  "subject_ci95": [
+   -2.606685404077038,
+   -0.5166472262814632
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -1.7434872132424317,
+  "seq_ci95": [
+   -3.058157028203404,
+   -0.3385225787175878
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 8.842972989681696,
+  "control_mean": 9.345533940688986,
+  "difference": -0.5025609510072904,
+  "rel_pct": -5.377552039260367,
+  "subject_ci95": [
+   -2.0247083707289213,
+   0.47552449594358204
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.6860841373984176,
+  "seq_ci95": [
+   -1.7541247581398358,
+   0.416364110959126
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_gn",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.638303338301458,
+  "control_mean": 11.179938714328067,
+  "difference": -1.541635376026609,
+  "rel_pct": -13.789300777211496,
+  "subject_ci95": [
+   -2.5447479274743667,
+   -0.5385228245788514
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -1.7098991077389265,
+  "seq_ci95": [
+   -2.990088856439871,
+   -0.3551598263324997
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.947558317224033,
+  "control_mean": 5.515188857909143,
+  "difference": -0.5676305406851097,
+  "rel_pct": -10.29213242391673,
+  "subject_ci95": [
+   -0.940981916755763,
+   -0.20571656411854636
+  ],
+  "sig": "better",
+  "improved_subjects": 23,
+  "seq_difference": -0.5458437998456349,
+  "seq_ci95": [
+   -0.9160233758548831,
+   -0.19981321229909266
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5531323726524087,
+  "control_mean": 3.836849255762061,
+  "difference": -0.2837168831096517,
+  "rel_pct": -7.394527754343606,
+  "subject_ci95": [
+   -0.4882703706669219,
+   -0.08759077329078409
+  ],
+  "sig": "better",
+  "improved_subjects": 20,
+  "seq_difference": -0.2694956832089449,
+  "seq_ci95": [
+   -0.47169089989976,
+   -0.08116270985588901
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.936215300889703,
+  "control_mean": 5.573562991956379,
+  "difference": -0.6373476910666765,
+  "rel_pct": -11.435193106931422,
+  "subject_ci95": [
+   -1.0660480608252136,
+   -0.22610210317316984
+  ],
+  "sig": "better",
+  "improved_subjects": 23,
+  "seq_difference": -0.6116606011684879,
+  "seq_ci95": [
+   -1.0413597592613888,
+   -0.21104966020972635
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.765719694579007,
+  "control_mean": 7.216220360832496,
+  "difference": -1.450500666253488,
+  "rel_pct": -20.100559485771466,
+  "subject_ci95": [
+   -2.211636983248843,
+   -0.7910427095480385
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -1.4717849290734653,
+  "seq_ci95": [
+   -2.123342847225797,
+   -0.9324597026690917
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.020168499156117,
+  "control_mean": 5.3368231112629285,
+  "difference": -0.31665461210681006,
+  "rel_pct": -5.933391560955738,
+  "subject_ci95": [
+   -0.5214659836777932,
+   -0.14691919249885754
+  ],
+  "sig": "better",
+  "improved_subjects": 13,
+  "seq_difference": -0.3102144469112358,
+  "seq_ci95": [
+   -0.4922413859405827,
+   -0.14619463755736334
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.825385045645053,
+  "control_mean": 7.239333855925035,
+  "difference": -1.4139488102799826,
+  "rel_pct": -19.531476768718655,
+  "subject_ci95": [
+   -2.1788525647258052,
+   -0.7563423698385885
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -1.434458069075717,
+  "seq_ci95": [
+   -2.1394747782981014,
+   -0.8619829101622578
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.1055969795630953,
+  "control_mean": 3.7910178550895703,
+  "difference": -0.6854208755264749,
+  "rel_pct": -18.080127863451608,
+  "subject_ci95": [
+   -0.9146678918812651,
+   -0.47622804895462756
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -0.6433442403282549,
+  "seq_ci95": [
+   -0.8665704579406869,
+   -0.44026368485398754
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.5731223460806096,
+  "control_mean": 4.479263025537556,
+  "difference": -0.9061406794569454,
+  "rel_pct": -20.229682300208296,
+  "subject_ci95": [
+   -1.3633961551266582,
+   -0.5274223857526973
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -0.8128267784531307,
+  "seq_ci95": [
+   -1.2199907660825642,
+   -0.4592499547438331
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.0989839014810867,
+  "control_mean": 3.743176667740499,
+  "difference": -0.6441927662594126,
+  "rel_pct": -17.209787927222465,
+  "subject_ci95": [
+   -0.8574166492085238,
+   -0.44421694910817094
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -0.6061564974266944,
+  "seq_ci95": [
+   -0.8232104147008267,
+   -0.40618209594026566
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.332129051891191,
+  "control_mean": 5.041783407877088,
+  "difference": -0.7096543559858979,
+  "rel_pct": -14.075462957753427,
+  "subject_ci95": [
+   -1.2759798011666559,
+   -0.2437626154370064
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.7096543559858979,
+  "seq_ci95": [
+   -1.2759798011666559,
+   -0.2437626154370064
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.6550161372240506,
+  "control_mean": 4.066299765795957,
+  "difference": -0.4112836285719058,
+  "rel_pct": -10.114444390732201,
+  "subject_ci95": [
+   -0.6436437282194377,
+   -0.20853099380228882
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.4112836285719058,
+  "seq_ci95": [
+   -0.6436437282194377,
+   -0.20853099380228882
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.68011662363658,
+  "control_mean": 5.445104255283088,
+  "difference": -0.7649876316465091,
+  "rel_pct": -14.049090628600606,
+  "subject_ci95": [
+   -1.357600031008838,
+   -0.2841871052374526
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.7649876316465091,
+  "seq_ci95": [
+   -1.357600031008838,
+   -0.2841871052374526
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.895478542184286,
+  "control_mean": 11.681714234899765,
+  "difference": -1.7862356927154766,
+  "rel_pct": -15.290869617226203,
+  "subject_ci95": [
+   -2.4945836523504386,
+   -0.9445243768091154
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -1.7774034448199574,
+  "seq_ci95": [
+   -2.862298581940607,
+   -0.7638614740798366
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 8.842972989681696,
+  "control_mean": 10.189907292435471,
+  "difference": -1.346934302753776,
+  "rel_pct": -13.218317538116164,
+  "subject_ci95": [
+   -2.1352139892108544,
+   -0.787851834124532
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -1.2737986851994547,
+  "seq_ci95": [
+   -1.8311317497436503,
+   -0.7645246843408999
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_hn",
+  "control": "ours_pca",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.638303338301458,
+  "control_mean": 11.433750699310139,
+  "difference": -1.795447361008681,
+  "rel_pct": -15.703048004335185,
+  "subject_ci95": [
+   -2.456832125094632,
+   -0.9852515797163206
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -1.7890516940636891,
+  "seq_ci95": [
+   -2.883203090566174,
+   -0.7728165305136648
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.6554568213341736,
+  "control_mean": 3.847661232798408,
+  "difference": -0.19220441146423403,
+  "rel_pct": -4.995356915152418,
+  "subject_ci95": [
+   -0.3813792642972287,
+   0.004871982798875082
+  ],
+  "sig": "ns",
+  "improved_subjects": 25,
+  "seq_difference": -0.21025145354174052,
+  "seq_ci95": [
+   -0.3920967615325712,
+   -0.01557475672782926
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.0889805442375393,
+  "control_mean": 3.1629584729076328,
+  "difference": -0.07397792867009315,
+  "rel_pct": -2.3388839690357046,
+  "subject_ci95": [
+   -0.20591321387388478,
+   0.05481388896363036
+  ],
+  "sig": "ns",
+  "improved_subjects": 23,
+  "seq_difference": -0.07334119567663876,
+  "seq_ci95": [
+   -0.19904593112036162,
+   0.053238888839293376
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5271878020665692,
+  "control_mean": 3.68719444875135,
+  "difference": -0.16000664668478007,
+  "rel_pct": -4.339522878674476,
+  "subject_ci95": [
+   -0.32459614346693383,
+   0.009459435423663337
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": -0.17148458519456683,
+  "seq_ci95": [
+   -0.3315412433416715,
+   -0.004189452922674661
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.980930202539244,
+  "control_mean": 5.052165489565718,
+  "difference": -0.07123528702647407,
+  "rel_pct": -1.4099951233505104,
+  "subject_ci95": [
+   -0.6092564237148252,
+   0.3777265330357865
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": -0.18231830912904745,
+  "seq_ci95": [
+   -0.689335053274704,
+   0.1955963617239175
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.345393514220828,
+  "control_mean": 4.329428376655508,
+  "difference": 0.01596513756532018,
+  "rel_pct": 0.36875855601180496,
+  "subject_ci95": [
+   -0.10076374060508474,
+   0.12696910128397967
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": 0.014111269737878823,
+  "seq_ci95": [
+   -0.08533144428766977,
+   0.11240294927324714
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.041077212308318,
+  "control_mean": 5.3086341834071975,
+  "difference": -0.2675569710988805,
+  "rel_pct": -5.040034062530875,
+  "subject_ci95": [
+   -0.9961038170505192,
+   0.2508416440203637
+  ],
+  "sig": "ns",
+  "improved_subjects": 7,
+  "seq_difference": -0.3364448283784636,
+  "seq_ci95": [
+   -1.041909752043196,
+   0.13586418411869283
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.772965706071935,
+  "control_mean": 2.8768317802745846,
+  "difference": -0.10386607420264939,
+  "rel_pct": -3.6104326611942423,
+  "subject_ci95": [
+   -0.1748031874157671,
+   -0.009801472917794818
+  ],
+  "sig": "better",
+  "improved_subjects": 9,
+  "seq_difference": -0.12449428909222227,
+  "seq_ci95": [
+   -0.2598641910791695,
+   0.0017420354963080258
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.1986029618256966,
+  "control_mean": 3.4107250457128,
+  "difference": -0.21212208388710313,
+  "rel_pct": -6.219266608832498,
+  "subject_ci95": [
+   -0.2793325134611915,
+   -0.14213210507259613
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.22568883363757902,
+  "seq_ci95": [
+   -0.369237399349144,
+   -0.09111649031881977
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.74121095568694,
+  "control_mean": 2.8219341701623093,
+  "difference": -0.08072321447536929,
+  "rel_pct": -2.8605633444215437,
+  "subject_ci95": [
+   -0.16089590030526082,
+   0.016039088488566545
+  ],
+  "sig": "ns",
+  "improved_subjects": 8,
+  "seq_difference": -0.10626938712606214,
+  "seq_ci95": [
+   -0.2367718494034479,
+   0.014783836346462347
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.2714386225641063,
+  "control_mean": 3.511813787996483,
+  "difference": -0.24037516543237666,
+  "rel_pct": -6.844758291398832,
+  "subject_ci95": [
+   -0.49779112658877966,
+   0.009650020998542033
+  ],
+  "sig": "ns",
+  "improved_subjects": 22,
+  "seq_difference": -0.24037516543237666,
+  "seq_ci95": [
+   -0.49779112658877966,
+   0.009650020998542033
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 2.681265135831269,
+  "control_mean": 2.790654449075893,
+  "difference": -0.10938931324462373,
+  "rel_pct": -3.919844439387588,
+  "subject_ci95": [
+   -0.20138968090304196,
+   -0.017177110987700094
+  ],
+  "sig": "better",
+  "improved_subjects": 22,
+  "seq_difference": -0.10938931324462373,
+  "seq_ci95": [
+   -0.20138968090304196,
+   -0.017177110987700094
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.949103567519105,
+  "control_mean": 4.145685728526185,
+  "difference": -0.19658216100708048,
+  "rel_pct": -4.741849090354626,
+  "subject_ci95": [
+   -0.6888890568656442,
+   0.1822815400821251
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": -0.19658216100708048,
+  "seq_ci95": [
+   -0.6888890568656442,
+   0.1822815400821251
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 8.251203562461313,
+  "control_mean": 8.5941249143861,
+  "difference": -0.3429213519247878,
+  "rel_pct": -3.9901834723248673,
+  "subject_ci95": [
+   -0.8238041539548693,
+   0.1379614501052937
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.3409230699810231,
+  "seq_ci95": [
+   -0.8496631302938398,
+   0.11959846201190102
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 8.032165052971171,
+  "control_mean": 8.333883396055848,
+  "difference": -0.30171834308467704,
+  "rel_pct": -3.620381144611051,
+  "subject_ci95": [
+   -0.6025877535229371,
+   -0.0008489326464169444
+  ],
+  "sig": "better",
+  "improved_subjects": 3,
+  "seq_difference": -0.3191759490227706,
+  "seq_ci95": [
+   -0.6142499266576914,
+   -0.03507932208227857
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ext_resnet_hn",
+  "control": "ext_resnet",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 7.88570652335866,
+  "control_mean": 8.320924807935109,
+  "difference": -0.4352182845764483,
+  "rel_pct": -5.2304076124015655,
+  "subject_ci95": [
+   -0.8934800827522142,
+   0.023043513599317667
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.43572924238128385,
+  "seq_ci95": [
+   -0.9919003816489996,
+   0.06774589896326218
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.748633962915918,
+  "control_mean": 5.002332960941408,
+  "difference": -0.2536989980254912,
+  "rel_pct": -5.071613585228972,
+  "subject_ci95": [
+   -0.4062714920001906,
+   -0.09215266376753045
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.25662030905782574,
+  "seq_ci95": [
+   -0.4151324557252045,
+   -0.09998317406323108
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5835596579886952,
+  "control_mean": 3.6303976540977687,
+  "difference": -0.04683799610907354,
+  "rel_pct": -1.2901615903207106,
+  "subject_ci95": [
+   -0.13255887020004545,
+   0.041227688258879215
+  ],
+  "sig": "ns",
+  "improved_subjects": 16,
+  "seq_difference": -0.04520266263602676,
+  "seq_ci95": [
+   -0.13486621539756896,
+   0.04381926724023871
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.796325942628913,
+  "control_mean": 5.008997149676625,
+  "difference": -0.21267120704771394,
+  "rel_pct": -4.2457841498560995,
+  "subject_ci95": [
+   -0.3623666694779877,
+   -0.05456642470899611
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.2169574045451148,
+  "seq_ci95": [
+   -0.36910899747859305,
+   -0.0612267983475787
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.216177260119289,
+  "control_mean": 6.202315861809593,
+  "difference": -0.9861386016903058,
+  "rel_pct": -15.899522431006748,
+  "subject_ci95": [
+   -1.4523571958988915,
+   -0.5735187228816013
+  ],
+  "sig": "better",
+  "improved_subjects": 15,
+  "seq_difference": -0.9546864042733991,
+  "seq_ci95": [
+   -1.461575067594155,
+   -0.5329633957591335
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.739991013984197,
+  "control_mean": 4.80584950887173,
+  "difference": -0.06585849488753412,
+  "rel_pct": -1.3703819640202535,
+  "subject_ci95": [
+   -0.14973694071526542,
+   0.012286031685543023
+  ],
+  "sig": "ns",
+  "improved_subjects": 11,
+  "seq_difference": -0.06093656442250594,
+  "seq_ci95": [
+   -0.1447538541043246,
+   0.015607784140830302
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.245755288896086,
+  "control_mean": 6.195012827908969,
+  "difference": -0.9492575390128841,
+  "rel_pct": -15.322930966928949,
+  "subject_ci95": [
+   -1.386328866869802,
+   -0.5627928785747126
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -0.9270228753420104,
+  "seq_ci95": [
+   -1.3908526732847857,
+   -0.5396602746540792
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.005938188249755,
+  "control_mean": 3.144646970758105,
+  "difference": -0.13870878250835006,
+  "rel_pct": -4.410949267062255,
+  "subject_ci95": [
+   -0.24895770455153654,
+   0.0029277492708907763
+  ],
+  "sig": "ns",
+  "improved_subjects": 10,
+  "seq_difference": -0.1850928284121815,
+  "seq_ci95": [
+   -0.2816654618555604,
+   -0.08207100906925026
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.396062242946776,
+  "control_mean": 3.6112983850750235,
+  "difference": -0.21523614212824746,
+  "rel_pct": -5.960076381884905,
+  "subject_ci95": [
+   -0.3632600584235826,
+   -0.054949617565068005
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.26258888657861906,
+  "seq_ci95": [
+   -0.3913493008450888,
+   -0.13534113783838383
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.972513101497827,
+  "control_mean": 3.1223153200696574,
+  "difference": -0.14980221857183004,
+  "rel_pct": -4.797792766442565,
+  "subject_ci95": [
+   -0.2657874209188872,
+   6.243374282928756e-05
+  ],
+  "sig": "ns",
+  "improved_subjects": 10,
+  "seq_difference": -0.19552793145392694,
+  "seq_ci95": [
+   -0.29245368839978525,
+   -0.09285936951917695
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9625777201124817,
+  "control_mean": 4.741534174980525,
+  "difference": -0.7789564548680432,
+  "rel_pct": -16.42836318629387,
+  "subject_ci95": [
+   -1.4735233470084914,
+   -0.2351850185129658
+  ],
+  "sig": "better",
+  "improved_subjects": 23,
+  "seq_difference": -0.7789564548680432,
+  "seq_ci95": [
+   -1.4735233470084914,
+   -0.2351850185129658
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.3665647943534993,
+  "control_mean": 3.7436906827663146,
+  "difference": -0.377125888412815,
+  "rel_pct": -10.073639100283426,
+  "subject_ci95": [
+   -0.6725056797831094,
+   -0.13962263536824537
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.377125888412815,
+  "seq_ci95": [
+   -0.6725056797831094,
+   -0.13962263536824537
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.510055364246086,
+  "control_mean": 5.105108675726712,
+  "difference": -0.5950533114806251,
+  "rel_pct": -11.65603612534104,
+  "subject_ci95": [
+   -1.1794579315568614,
+   -0.14590989877233215
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.5950533114806251,
+  "seq_ci95": [
+   -1.1794579315568614,
+   -0.14590989877233215
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.2250155479461,
+  "control_mean": 10.277594502009478,
+  "difference": -0.052578954063378536,
+  "rel_pct": -0.5115881352693793,
+  "subject_ci95": [
+   -0.40344455110810795,
+   0.2982866429813509
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.026305998068477762,
+  "seq_ci95": [
+   -0.38247824234111694,
+   0.3136293042356469
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.262522827841702,
+  "control_mean": 9.331297621811604,
+  "difference": -0.06877479396990172,
+  "rel_pct": -0.7370335483581927,
+  "subject_ci95": [
+   -0.229855435289668,
+   0.09230584734986458
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.07155480682382623,
+  "seq_ci95": [
+   -0.30241476280794544,
+   0.17578089599053298
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.846649388274876,
+  "control_mean": 9.92518939250316,
+  "difference": -0.07854000422828333,
+  "rel_pct": -0.7913199549381629,
+  "subject_ci95": [
+   -0.5026462921789925,
+   0.3455662837224258
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.05521790033958286,
+  "seq_ci95": [
+   -0.4473828036990074,
+   0.3123003157608911
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.748633962915918,
+  "control_mean": 4.947558317224033,
+  "difference": -0.19892435430811606,
+  "rel_pct": -4.020657090904756,
+  "subject_ci95": [
+   -0.4591686716411106,
+   0.06557070540644488
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": -0.19175875421123015,
+  "seq_ci95": [
+   -0.4428658085661106,
+   0.06430069216763643
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5835596579886952,
+  "control_mean": 3.5531323726524087,
+  "difference": 0.030427285336287455,
+  "rel_pct": 0.8563510205946402,
+  "subject_ci95": [
+   -0.12406145607690007,
+   0.1939983987057994
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": 0.03877563940453842,
+  "seq_ci95": [
+   -0.10496731644351256,
+   0.19208123233659552
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.796325942628913,
+  "control_mean": 4.936215300889703,
+  "difference": -0.13988935826078974,
+  "rel_pct": -2.8339395616632865,
+  "subject_ci95": [
+   -0.3940747480617486,
+   0.11727040910172772
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.13656115584583117,
+  "seq_ci95": [
+   -0.3829303311132162,
+   0.11098769657856614
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.216177260119289,
+  "control_mean": 5.765719694579007,
+  "difference": -0.5495424344597206,
+  "rel_pct": -9.531202756464323,
+  "subject_ci95": [
+   -1.185489070483865,
+   0.00035430344620769193
+  ],
+  "sig": "ns",
+  "improved_subjects": 8,
+  "seq_difference": -0.4686460328419071,
+  "seq_ci95": [
+   -1.0475774583381006,
+   0.0005506477419313202
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.739991013984197,
+  "control_mean": 5.020168499156117,
+  "difference": -0.2801774851719208,
+  "rel_pct": -5.581037473523414,
+  "subject_ci95": [
+   -0.5350770988158372,
+   -0.0522045390727993
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -0.22595697845338936,
+  "seq_ci95": [
+   -0.43189745434118193,
+   -0.03950726622149678
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.245755288896086,
+  "control_mean": 5.825385045645053,
+  "difference": -0.5796297567489679,
+  "rel_pct": -9.950067715820571,
+  "subject_ci95": [
+   -1.2196219830924018,
+   -0.03946136129879408
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.5031643031491295,
+  "seq_ci95": [
+   -1.0778685970391966,
+   -0.04198301377308194
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.005938188249755,
+  "control_mean": 3.1055969795630953,
+  "difference": -0.09965879131334096,
+  "rel_pct": -3.2090059324877775,
+  "subject_ci95": [
+   -0.22988522151001053,
+   0.028870908745291395
+  ],
+  "sig": "ns",
+  "improved_subjects": 7,
+  "seq_difference": -0.15681762861694978,
+  "seq_ci95": [
+   -0.2683946204937894,
+   -0.056873524725516135
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.396062242946776,
+  "control_mean": 3.5731223460806096,
+  "difference": -0.17706010313383364,
+  "rel_pct": -4.955332786968587,
+  "subject_ci95": [
+   -0.3510789534637928,
+   -0.014179191037632717
+  ],
+  "sig": "better",
+  "improved_subjects": 6,
+  "seq_difference": -0.24917901931989245,
+  "seq_ci95": [
+   -0.4219804894060624,
+   -0.08912695701678093
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.972513101497827,
+  "control_mean": 3.0989839014810867,
+  "difference": -0.1264707999832596,
+  "rel_pct": -4.08104088320097,
+  "subject_ci95": [
+   -0.258904935613814,
+   0.008049270741412297
+  ],
+  "sig": "ns",
+  "improved_subjects": 8,
+  "seq_difference": -0.19622049749479897,
+  "seq_ci95": [
+   -0.3168052084978218,
+   -0.08568490114666545
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9625777201124817,
+  "control_mean": 4.332129051891191,
+  "difference": -0.36955133177871013,
+  "rel_pct": -8.530478371076745,
+  "subject_ci95": [
+   -0.7651887444588462,
+   -0.02333769182912512
+  ],
+  "sig": "better",
+  "improved_subjects": 21,
+  "seq_difference": -0.36955133177871013,
+  "seq_ci95": [
+   -0.7651887444588462,
+   -0.02333769182912512
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.3665647943534993,
+  "control_mean": 3.6550161372240506,
+  "difference": -0.28845134287055196,
+  "rel_pct": -7.891930761477512,
+  "subject_ci95": [
+   -0.5103845354728198,
+   -0.0881770422698483
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.28845134287055196,
+  "seq_ci95": [
+   -0.5103845354728198,
+   -0.0881770422698483
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.510055364246086,
+  "control_mean": 4.68011662363658,
+  "difference": -0.17006125939049366,
+  "rel_pct": -3.633697043608101,
+  "subject_ci95": [
+   -0.5647452226848113,
+   0.17986219150393087
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": -0.17006125939049366,
+  "seq_ci95": [
+   -0.5647452226848113,
+   0.17986219150393087
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.2250155479461,
+  "control_mean": 9.895478542184286,
+  "difference": 0.3295370057618128,
+  "rel_pct": 3.3301775589427147,
+  "subject_ci95": [
+   -0.03185169987956149,
+   0.690925711403187
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.39675453758829743,
+  "seq_ci95": [
+   -0.11618202303516624,
+   0.92495286319283
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.262522827841702,
+  "control_mean": 8.842972989681696,
+  "difference": 0.4195498381600069,
+  "rel_pct": 4.744443284510232,
+  "subject_ci95": [
+   0.24665077302124327,
+   0.6190895462371007
+  ],
+  "sig": "worse",
+  "improved_subjects": 0,
+  "seq_difference": 0.44292276518290846,
+  "seq_ci95": [
+   -0.04205991177846637,
+   0.9316899625323601
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.846649388274876,
+  "control_mean": 9.638303338301458,
+  "difference": 0.20834604997341777,
+  "rel_pct": 2.1616465332178914,
+  "subject_ci95": [
+   -0.21465420177140082,
+   0.5823407227539814
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.28220805802716303,
+  "seq_ci95": [
+   -0.299686051718038,
+   0.8519619877503611
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.748633962915918,
+  "control_mean": 4.658736804634621,
+  "difference": 0.08989715828129557,
+  "rel_pct": 1.9296466413784905,
+  "subject_ci95": [
+   0.024398560437430942,
+   0.1610256808770689
+  ],
+  "sig": "worse",
+  "improved_subjects": 8,
+  "seq_difference": 0.0896356475018723,
+  "seq_ci95": [
+   0.025286722688752362,
+   0.15814127442137954
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5835596579886952,
+  "control_mean": 3.5157320305012068,
+  "difference": 0.06782762748748956,
+  "rel_pct": 1.9292604470147852,
+  "subject_ci95": [
+   0.020013984607955403,
+   0.12218719071911381
+  ],
+  "sig": "worse",
+  "improved_subjects": 7,
+  "seq_difference": 0.06870820854253967,
+  "seq_ci95": [
+   0.019975214949104755,
+   0.12398236561364608
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.796325942628913,
+  "control_mean": 4.680270604067475,
+  "difference": 0.11605533856143756,
+  "rel_pct": 2.4796715484907548,
+  "subject_ci95": [
+   0.047459682156171856,
+   0.19055620095013545
+  ],
+  "sig": "worse",
+  "improved_subjects": 6,
+  "seq_difference": 0.11540935587179504,
+  "seq_ci95": [
+   0.04821242917233554,
+   0.1878108905849642
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.216177260119289,
+  "control_mean": 5.117446997854481,
+  "difference": 0.09873026226480658,
+  "rel_pct": 1.9292874416911363,
+  "subject_ci95": [
+   0.0188369661458702,
+   0.17434603140856444
+  ],
+  "sig": "worse",
+  "improved_subjects": 3,
+  "seq_difference": 0.08025825928262029,
+  "seq_ci95": [
+   0.01911152789052926,
+   0.14294473773287886
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.739991013984197,
+  "control_mean": 4.664865704477753,
+  "difference": 0.07512530950644264,
+  "rel_pct": 1.6104495663043563,
+  "subject_ci95": [
+   0.025288000920518233,
+   0.12793961165028106
+  ],
+  "sig": "worse",
+  "improved_subjects": 4,
+  "seq_difference": 0.05917411966284595,
+  "seq_ci95": [
+   0.019207516468681757,
+   0.10059008700975275
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.245755288896086,
+  "control_mean": 5.15362488576697,
+  "difference": 0.0921304031291157,
+  "rel_pct": 1.787681586674206,
+  "subject_ci95": [
+   0.01533110788257532,
+   0.1679709776461457
+  ],
+  "sig": "worse",
+  "improved_subjects": 3,
+  "seq_difference": 0.07136124876916974,
+  "seq_ci95": [
+   0.012259012405125088,
+   0.1362595251761291
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.005938188249755,
+  "control_mean": 2.9695042137536998,
+  "difference": 0.036433974496055524,
+  "rel_pct": 1.2269379624822945,
+  "subject_ci95": [
+   -0.022215853546256232,
+   0.10594602874156779
+  ],
+  "sig": "ns",
+  "improved_subjects": 5,
+  "seq_difference": 0.02302058045008086,
+  "seq_ci95": [
+   -0.020252185782205036,
+   0.07023681776611793
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.396062242946776,
+  "control_mean": 3.346214135141032,
+  "difference": 0.04984810780574509,
+  "rel_pct": 1.4896867263291313,
+  "subject_ci95": [
+   -0.008687123842818821,
+   0.11893616237113704
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": 0.033074734616353574,
+  "seq_ci95": [
+   -0.020942869313496905,
+   0.09210124026803262
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.972513101497827,
+  "control_mean": 2.929720633072264,
+  "difference": 0.04279246842556297,
+  "rel_pct": 1.4606330700101073,
+  "subject_ci95": [
+   -0.014563175032240671,
+   0.11285381160196485
+  ],
+  "sig": "ns",
+  "improved_subjects": 5,
+  "seq_difference": 0.02935790285543645,
+  "seq_ci95": [
+   -0.01299478629657352,
+   0.07652585476819315
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9625777201124817,
+  "control_mean": 3.9843549695243285,
+  "difference": -0.021777249411846913,
+  "rel_pct": -0.5465690074909862,
+  "subject_ci95": [
+   -0.11023494209210755,
+   0.06175132013325682
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.021777249411846913,
+  "seq_ci95": [
+   -0.11023494209210755,
+   0.06175132013325682
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.3665647943534993,
+  "control_mean": 3.4109975101131256,
+  "difference": -0.04443271575962666,
+  "rel_pct": -1.3026311402424053,
+  "subject_ci95": [
+   -0.10806536146636096,
+   0.015251492375557667
+  ],
+  "sig": "ns",
+  "improved_subjects": 21,
+  "seq_difference": -0.04443271575962666,
+  "seq_ci95": [
+   -0.10806536146636096,
+   0.015251492375557667
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.510055364246086,
+  "control_mean": 4.487275437198467,
+  "difference": 0.022779927047617603,
+  "rel_pct": 0.5076560903477714,
+  "subject_ci95": [
+   -0.07665169671313975,
+   0.1252054073406941
+  ],
+  "sig": "ns",
+  "improved_subjects": 16,
+  "seq_difference": 0.022779927047617603,
+  "seq_ci95": [
+   -0.07665169671313975,
+   0.1252054073406941
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.2250155479461,
+  "control_mean": 10.056718595165883,
+  "difference": 0.16829695278021717,
+  "rel_pct": 1.6734777968343972,
+  "subject_ci95": [
+   0.05257808226765581,
+   0.31753311195980816
+  ],
+  "sig": "worse",
+  "improved_subjects": 0,
+  "seq_difference": 0.1873334950642861,
+  "seq_ci95": [
+   0.03841759946410396,
+   0.3785218411287883
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.262522827841702,
+  "control_mean": 9.090039993970358,
+  "difference": 0.17248283387134378,
+  "rel_pct": 1.897492574133401,
+  "subject_ci95": [
+   0.08878175438899127,
+   0.2946388686164534
+  ],
+  "sig": "worse",
+  "improved_subjects": 0,
+  "seq_difference": 0.18640297835375977,
+  "seq_ci95": [
+   0.047196288177448344,
+   0.34996174962706544
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.846649388274876,
+  "control_mean": 9.717544719972404,
+  "difference": 0.12910466830247236,
+  "rel_pct": 1.328572926833302,
+  "subject_ci95": [
+   -0.014493089464725273,
+   0.3008610566346972
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": 0.14892981520466644,
+  "seq_ci95": [
+   -0.01657224742208131,
+   0.3453529366533676
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.658736804634621,
+  "control_mean": 5.002332960941408,
+  "difference": -0.3435961563067867,
+  "rel_pct": -6.868718235863372,
+  "subject_ci95": [
+   -0.46235608186726873,
+   -0.22822235646968922
+  ],
+  "sig": "better",
+  "improved_subjects": 27,
+  "seq_difference": -0.346255956559698,
+  "seq_ci95": [
+   -0.4689199712624399,
+   -0.23096067867307887
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5157320305012068,
+  "control_mean": 3.6303976540977687,
+  "difference": -0.11466562359656311,
+  "rel_pct": -3.1584866045496596,
+  "subject_ci95": [
+   -0.17883969781200312,
+   -0.05575279675756241
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.11391087117856642,
+  "seq_ci95": [
+   -0.17848482688007514,
+   -0.05447479345961599
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.680270604067475,
+  "control_mean": 5.008997149676625,
+  "difference": -0.32872654560915143,
+  "rel_pct": -6.562721754201311,
+  "subject_ci95": [
+   -0.4488176629119756,
+   -0.21224329256862556
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.3323667604169098,
+  "seq_ci95": [
+   -0.45503029957731955,
+   -0.21561715395367423
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.117446997854481,
+  "control_mean": 6.202315861809593,
+  "difference": -1.0848688639551125,
+  "rel_pct": -17.4913514262492,
+  "subject_ci95": [
+   -1.5823576093299798,
+   -0.6420334928550744
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -1.0349446635560193,
+  "seq_ci95": [
+   -1.5642244254604867,
+   -0.5970283041314725
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.664865704477753,
+  "control_mean": 4.80584950887173,
+  "difference": -0.14098380439397676,
+  "rel_pct": -2.9335875818357775,
+  "subject_ci95": [
+   -0.23755497983887486,
+   -0.06207312012338649
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -0.12011068408535189,
+  "seq_ci95": [
+   -0.21884628845790008,
+   -0.038679243462638985
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.15362488576697,
+  "control_mean": 6.195012827908969,
+  "difference": -1.0413879421419996,
+  "rel_pct": -16.810101465011883,
+  "subject_ci95": [
+   -1.496729807749394,
+   -0.6349206656037599
+  ],
+  "sig": "better",
+  "improved_subjects": 15,
+  "seq_difference": -0.9983841241111802,
+  "seq_ci95": [
+   -1.469930672207019,
+   -0.6007080581820653
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.9695042137536998,
+  "control_mean": 3.144646970758105,
+  "difference": -0.17514275700440557,
+  "rel_pct": -5.569552278301768,
+  "subject_ci95": [
+   -0.2703430499680513,
+   -0.07435921782610731
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.20811340886226237,
+  "seq_ci95": [
+   -0.2881366898498648,
+   -0.1289959735756341
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.346214135141032,
+  "control_mean": 3.6112983850750235,
+  "difference": -0.26508424993399254,
+  "rel_pct": -7.340413936149602,
+  "subject_ci95": [
+   -0.39516404454105136,
+   -0.13985836612446342
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.2956636211949725,
+  "seq_ci95": [
+   -0.41637765428552515,
+   -0.18457021641813706
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.929720633072264,
+  "control_mean": 3.1223153200696574,
+  "difference": -0.192594686997393,
+  "rel_pct": -6.168329180574122,
+  "subject_ci95": [
+   -0.2940959711226181,
+   -0.08743331341143644
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.2248858343093634,
+  "seq_ci95": [
+   -0.3062194930581048,
+   -0.14452467956963647
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9843549695243285,
+  "control_mean": 4.741534174980525,
+  "difference": -0.7571792054561963,
+  "rel_pct": -15.969076200095222,
+  "subject_ci95": [
+   -1.3898840267684391,
+   -0.25877975299342804
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.7571792054561963,
+  "seq_ci95": [
+   -1.3898840267684391,
+   -0.25877975299342804
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.4109975101131256,
+  "control_mean": 3.7436906827663146,
+  "difference": -0.3326931726531883,
+  "rel_pct": -8.886769790696285,
+  "subject_ci95": [
+   -0.5797987949729929,
+   -0.13334602611110646
+  ],
+  "sig": "better",
+  "improved_subjects": 28,
+  "seq_difference": -0.3326931726531883,
+  "seq_ci95": [
+   -0.5797987949729929,
+   -0.13334602611110646
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.487275437198467,
+  "control_mean": 5.105108675726712,
+  "difference": -0.6178332385282428,
+  "rel_pct": -12.102254384237849,
+  "subject_ci95": [
+   -1.1660561288416118,
+   -0.1846400023151072
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.6178332385282428,
+  "seq_ci95": [
+   -1.1660561288416118,
+   -0.1846400023151072
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.056718595165883,
+  "control_mean": 10.277594502009478,
+  "difference": -0.2208759068435957,
+  "rel_pct": -2.1491012006789134,
+  "subject_ci95": [
+   -0.4621919370383676,
+   0.05390291173624728
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.21363949313276384,
+  "seq_ci95": [
+   -0.5884639137782843,
+   0.13630756952546533
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.090039993970358,
+  "control_mean": 9.331297621811604,
+  "difference": -0.2412576278412455,
+  "rel_pct": -2.5854670767044623,
+  "subject_ci95": [
+   -0.36725175913842634,
+   -0.08497530493290228
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -0.257957785177586,
+  "seq_ci95": [
+   -0.41858359295053216,
+   -0.09450992920688366
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.717544719972404,
+  "control_mean": 9.92518939250316,
+  "difference": -0.2076446725307557,
+  "rel_pct": -2.092097836315314,
+  "subject_ci95": [
+   -0.4881532027142672,
+   0.07286385765275583
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.20414771554424935,
+  "seq_ci95": [
+   -0.5653344145432788,
+   0.13784662411922846
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.658736804634621,
+  "control_mean": 4.947558317224033,
+  "difference": -0.28882151258941163,
+  "rel_pct": -5.837657569066575,
+  "subject_ci95": [
+   -0.5451920379262363,
+   -0.03475373268055257
+  ],
+  "sig": "better",
+  "improved_subjects": 21,
+  "seq_difference": -0.2813944017131024,
+  "seq_ci95": [
+   -0.5290397219750154,
+   -0.03374972116316491
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5157320305012068,
+  "control_mean": 3.5531323726524087,
+  "difference": -0.03740034215120213,
+  "rel_pct": -1.052601992514082,
+  "subject_ci95": [
+   -0.20742224763508038,
+   0.13577563020732322
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.02993256913800125,
+  "seq_ci95": [
+   -0.18800683339263713,
+   0.1314340429178661
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.680270604067475,
+  "control_mean": 4.936215300889703,
+  "difference": -0.25594469682222737,
+  "rel_pct": -5.185039169099774,
+  "subject_ci95": [
+   -0.5041847888634511,
+   -0.010122791965987336
+  ],
+  "sig": "better",
+  "improved_subjects": 21,
+  "seq_difference": -0.2519705117176262,
+  "seq_ci95": [
+   -0.4961717404516793,
+   -0.015678764914255267
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.117446997854481,
+  "control_mean": 5.765719694579007,
+  "difference": -0.6482726967245273,
+  "rel_pct": -11.243569425236549,
+  "subject_ci95": [
+   -1.2647574987685346,
+   -0.1182215203907256
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.5489042921245275,
+  "seq_ci95": [
+   -1.1199962653490092,
+   -0.08752022001073688
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.664865704477753,
+  "control_mean": 5.020168499156117,
+  "difference": -0.3553027946783634,
+  "rel_pct": -7.077507353350574,
+  "subject_ci95": [
+   -0.6189124530867207,
+   -0.12184769303569955
+  ],
+  "sig": "better",
+  "improved_subjects": 12,
+  "seq_difference": -0.2851310981162353,
+  "seq_ci95": [
+   -0.5064981384910026,
+   -0.09360304015987653
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.15362488576697,
+  "control_mean": 5.825385045645053,
+  "difference": -0.6717601598780836,
+  "rel_pct": -11.53160099486091,
+  "subject_ci95": [
+   -1.2941411794170776,
+   -0.14625904693102867
+  ],
+  "sig": "better",
+  "improved_subjects": 9,
+  "seq_difference": -0.5745255519182992,
+  "seq_ci95": [
+   -1.1480287682302313,
+   -0.11389690008767504
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.9695042137536998,
+  "control_mean": 3.1055969795630953,
+  "difference": -0.13609276580939647,
+  "rel_pct": -4.382177298116203,
+  "subject_ci95": [
+   -0.3062133068201814,
+   0.011019666464166617
+  ],
+  "sig": "ns",
+  "improved_subjects": 8,
+  "seq_difference": -0.1798382090670307,
+  "seq_ci95": [
+   -0.3030318798667204,
+   -0.06954895575261015
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.346214135141032,
+  "control_mean": 3.5731223460806096,
+  "difference": -0.22690821093957875,
+  "rel_pct": -6.350418176653717,
+  "subject_ci95": [
+   -0.41404017840258994,
+   -0.05657275349068613
+  ],
+  "sig": "better",
+  "improved_subjects": 7,
+  "seq_difference": -0.282253753936246,
+  "seq_ci95": [
+   -0.4598202870950197,
+   -0.12300248855103957
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.929720633072264,
+  "control_mean": 3.0989839014810867,
+  "difference": -0.16926326840882258,
+  "rel_pct": -5.4618956983909195,
+  "subject_ci95": [
+   -0.325582937809971,
+   -0.020153221237931167
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.22557840035023535,
+  "seq_ci95": [
+   -0.35466572285329784,
+   -0.10957959093643763
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9843549695243285,
+  "control_mean": 4.332129051891191,
+  "difference": -0.34777408236686325,
+  "rel_pct": -8.027786757992413,
+  "subject_ci95": [
+   -0.6905301369354407,
+   -0.02764466609201402
+  ],
+  "sig": "better",
+  "improved_subjects": 22,
+  "seq_difference": -0.34777408236686325,
+  "seq_ci95": [
+   -0.6905301369354407,
+   -0.02764466609201402
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.4109975101131256,
+  "control_mean": 3.6550161372240506,
+  "difference": -0.24401862711092537,
+  "rel_pct": -6.676266750938483,
+  "subject_ci95": [
+   -0.44408513927079063,
+   -0.06231254727654071
+  ],
+  "sig": "better",
+  "improved_subjects": 24,
+  "seq_difference": -0.24401862711092537,
+  "seq_ci95": [
+   -0.44408513927079063,
+   -0.06231254727654071
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.487275437198467,
+  "control_mean": 4.68011662363658,
+  "difference": -0.1928411864381113,
+  "rel_pct": -4.120435492230713,
+  "subject_ci95": [
+   -0.5169272509305739,
+   0.10612582905406215
+  ],
+  "sig": "ns",
+  "improved_subjects": 21,
+  "seq_difference": -0.1928411864381113,
+  "seq_ci95": [
+   -0.5169272509305739,
+   0.10612582905406215
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.056718595165883,
+  "control_mean": 9.895478542184286,
+  "difference": 0.1612400529815956,
+  "rel_pct": 1.6294315862970297,
+  "subject_ci95": [
+   -0.12244592123868125,
+   0.44492602720187246
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": 0.2094210425240114,
+  "seq_ci95": [
+   -0.2691088278092789,
+   0.7015128744156629
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.090039993970358,
+  "control_mean": 8.842972989681696,
+  "difference": 0.24706700428866313,
+  "rel_pct": 2.79393598258131,
+  "subject_ci95": [
+   0.157869018632252,
+   0.33626498994507426
+  ],
+  "sig": "worse",
+  "improved_subjects": 0,
+  "seq_difference": 0.25651978682914856,
+  "seq_ci95": [
+   -0.15643208523825275,
+   0.6523173850748712
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_tta8",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.717544719972404,
+  "control_mean": 9.638303338301458,
+  "difference": 0.07924138167094541,
+  "rel_pct": 0.8221507343107753,
+  "subject_ci95": [
+   -0.2236683289521877,
+   0.3821510922940785
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": 0.1332782428224966,
+  "seq_ci95": [
+   -0.393690634631258,
+   0.6561908363853184
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.748633962915918,
+  "control_mean": 4.700733277258939,
+  "difference": 0.047900685656977915,
+  "rel_pct": 1.0190045431573487,
+  "subject_ci95": [
+   -0.006146856073461987,
+   0.10509109432253785
+  ],
+  "sig": "ns",
+  "improved_subjects": 10,
+  "seq_difference": 0.04918837168809948,
+  "seq_ci95": [
+   -0.0035881116272335144,
+   0.10485373303273722
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5835596579886952,
+  "control_mean": 3.5552010832394707,
+  "difference": 0.028358574749225342,
+  "rel_pct": 0.7976644382484614,
+  "subject_ci95": [
+   -0.0056050973103760554,
+   0.06573035905703566
+  ],
+  "sig": "ns",
+  "improved_subjects": 13,
+  "seq_difference": 0.02776115457075512,
+  "seq_ci95": [
+   -0.005927425068522999,
+   0.06370384930557918
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.796325942628913,
+  "control_mean": 4.735042362996413,
+  "difference": 0.06128357963249829,
+  "rel_pct": 1.2942562058455802,
+  "subject_ci95": [
+   0.004605302706495115,
+   0.12166683074787252
+  ],
+  "sig": "worse",
+  "improved_subjects": 10,
+  "seq_difference": 0.06262403807023412,
+  "seq_ci95": [
+   0.006710291452288945,
+   0.12296439260566226
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.216177260119289,
+  "control_mean": 5.190315610566924,
+  "difference": 0.025861649552363777,
+  "rel_pct": 0.498267378956922,
+  "subject_ci95": [
+   -0.03349769234964931,
+   0.08256445555352362
+  ],
+  "sig": "ns",
+  "improved_subjects": 7,
+  "seq_difference": 0.019419441960639855,
+  "seq_ci95": [
+   -0.027927602911930006,
+   0.072022909249675
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.739991013984197,
+  "control_mean": 4.708112018563807,
+  "difference": 0.0318789954203905,
+  "rel_pct": 0.6771078363193889,
+  "subject_ci95": [
+   -0.006457666507488737,
+   0.07475796418332814
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": 0.019115833420516364,
+  "seq_ci95": [
+   -0.014929975068567592,
+   0.05763830327645682
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.245755288896086,
+  "control_mean": 5.22186976788044,
+  "difference": 0.023885521015644576,
+  "rel_pct": 0.4574131887118993,
+  "subject_ci95": [
+   -0.03781812060321433,
+   0.08376414269338482
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": 0.022180150400042675,
+  "seq_ci95": [
+   -0.02386238571571119,
+   0.07470698090963893
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.005938188249755,
+  "control_mean": 2.983902226717873,
+  "difference": 0.022035961531881518,
+  "rel_pct": 0.7384947581248281,
+  "subject_ci95": [
+   -0.02935658302227567,
+   0.08208093490872136
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": -0.004166651336273704,
+  "seq_ci95": [
+   -0.046228223152711606,
+   0.03906512981772917
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.396062242946776,
+  "control_mean": 3.3707636724301904,
+  "difference": 0.02529857051658531,
+  "rel_pct": 0.7505293451304469,
+  "subject_ci95": [
+   -0.027424432352799896,
+   0.08155912919692537
+  ],
+  "sig": "ns",
+  "improved_subjects": 4,
+  "seq_difference": -0.00651075664904474,
+  "seq_ci95": [
+   -0.05647792028116294,
+   0.04310580033643311
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.972513101497827,
+  "control_mean": 2.9490722630662303,
+  "difference": 0.023440838431596542,
+  "rel_pct": 0.7948546641317112,
+  "subject_ci95": [
+   -0.02829492461213667,
+   0.08371448946099669
+  ],
+  "sig": "ns",
+  "improved_subjects": 6,
+  "seq_difference": -0.0027764267757603763,
+  "seq_ci95": [
+   -0.04516448072272978,
+   0.0417014474864285
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9625777201124817,
+  "control_mean": 3.9996758858843355,
+  "difference": -0.03709816577185457,
+  "rel_pct": -0.9275293006311209,
+  "subject_ci95": [
+   -0.10839691941982482,
+   0.03101608851468297
+  ],
+  "sig": "ns",
+  "improved_subjects": 20,
+  "seq_difference": -0.03709816577185457,
+  "seq_ci95": [
+   -0.10839691941982482,
+   0.03101608851468297
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.3665647943534993,
+  "control_mean": 3.40041080531499,
+  "difference": -0.03384601096149103,
+  "rel_pct": -0.9953506472979159,
+  "subject_ci95": [
+   -0.0876826768354299,
+   0.018909669944733205
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": -0.03384601096149103,
+  "seq_ci95": [
+   -0.0876826768354299,
+   0.018909669944733205
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.510055364246086,
+  "control_mean": 4.5056817002021345,
+  "difference": 0.004373664043951373,
+  "rel_pct": 0.0970699737568049,
+  "subject_ci95": [
+   -0.08816982788633204,
+   0.11042001265508927
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": 0.004373664043951373,
+  "seq_ci95": [
+   -0.08816982788633204,
+   0.11042001265508927
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.2250155479461,
+  "control_mean": 10.075972635718879,
+  "difference": 0.14904291222722144,
+  "rel_pct": 1.479191315971531,
+  "subject_ci95": [
+   0.02091612766653661,
+   0.2726914711529673
+  ],
+  "sig": "worse",
+  "improved_subjects": 1,
+  "seq_difference": 0.1669115294503603,
+  "seq_ci95": [
+   0.0421074980940429,
+   0.3164714374483446
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.262522827841702,
+  "control_mean": 9.047700885625705,
+  "difference": 0.21482194221599737,
+  "rel_pct": 2.374326306004325,
+  "subject_ci95": [
+   0.13956541237130837,
+   0.31881097765236843
+  ],
+  "sig": "worse",
+  "improved_subjects": 0,
+  "seq_difference": 0.22551381858905653,
+  "seq_ci95": [
+   0.08395076411441503,
+   0.384241057034546
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_hn",
+  "control": "ours_yaw_fa2",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.846649388274876,
+  "control_mean": 9.73319903809432,
+  "difference": 0.11345035018055682,
+  "rel_pct": 1.1656018718668828,
+  "subject_ci95": [
+   -0.01650230719244883,
+   0.20900691994000065
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.1305995278722673,
+  "seq_ci95": [
+   0.006615901681974193,
+   0.27426688780261205
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.700733277258939,
+  "control_mean": 5.002332960941408,
+  "difference": -0.3015996836824691,
+  "rel_pct": -6.029180505123951,
+  "subject_ci95": [
+   -0.4319082416937472,
+   -0.16970623874776186
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.30580868074592515,
+  "seq_ci95": [
+   -0.4406169287595748,
+   -0.17284867780828275
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5552010832394707,
+  "control_mean": 3.6303976540977687,
+  "difference": -0.0751965708582989,
+  "rel_pct": -2.0713039733656076,
+  "subject_ci95": [
+   -0.15650209038656368,
+   -0.0037386339783604706
+  ],
+  "sig": "better",
+  "improved_subjects": 20,
+  "seq_difference": -0.07296381720678188,
+  "seq_ci95": [
+   -0.15549401172539312,
+   0.0010250405740526189
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.735042362996413,
+  "control_mean": 5.008997149676625,
+  "difference": -0.2739547866802123,
+  "rel_pct": -5.469254193883869,
+  "subject_ci95": [
+   -0.4009087387397969,
+   -0.1465643850542741
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.2795814426153489,
+  "seq_ci95": [
+   -0.40789646131100527,
+   -0.1517259872760744
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.190315610566924,
+  "control_mean": 6.202315861809593,
+  "difference": -1.0120002512426696,
+  "rel_pct": -16.316490062591033,
+  "subject_ci95": [
+   -1.5082240082782554,
+   -0.5723695171126039
+  ],
+  "sig": "better",
+  "improved_subjects": 14,
+  "seq_difference": -0.9741058462340391,
+  "seq_ci95": [
+   -1.4878515683410287,
+   -0.5460392288683666
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.708112018563807,
+  "control_mean": 4.80584950887173,
+  "difference": -0.09773749030792463,
+  "rel_pct": -2.0337193274050414,
+  "subject_ci95": [
+   -0.19407793658359915,
+   -0.01590462930356713
+  ],
+  "sig": "better",
+  "improved_subjects": 11,
+  "seq_difference": -0.0800523978430223,
+  "seq_ci95": [
+   -0.18598126746241966,
+   0.011596002053424554
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.22186976788044,
+  "control_mean": 6.195012827908969,
+  "difference": -0.9731430600285287,
+  "rel_pct": -15.708491444028182,
+  "subject_ci95": [
+   -1.4311597082350702,
+   -0.5656679130553421
+  ],
+  "sig": "better",
+  "improved_subjects": 15,
+  "seq_difference": -0.9492030257420531,
+  "seq_ci95": [
+   -1.4124501281821948,
+   -0.5603553812826326
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.983902226717873,
+  "control_mean": 3.144646970758105,
+  "difference": -0.16074474404023156,
+  "rel_pct": -5.11169442977186,
+  "subject_ci95": [
+   -0.2616655437637925,
+   -0.0552504962471807
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.1809261770759078,
+  "seq_ci95": [
+   -0.26768954966912845,
+   -0.09484741140874657
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.3707636724301904,
+  "control_mean": 3.6112983850750235,
+  "difference": -0.24053471264483275,
+  "rel_pct": -6.660615850491006,
+  "subject_ci95": [
+   -0.36841921443369036,
+   -0.1152704268162904
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.2560781299295743,
+  "seq_ci95": [
+   -0.3803098518941394,
+   -0.1413855820539363
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.9490722630662303,
+  "control_mean": 3.1223153200696574,
+  "difference": -0.17324305700342657,
+  "rel_pct": -5.548544565305518,
+  "subject_ci95": [
+   -0.2800705021697117,
+   -0.060221618679315955
+  ],
+  "sig": "better",
+  "improved_subjects": 10,
+  "seq_difference": -0.19275150467816662,
+  "seq_ci95": [
+   -0.28197513337815117,
+   -0.10509095634323327
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9996758858843355,
+  "control_mean": 4.741534174980525,
+  "difference": -0.7418582890961887,
+  "rel_pct": -15.64595469986749,
+  "subject_ci95": [
+   -1.3889096753884884,
+   -0.2376611113423607
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.7418582890961887,
+  "seq_ci95": [
+   -1.3889096753884884,
+   -0.2376611113423607
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.40041080531499,
+  "control_mean": 3.7436906827663146,
+  "difference": -0.34327987745132404,
+  "rel_pct": -9.169557704956148,
+  "subject_ci95": [
+   -0.6021666522622354,
+   -0.1377867273874173
+  ],
+  "sig": "better",
+  "improved_subjects": 28,
+  "seq_difference": -0.34327987745132404,
+  "seq_ci95": [
+   -0.6021666522622354,
+   -0.1377867273874173
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.5056817002021345,
+  "control_mean": 5.105108675726712,
+  "difference": -0.5994269755245766,
+  "rel_pct": -11.74170842581031,
+  "subject_ci95": [
+   -1.1668926845106706,
+   -0.1506094689771122
+  ],
+  "sig": "better",
+  "improved_subjects": 25,
+  "seq_difference": -0.5994269755245766,
+  "seq_ci95": [
+   -1.1668926845106706,
+   -0.1506094689771122
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.075972635718879,
+  "control_mean": 10.277594502009478,
+  "difference": -0.20162186629059997,
+  "rel_pct": -1.9617612492026104,
+  "subject_ci95": [
+   -0.5480092377003905,
+   0.1447655051191905
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.19321752751883806,
+  "seq_ci95": [
+   -0.543962320117858,
+   0.13952909728734383
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.047700885625705,
+  "control_mean": 9.331297621811604,
+  "difference": -0.2835967361858991,
+  "rel_pct": -3.039199344826393,
+  "subject_ci95": [
+   -0.5577641877832678,
+   -0.07974627220703923
+  ],
+  "sig": "better",
+  "improved_subjects": 4,
+  "seq_difference": -0.2970686254128828,
+  "seq_ci95": [
+   -0.5149869086443756,
+   -0.09226588902559874
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.73319903809432,
+  "control_mean": 9.92518939250316,
+  "difference": -0.19199035440884016,
+  "rel_pct": -1.9343747188729432,
+  "subject_ci95": [
+   -0.5817005547459875,
+   0.19771984592830716
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": -0.18581742821185016,
+  "seq_ci95": [
+   -0.5452699215190815,
+   0.1578177077953525
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.700733277258939,
+  "control_mean": 4.658736804634621,
+  "difference": 0.04199647262431766,
+  "rel_pct": 0.9014562184010605,
+  "subject_ci95": [
+   0.011216839750501723,
+   0.07393995874683638
+  ],
+  "sig": "worse",
+  "improved_subjects": 11,
+  "seq_difference": 0.04044727581377282,
+  "seq_ci95": [
+   0.010782055748327348,
+   0.07141633259249475
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5552010832394707,
+  "control_mean": 3.5157320305012068,
+  "difference": 0.03946905273826423,
+  "rel_pct": 1.122641099942918,
+  "subject_ci95": [
+   0.011165765657879691,
+   0.0678494734595137
+  ],
+  "sig": "worse",
+  "improved_subjects": 8,
+  "seq_difference": 0.040947053971784546,
+  "seq_ci95": [
+   0.011163392798475457,
+   0.07100593730169633
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.735042362996413,
+  "control_mean": 4.680270604067475,
+  "difference": 0.05477175892893927,
+  "rel_pct": 1.1702690626763945,
+  "subject_ci95": [
+   0.025458039440272417,
+   0.08270223961287423
+  ],
+  "sig": "worse",
+  "improved_subjects": 9,
+  "seq_difference": 0.05278531780156092,
+  "seq_ci95": [
+   0.024412801104808396,
+   0.07991315085161911
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.190315610566924,
+  "control_mean": 5.117446997854481,
+  "difference": 0.0728686127124428,
+  "rel_pct": 1.4239251084181894,
+  "subject_ci95": [
+   0.009117272723559935,
+   0.13591213321259296
+  ],
+  "sig": "worse",
+  "improved_subjects": 4,
+  "seq_difference": 0.06083881732198043,
+  "seq_ci95": [
+   0.009786269030264898,
+   0.107879419850263
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.708112018563807,
+  "control_mean": 4.664865704477753,
+  "difference": 0.043246314086052146,
+  "rel_pct": 0.9270645035834684,
+  "subject_ci95": [
+   0.025760542026214313,
+   0.061659282126897814
+  ],
+  "sig": "worse",
+  "improved_subjects": 2,
+  "seq_difference": 0.040058286242329585,
+  "seq_ci95": [
+   0.019710132121219703,
+   0.060867431488771134
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.22186976788044,
+  "control_mean": 5.15362488576697,
+  "difference": 0.06824488211347113,
+  "rel_pct": 1.3242112809169817,
+  "subject_ci95": [
+   -0.0029120592323801874,
+   0.13846349270179897
+  ],
+  "sig": "ns",
+  "improved_subjects": 5,
+  "seq_difference": 0.04918109836912706,
+  "seq_ci95": [
+   -0.008341183507957357,
+   0.10278033804570245
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.983902226717873,
+  "control_mean": 2.9695042137536998,
+  "difference": 0.014398012964174008,
+  "rel_pct": 0.4848625200626917,
+  "subject_ci95": [
+   -0.01446882670243342,
+   0.04206965463457396
+  ],
+  "sig": "ns",
+  "improved_subjects": 4,
+  "seq_difference": 0.02718723178635457,
+  "seq_ci95": [
+   0.0013424164287696968,
+   0.05226305057911098
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.3707636724301904,
+  "control_mean": 3.346214135141032,
+  "difference": 0.024549537289159783,
+  "rel_pct": 0.733651114295024,
+  "subject_ci95": [
+   -0.0019837581184255428,
+   0.051555591731133034
+  ],
+  "sig": "ns",
+  "improved_subjects": 4,
+  "seq_difference": 0.039585491265398315,
+  "seq_ci95": [
+   0.009410714035562224,
+   0.07229440742778527
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.9490722630662303,
+  "control_mean": 2.929720633072264,
+  "difference": 0.019351629993966425,
+  "rel_pct": 0.6605281669356049,
+  "subject_ci95": [
+   -0.009464041052566674,
+   0.04656497710904108
+  ],
+  "sig": "ns",
+  "improved_subjects": 4,
+  "seq_difference": 0.03213432963119681,
+  "seq_ci95": [
+   0.006711603727484239,
+   0.056925519642523126
+  ],
+  "seq_sig": "worse"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9996758858843355,
+  "control_mean": 3.9843549695243285,
+  "difference": 0.015320916360007649,
+  "rel_pct": 0.3845268927390958,
+  "subject_ci95": [
+   -0.016429107408086344,
+   0.05032503183343745
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": 0.015320916360007649,
+  "seq_ci95": [
+   -0.016429107408086344,
+   0.05032503183343745
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.40041080531499,
+  "control_mean": 3.4109975101131256,
+  "difference": -0.010586704798135624,
+  "rel_pct": -0.310369760363282,
+  "subject_ci95": [
+   -0.03089168095346147,
+   0.009093978567630605
+  ],
+  "sig": "ns",
+  "improved_subjects": 19,
+  "seq_difference": -0.010586704798135624,
+  "seq_ci95": [
+   -0.03089168095346147,
+   0.009093978567630605
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.5056817002021345,
+  "control_mean": 4.487275437198467,
+  "difference": 0.018406263003666226,
+  "rel_pct": 0.41018794725820923,
+  "subject_ci95": [
+   -0.019577641181539124,
+   0.059261174958547914
+  ],
+  "sig": "ns",
+  "improved_subjects": 16,
+  "seq_difference": 0.018406263003666226,
+  "seq_ci95": [
+   -0.019577641181539124,
+   0.059261174958547914
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.075972635718879,
+  "control_mean": 10.056718595165883,
+  "difference": 0.019254040552995733,
+  "rel_pct": 0.19145450248802692,
+  "subject_ci95": [
+   -0.1530981555217248,
+   0.16359000658830114
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.02042196561392577,
+  "seq_ci95": [
+   -0.06538421305898975,
+   0.10640963606615508
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.047700885625705,
+  "control_mean": 9.090039993970358,
+  "difference": -0.0423391083446536,
+  "rel_pct": -0.46577472016336724,
+  "subject_ci95": [
+   -0.20973840586246228,
+   0.10695193613794585
+  ],
+  "sig": "ns",
+  "improved_subjects": 3,
+  "seq_difference": -0.03911084023529677,
+  "seq_ci95": [
+   -0.1324495262285783,
+   0.04568172678489962
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_yaw_tta8",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.73319903809432,
+  "control_mean": 9.717544719972404,
+  "difference": 0.015654318121915534,
+  "rel_pct": 0.16109334788798368,
+  "subject_ci95": [
+   -0.16611215093041487,
+   0.17707604571926838
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.018330287332399157,
+  "seq_ci95": [
+   -0.07414111860390774,
+   0.11178670528128243
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.700733277258939,
+  "control_mean": 4.947558317224033,
+  "difference": -0.24682503996509392,
+  "rel_pct": -4.988825277830824,
+  "subject_ci95": [
+   -0.5028394687518283,
+   0.013893262806547162
+  ],
+  "sig": "ns",
+  "improved_subjects": 21,
+  "seq_difference": -0.24094712589932962,
+  "seq_ci95": [
+   -0.4870115332371188,
+   0.01309846382316296
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "rte_u",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 3.5552010832394707,
+  "control_mean": 3.5531323726524087,
+  "difference": 0.002068710587062111,
+  "rel_pct": 0.058222164842055155,
+  "subject_ci95": [
+   -0.1503198210631472,
+   0.15860254629195825
+  ],
+  "sig": "ns",
+  "improved_subjects": 18,
+  "seq_difference": 0.011014484833783297,
+  "seq_ci95": [
+   -0.13358300879338092,
+   0.1582824680124652
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_seen",
+  "metric": "ate_lit",
+  "n_subjects": 31,
+  "n_sequences": 32,
+  "treatment_mean": 4.735042362996413,
+  "control_mean": 4.936215300889703,
+  "difference": -0.201172937893288,
+  "rel_pct": -4.075449015707005,
+  "subject_ci95": [
+   -0.4508714108674394,
+   0.050339647570143344
+  ],
+  "sig": "ns",
+  "improved_subjects": 21,
+  "seq_difference": -0.1991851939160653,
+  "seq_ci95": [
+   -0.439613727882285,
+   0.04119998198130849
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.190315610566924,
+  "control_mean": 5.765719694579007,
+  "difference": -0.5754040840120845,
+  "rel_pct": -9.979744324946733,
+  "subject_ci95": [
+   -1.2389814351006951,
+   -0.014698197874452923
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.488065474802547,
+  "seq_ci95": [
+   -1.069076340315492,
+   -0.0144109786383295
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "rte_u",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 4.708112018563807,
+  "control_mean": 5.020168499156117,
+  "difference": -0.3120564805923113,
+  "rel_pct": -6.21605590817853,
+  "subject_ci95": [
+   -0.5801380511719174,
+   -0.07855745461378519
+  ],
+  "sig": "better",
+  "improved_subjects": 12,
+  "seq_difference": -0.24507281187390573,
+  "seq_ci95": [
+   -0.46991482240781063,
+   -0.05284047747179529
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ronin_unseen",
+  "metric": "ate_lit",
+  "n_subjects": 15,
+  "n_sequences": 32,
+  "treatment_mean": 5.22186976788044,
+  "control_mean": 5.825385045645053,
+  "difference": -0.6035152777646126,
+  "rel_pct": -10.360092475188212,
+  "subject_ci95": [
+   -1.2663792494284112,
+   -0.049269425607151
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.5253444535491721,
+  "seq_ci95": [
+   -1.1033763655450286,
+   -0.058229404784789024
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.983902226717873,
+  "control_mean": 3.1055969795630953,
+  "difference": -0.12169475284522248,
+  "rel_pct": -3.9185623133347733,
+  "subject_ci95": [
+   -0.28137507119748545,
+   0.015801373082142144
+  ],
+  "sig": "ns",
+  "improved_subjects": 8,
+  "seq_difference": -0.15265097728067611,
+  "seq_ci95": [
+   -0.27022038643273094,
+   -0.04826303614144975
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "rte_u",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 3.3707636724301904,
+  "control_mean": 3.5731223460806096,
+  "difference": -0.20235867365041893,
+  "rel_pct": -5.663356976074105,
+  "subject_ci95": [
+   -0.37367419679160585,
+   -0.04471170732626775
+  ],
+  "sig": "better",
+  "improved_subjects": 7,
+  "seq_difference": -0.2426682626708478,
+  "seq_ci95": [
+   -0.41792428642932455,
+   -0.08492955972547156
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "ridi",
+  "metric": "ate_lit",
+  "n_subjects": 11,
+  "n_sequences": 94,
+  "treatment_mean": 2.9490722630662303,
+  "control_mean": 3.0989839014810867,
+  "difference": -0.14991163841485616,
+  "rel_pct": -4.837444890991831,
+  "subject_ci95": [
+   -0.2987524914799841,
+   -0.00892932566275953
+  ],
+  "sig": "better",
+  "improved_subjects": 8,
+  "seq_difference": -0.19344407071903852,
+  "seq_ci95": [
+   -0.31558773524003747,
+   -0.08382586553028927
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.9996758858843355,
+  "control_mean": 4.332129051891191,
+  "difference": -0.33245316600685565,
+  "rel_pct": -7.674128864229545,
+  "subject_ci95": [
+   -0.6811077151399184,
+   -0.011546362975223089
+  ],
+  "sig": "better",
+  "improved_subjects": 20,
+  "seq_difference": -0.33245316600685565,
+  "seq_ci95": [
+   -0.6811077151399184,
+   -0.011546362975223089
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "rte_u",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 3.40041080531499,
+  "control_mean": 3.6550161372240506,
+  "difference": -0.2546053319090611,
+  "rel_pct": -6.9659153981856665,
+  "subject_ci95": [
+   -0.4550684349273181,
+   -0.07547854331247865
+  ],
+  "sig": "better",
+  "improved_subjects": 26,
+  "seq_difference": -0.2546053319090611,
+  "seq_ci95": [
+   -0.4550684349273181,
+   -0.07547854331247865
+  ],
+  "seq_sig": "better"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "tlio",
+  "metric": "ate_lit",
+  "n_subjects": 36,
+  "n_sequences": 36,
+  "treatment_mean": 4.5056817002021345,
+  "control_mean": 4.68011662363658,
+  "difference": -0.17443492343444508,
+  "rel_pct": -3.7271490747361833,
+  "subject_ci95": [
+   -0.5204870724844868,
+   0.14282534694059448
+  ],
+  "sig": "ns",
+  "improved_subjects": 20,
+  "seq_difference": -0.17443492343444508,
+  "seq_ci95": [
+   -0.5204870724844868,
+   0.14282534694059448
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 10.075972635718879,
+  "control_mean": 9.895478542184286,
+  "difference": 0.18049409353459134,
+  "rel_pct": 1.8240057089219843,
+  "subject_ci95": [
+   -0.07517565064627041,
+   0.4791028229529031
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": 0.22984300813793718,
+  "seq_ci95": [
+   -0.25846376124368287,
+   0.711074202069524
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "rte_u",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.047700885625705,
+  "control_mean": 8.842972989681696,
+  "difference": 0.20472789594400953,
+  "rel_pct": 2.315147814913531,
+  "subject_ci95": [
+   -0.0053796720159573486,
+   0.423711244226209
+  ],
+  "sig": "ns",
+  "improved_subjects": 1,
+  "seq_difference": 0.21740894659385188,
+  "seq_ci95": [
+   -0.22666492489626458,
+   0.6477243645391463
+  ],
+  "seq_sig": "ns"
+ },
+ {
+  "treatment": "ours_yaw_fa2",
+  "control": "ours_hn",
+  "dataset": "imunet",
+  "metric": "ate_lit",
+  "n_subjects": 4,
+  "n_sequences": 36,
+  "treatment_mean": 9.73319903809432,
+  "control_mean": 9.638303338301458,
+  "difference": 0.09489569979286094,
+  "rel_pct": 0.9845685123413459,
+  "subject_ci95": [
+   -0.21447373165218142,
+   0.41436331554032235
+  ],
+  "sig": "ns",
+  "improved_subjects": 2,
+  "seq_difference": 0.1516085301548957,
+  "seq_ci95": [
+   -0.39354660944690273,
+   0.6768658506543919
+  ],
+  "seq_sig": "ns"
+ }
+]

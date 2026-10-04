@@ -1,0 +1,705 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2026-02-27T10:19:38Z",
+    "timestamp": 1772187578520,
+    "version": "3.50.1"
+  },
+  "reference-count": 30,
+  "publisher": "IOP Publishing",
+  "issue": "8",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            27
+          ]
+        ],
+        "date-time": "2026-02-27T00:00:00Z",
+        "timestamp": 1772150400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            27
+          ]
+        ],
+        "date-time": "2026-02-27T00:00:00Z",
+        "timestamp": 1772150400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100005046",
+      "name": "Natural Science Foundation of Heilongjiang Province",
+      "doi-asserted-by": "crossref",
+      "award": [
+        "F2015031"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "F2015031"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100005046",
+          "id-type": "DOI",
+          "asserted-by": "crossref"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "crossref",
+      "award": [
+        "41627801"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "41627801"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "crossref"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "iopscience.iop.org"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Meas. Sci. Technol."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Inertial measurement unit (IMU) is widely used in navigation and motion sensing due to their small size, low cost, and high sampling rate. However, low-cost micro-electro-mechanical system (MEMS) IMU suffers from significant measurement noise, which severely affects navigation accuracy. To address this issue, this paper proposes a self-supervised IMU denoising method that integrates temporal decomposition with a multi-module fusion network. The approach employs dilated causal convolution to capture short-term local dependencies while avoiding future information leakage. A multi-head attention mechanism is incorporated to enhance long-range dependency modeling, and an long short term memory (LSTM) module is introduced to improve temporal sequence learning. Furthermore, a temporal decomposition strategy is designed to separate high- and low-frequency components, allowing targeted denoising while preserving essential motion information. Experimental results on real world datasets demonstrate that the proposed method outperforms traditional autoencoder (AE), convolutional AE, and LSTM models in terms of mean absolute error, root mean square error, and maximum absolute error, achieving more robust denoising performance in complex environments.</jats:p>",
+  "DOI": "10.1088/1361-6501/ae2289",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        21
+      ]
+    ],
+    "date-time": "2025-11-21T22:49:50Z",
+    "timestamp": 1763765390000
+  },
+  "page": "086302",
+  "update-policy": "https://doi.org/10.1088/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+    "A self-supervised IMU denoising approach with temporal decomposition and multi-module fusion network"
+  ],
+  "prefix": "10.1088",
+  "volume": "37",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0004-7721-1006",
+      "authenticated-orcid": true,
+      "given": "Zhidong",
+      "family": "Yang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Wenqiang",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Ruichang",
+      "family": "Fan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Feng",
+      "family": "Shen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "266",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "mstae2289bib1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.oceaneng.2024.117280",
+      "type": "journal-article",
+      "article-title": "A hybrid data-driven and learning-based method for denoising low-cost IMU to enhance ship navigation reliability",
+      "volume": "299",
+      "author": "Zhang",
+      "year": "2024",
+      "journal-title": "Ocean Eng."
+    },
+    {
+      "key": "mstae2289bib2",
+      "doi-asserted-by": "publisher",
+      "first-page": "3282",
+      "DOI": "10.3390/s150203282",
+      "type": "journal-article",
+      "article-title": "Adaptive data filtering of inertial sensors with variable bandwidth",
+      "volume": "15",
+      "author": "Alam",
+      "year": "2015",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstae2289bib3",
+      "doi-asserted-by": "publisher",
+      "first-page": "124",
+      "DOI": "10.1109/ELNANO54667.2022.9927029",
+      "type": "conference-proceedings",
+      "article-title": "Wavelet filtering of MEMS inertial measurement unit for autonomous latitude determination",
+      "author": "Avrutov",
+      "year": "2022"
+    },
+    {
+      "key": "mstae2289bib4",
+      "first-page": "1",
+      "type": "conference-proceedings",
+      "article-title": "Low-cost IMU data denoising using Savitzky\u2013Golay filters",
+      "author": "Karaim",
+      "year": "2019"
+    },
+    {
+      "key": "mstae2289bib5",
+      "doi-asserted-by": "publisher",
+      "first-page": "23803",
+      "DOI": "10.3390/s141223803",
+      "type": "journal-article",
+      "article-title": "A Vondrak low pass filter for IMU sensor initial alignment on a disturbed base",
+      "volume": "14",
+      "author": "Li",
+      "year": "2014",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstae2289bib6",
+      "doi-asserted-by": "publisher",
+      "first-page": "326",
+      "DOI": "10.1016/j.aej.2023.08.069",
+      "type": "journal-article",
+      "article-title": "Hybrid noise removal to improve the accuracy of inertial sensors using lifting wavelet transform optimized by genetic algorithm",
+      "volume": "80",
+      "author": "Alaeiyan",
+      "year": "2023",
+      "journal-title": "Alexandria Eng. J."
+    },
+    {
+      "key": "mstae2289bib7",
+      "doi-asserted-by": "publisher",
+      "first-page": "608",
+      "DOI": "10.3390/mi10090608",
+      "type": "journal-article",
+      "article-title": "Application of improved wavelet thresholding method and an RBF network in the error compensating of an MEMS gyroscope",
+      "volume": "10",
+      "author": "Sheng",
+      "year": "2019",
+      "journal-title": "Micromachines"
+    },
+    {
+      "key": "mstae2289bib8",
+      "doi-asserted-by": "publisher",
+      "first-page": "34",
+      "DOI": "10.1016/j.measurement.2013.11.030",
+      "type": "journal-article",
+      "article-title": "An EMD threshold denoising method for inertial sensors",
+      "volume": "49",
+      "author": "Gan",
+      "year": "2014",
+      "journal-title": "Measurement"
+    },
+    {
+      "key": "mstae2289bib9",
+      "doi-asserted-by": "publisher",
+      "first-page": "5064",
+      "DOI": "10.3390/s19235064",
+      "type": "journal-article",
+      "article-title": "A gyroscope signal denoising method based on empirical mode decomposition and signal reconstruction",
+      "volume": "19",
+      "author": "Liu",
+      "year": "2019",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstae2289bib10",
+      "doi-asserted-by": "publisher",
+      "first-page": "3564",
+      "DOI": "10.3390/s19163564",
+      "type": "journal-article",
+      "article-title": "GAM-based mooring alignment for SINS based on an improved CEEMD denoising method",
+      "volume": "19",
+      "author": "Rong",
+      "year": "2019",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstae2289bib11",
+      "doi-asserted-by": "publisher",
+      "first-page": "1733",
+      "DOI": "10.3390/jmse10111733",
+      "type": "journal-article",
+      "article-title": "INS/GPS integrated navigation for unmanned ships based on EEMD noise reduction and SSA-ELM",
+      "volume": "10",
+      "author": "Xiao",
+      "year": "2022",
+      "journal-title": "J. Mar. Sci. Eng."
+    },
+    {
+      "key": "mstae2289bib12",
+      "doi-asserted-by": "publisher",
+      "first-page": "140",
+      "DOI": "10.1109/TIM.2007.908635",
+      "type": "journal-article",
+      "article-title": "Analysis and modeling of inertial sensors using Allan variance",
+      "volume": "57",
+      "author": "El-Sheimy",
+      "year": "2008",
+      "journal-title": "IEEE Trans. Instrum. Meas."
+    },
+    {
+      "key": "mstae2289bib13",
+      "first-page": "3992",
+      "type": "conference-proceedings",
+      "article-title": "IMU data processing for inertial-aided navigation: a recurrent neural network-based approach",
+      "author": "Zhang",
+      "year": "2021"
+    },
+    {
+      "key": "mstae2289bib14",
+      "doi-asserted-by": "publisher",
+      "first-page": "4796",
+      "DOI": "10.1109/LRA.2020.3003256",
+      "type": "journal-article",
+      "article-title": "Denoising IMU gyroscopes with deep learning for open-loop attitude estimation",
+      "volume": "5",
+      "author": "Brossard",
+      "year": "2020",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstae2289bib15",
+      "doi-asserted-by": "publisher",
+      "first-page": "181",
+      "DOI": "10.3390/electronics8020181",
+      "type": "journal-article",
+      "article-title": "A mixed deep recurrent neural network for MEMS gyroscope noise suppressing",
+      "volume": "8",
+      "author": "Jiang",
+      "year": "2019",
+      "journal-title": "Electronics"
+    },
+    {
+      "key": "mstae2289bib16",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "DOI": "10.3390/mi12020214",
+      "type": "journal-article",
+      "article-title": "Hybrid deep recurrent neural networks for noise reduction of MEMS-IMU with static and dynamic conditions",
+      "volume": "12",
+      "author": "Han",
+      "year": "2021",
+      "journal-title": "Micromachines"
+    },
+    {
+      "key": "mstae2289bib17",
+      "doi-asserted-by": "publisher",
+      "first-page": "1735",
+      "DOI": "10.1162/neco.1997.9.8.1735",
+      "type": "journal-article",
+      "article-title": "Long short-term memory",
+      "volume": "9",
+      "author": "Hochreiter",
+      "year": "1997",
+      "journal-title": "Neural Comput."
+    },
+    {
+      "key": "mstae2289bib18",
+      "doi-asserted-by": "publisher",
+      "first-page": "2655",
+      "DOI": "10.3390/s23052655",
+      "type": "journal-article",
+      "article-title": "A novel transformer-based IMU self-calibration approach through on-board RGB camera for UAV flight stabilization",
+      "volume": "23",
+      "author": "Avola",
+      "year": "2023",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstae2289bib19",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3389/frobt.2021.772583",
+      "type": "journal-article",
+      "article-title": "Calib-Net: calibrating the low-cost IMU via deep convolutional neural network",
+      "volume": "8",
+      "author": "Li",
+      "year": "2022",
+      "journal-title": "Front. Robot. AI"
+    },
+    {
+      "key": "mstae2289bib20",
+      "article-title": "An empirical evaluation of generic convolutional and recurrent networks for sequence modeling",
+      "author": "Bai",
+      "year": "2018",
+      "type": "preprint"
+    },
+    {
+      "key": "mstae2289bib21",
+      "doi-asserted-by": "publisher",
+      "first-page": "2983",
+      "DOI": "10.1109/LCOMM.2021.3091800",
+      "type": "journal-article",
+      "article-title": "Noise learning-based denoising autoencoder",
+      "volume": "25",
+      "author": "Lee",
+      "year": "2021",
+      "journal-title": "IEEE Commun. Lett."
+    },
+    {
+      "key": "mstae2289bib22",
+      "doi-asserted-by": "publisher",
+      "first-page": "585",
+      "DOI": "10.1109/TIV.2020.2980758",
+      "type": "journal-article",
+      "article-title": "AI-IMU dead-reckoning",
+      "volume": "5",
+      "author": "Brossard",
+      "year": "2020",
+      "journal-title": "IEEE Trans. Intell. Veh."
+    },
+    {
+      "key": "mstae2289bib23",
+      "doi-asserted-by": "publisher",
+      "first-page": "957",
+      "DOI": "10.1109/JSEN.2019.2944412",
+      "type": "journal-article",
+      "article-title": "Robust data-driven zero-velocity detection for foot-mounted inertial navigation",
+      "volume": "20",
+      "author": "Wagstaff",
+      "year": "2020",
+      "journal-title": "IEEE Sens. J."
+    },
+    {
+      "key": "mstae2289bib24",
+      "author": "Chen",
+      "year": "2018",
+      "type": "preprint"
+    },
+    {
+      "key": "mstae2289bib25",
+      "doi-asserted-by": "publisher",
+      "first-page": "399",
+      "DOI": "10.1109/LRA.2019.2959507",
+      "type": "journal-article",
+      "article-title": "OriNet: robust 3D orientation estimation with a single particular IMU",
+      "volume": "5",
+      "author": "Esfahani",
+      "year": "2020",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstae2289bib26",
+      "first-page": "3146",
+      "type": "conference-proceedings",
+      "article-title": "RoNIN: robust neural inertial navigation in the wild: benchmark, evaluations, & new methods",
+      "author": "Herath",
+      "year": "2020"
+    },
+    {
+      "key": "mstae2289bib27",
+      "first-page": "770",
+      "type": "conference-proceedings",
+      "article-title": "Deep residual learning for image recognition",
+      "author": "He",
+      "year": "2016"
+    },
+    {
+      "key": "mstae2289bib28",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.measurement.2023.113218",
+      "type": "journal-article",
+      "article-title": "Data-driven denoising of stationary accelerometer signals",
+      "volume": "218",
+      "author": "Engelsman",
+      "year": "2023",
+      "journal-title": "Measurement"
+    },
+    {
+      "key": "mstae2289bib29",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "DOI": "10.1109/LRA.2023.3234778",
+      "type": "journal-article",
+      "article-title": "A simple self-supervised IMU denoising method for inertial-aided navigation",
+      "volume": "8",
+      "author": "Yuan",
+      "year": "2023",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstae2289bib30",
+      "first-page": "13246",
+      "type": "conference-proceedings",
+      "article-title": "IMU2CLIP: language-grounded motion sensor translation with multimodal contrastive learning",
+      "author": "Moon",
+      "year": "2023"
+    }
+  ],
+  "container-title": [
+    "Measurement Science and Technology"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289",
+      "content-type": "text/html",
+      "content-version": "am",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "similarity-checking"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2026-02-27T09:16:47Z",
+    "timestamp": 1772183807000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ae2289"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ]
+  },
+  "references-count": 30,
+  "journal-issue": {
+    "issue": "8",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          27
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          27
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.1088/1361-6501/ae2289",
+  "relation": {},
+  "ISSN": [
+    "0957-0233",
+    "1361-6501"
+  ],
+  "issn-type": [
+    {
+      "value": "0957-0233",
+      "type": "print"
+    },
+    {
+      "value": "1361-6501",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        27
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "A self-supervised IMU denoising approach with temporal decomposition and multi-module fusion network",
+      "name": "article_title",
+      "label": "Article Title"
+    },
+    {
+      "value": "Measurement Science and Technology",
+      "name": "journal_title",
+      "label": "Journal Title"
+    },
+    {
+      "value": "paper",
+      "name": "article_type",
+      "label": "Article Type"
+    },
+    {
+      "value": "\u00a9 2026 IOP Publishing Ltd. All rights, including for text and data mining, AI training, and similar technologies, are reserved.",
+      "name": "copyright_information",
+      "label": "Copyright Information"
+    },
+    {
+      "value": "2025-08-18",
+      "name": "date_received",
+      "label": "Date Received",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    },
+    {
+      "value": "2025-11-21",
+      "name": "date_accepted",
+      "label": "Date Accepted",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    },
+    {
+      "value": "2026-02-27",
+      "name": "date_epub",
+      "label": "Online publication date",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    }
+  ]
+}

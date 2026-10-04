@@ -1,0 +1,6 @@
+train_step.EqNIO O(2) = 0.6360 s/step (5230466 params)
+train_step.EqNIO SO(2) = 0.6000 s/step (6456194 params)
+train_step.ResNet18+GN+HN = 0.0433 s/step (4634882 params)
+train_step.ratio_so2_over_resnet = 13.9
+train_step.ratio_o2_over_resnet = 14.7
+train_step.o2_faster_than_so2 = False

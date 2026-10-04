@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.2",
+  "analysis_id": "tlio_posthoc_cross_form_factor_v2_2",
+  "status": "post_hoc_exploratory_not_confirmatory",
+  "reason_for_inclusion": "Use TLIO only as an additional dataset to test cross-device-form-factor behavior; no TLIO algorithm is implemented or claimed.",
+  "prior_exposure": {
+    "tlio_outcomes_observed_before_this_extension": true,
+    "historical_scope": "A historical A6 checkpoint and the official RoNIN checkpoint had already been evaluated on TLIO in a separate manuscript workspace.",
+    "consequence": "The extension cannot be described as preregistered, prospectively confirmatory, or an untouched external test."
+  },
+  "dataset": {
+    "name": "TLIO golden release",
+    "device_form_factor": "head-mounted IMU",
+    "official_split": "test",
+    "n_sequences": 36,
+    "official_test_list_sha256": "bb26cd94046c4dbe1605eaed853fbedc7798232ed2d85fee1a4af81b7634e431",
+    "training_use": "none"
+  },
+  "input": {
+    "file": "imu0_resampled.npy",
+    "channels": [
+      "gyr_compensated_rotated_in_World",
+      "acc_compensated_rotated_in_World"
+    ],
+    "rate_hz": 200.0,
+    "attitude_source": "VIO-derived processed world frame",
+    "claim_boundary": "conditional cross-form-factor evaluation; not a raw-IMU-only or deployable TLIO benchmark"
+  },
+  "alignment": {
+    "name": "tlio_posthoc_prefix_se2_10s",
+    "prefix_seconds": 10.0,
+    "allow_scale": false,
+    "allow_reflection": false,
+    "full_trajectory_yaw_primary": false
+  },
+  "models": {
+    "families": [
+      "A6-100%",
+      "RoNIN-ResNet18-matched",
+      "IMUNet-2024-matched"
+    ],
+    "seeds": [0, 1, 2, 3],
+    "checkpoints_frozen_before_tlio_v2_2_evaluation": true
+  },
+  "metrics": ["ATE", "RTE", "TLR", "MCS"],
+  "reporting": {
+    "primary_subset": "official test only",
+    "retain_all_sequences_and_runs": true,
+    "paired_effects": "A6 minus comparator by matched seed",
+    "interpretation": "cross-device-form-factor stress test of complete pipelines"
+  }
+}

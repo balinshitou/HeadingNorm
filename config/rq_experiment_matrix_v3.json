@@ -1,0 +1,125 @@
+{
+  "matrix_id": "a6-rq1-rq4-v3",
+  "frozen_on": "2026-09-01",
+  "status": "prospective_component_addendum_after_prior_test_exposure",
+  "selection_rule": "No public test metric may be used to select a checkpoint, component, seed, or interpretation. Checkpoints are selected only by the fixed subject-disjoint validation loss. Prior test exposure is disclosed and prevents labeling this addendum an untouched confirmation study.",
+  "research_questions": {
+    "RQ1": "Under limited training data and an equal update budget, does the complete A6 pipeline outperform executable convolutional regression pipelines?",
+    "RQ2": "What do HeadingNorm, GlobalNorm, PreFilter, the Transformer backbone, and Huber loss contribute, and do HeadingNorm and GlobalNorm interact?",
+    "RQ3": "Do gains extend to unseen RoNIN subjects, cross-dataset RIDI, and the conditional post-hoc TLIO device-form transfer test?",
+    "RQ4": "Do gains arise from speed magnitude, motion direction, or both?"
+  },
+  "common": {
+    "sources": "ronin",
+    "split_protocol": "subject_disjoint_v2",
+    "data_frac": 1.0,
+    "steps": 20000,
+    "bs": 256,
+    "lr": 0.001,
+    "rate": 200.0,
+    "win_sec": 1.0,
+    "optimizer": "adamw",
+    "scheduler": "onecycle",
+    "sampling": "uniform_window",
+    "width": 2.0
+  },
+  "reused_frozen_references": [
+    {
+      "id": "a6_full",
+      "tag_template": "A6_v2_f100_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ1", "RQ2", "RQ3", "RQ4"],
+      "args": {"arch": "transformer", "loss": "huber", "delta": 0.27, "pre": 1, "hnorm": 1, "gnorm": 1}
+    },
+    {
+      "id": "ronin_resnet18_complete_pipeline_control",
+      "tag_template": "ResNet18_v2_matched_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ1", "RQ3"],
+      "args": {"arch": "ronin_resnet18", "loss": "huber", "delta": 0.27, "pre": 0, "hnorm": 0, "gnorm": 0}
+    },
+    {
+      "id": "imunet_complete_pipeline_control",
+      "tag_template": "IMUNet2024_v21_matched_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ1", "RQ3"],
+      "args": {"arch": "imunet2024", "loss": "huber", "delta": 0.27, "pre": 0, "hnorm": 0, "gnorm": 0}
+    }
+  ],
+  "new_families": [
+    {
+      "id": "a6_without_headingnorm",
+      "tag_template": "A6_v3_nohn_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2", "RQ4"],
+      "single_change_from_a6": "HeadingNorm on to off",
+      "args": {"arch": "transformer", "loss": "huber", "delta": 0.27, "pre": 1, "hnorm": 0, "gnorm": 1}
+    },
+    {
+      "id": "a6_without_globalnorm",
+      "tag_template": "A6_v3_nogn_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2", "RQ4"],
+      "single_change_from_a6": "GlobalNorm on to off",
+      "args": {"arch": "transformer", "loss": "huber", "delta": 0.27, "pre": 1, "hnorm": 1, "gnorm": 0}
+    },
+    {
+      "id": "a6_without_prefilter",
+      "tag_template": "A6_v3_nopre_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2", "RQ4", "backbone_control_transformer"],
+      "single_change_from_a6": "PreFilter on to off",
+      "args": {"arch": "transformer", "loss": "huber", "delta": 0.27, "pre": 0, "hnorm": 1, "gnorm": 1}
+    },
+    {
+      "id": "a6_mse_instead_of_huber",
+      "tag_template": "A6_v3_mse_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2", "RQ4"],
+      "single_change_from_a6": "Huber delta 0.27 to MSE",
+      "args": {"arch": "transformer", "loss": "mse", "delta": 0.27, "pre": 1, "hnorm": 1, "gnorm": 1}
+    },
+    {
+      "id": "a6_without_headingnorm_and_globalnorm",
+      "tag_template": "A6_v3_nohn_nogn_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2_interaction", "RQ4"],
+      "single_change_from_a6": "HeadingNorm and GlobalNorm both on to both off",
+      "args": {"arch": "transformer", "loss": "huber", "delta": 0.27, "pre": 1, "hnorm": 0, "gnorm": 0}
+    },
+    {
+      "id": "resnet18_shared_frontend",
+      "tag_template": "ResNet18_v3_hn_gn_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2_backbone"],
+      "comparison_note": "Same six-channel HeadingNorm+GlobalNorm front-end as A6_v3_nopre; only the temporal backbone differs.",
+      "args": {"arch": "ronin_resnet18", "loss": "huber", "delta": 0.27, "pre": 0, "hnorm": 1, "gnorm": 1}
+    },
+    {
+      "id": "imunet_shared_frontend",
+      "tag_template": "IMUNet2024_v3_hn_gn_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "role": ["RQ2_backbone"],
+      "comparison_note": "Same six-channel HeadingNorm+GlobalNorm front-end as A6_v3_nopre; only the temporal backbone differs.",
+      "args": {"arch": "imunet2024", "loss": "huber", "delta": 0.27, "pre": 0, "hnorm": 1, "gnorm": 1}
+    }
+  ],
+  "interaction": {
+    "factors": ["HeadingNorm", "GlobalNorm"],
+    "cells": {
+      "on_on": "A6_v2_f100_s{seed}",
+      "off_on": "A6_v3_nohn_s{seed}",
+      "on_off": "A6_v3_nogn_s{seed}",
+      "off_off": "A6_v3_nohn_nogn_s{seed}"
+    },
+    "effect_formula_for_error_metric": "Y_on_on - Y_off_on - Y_on_off + Y_off_off"
+  },
+  "primary_evaluation": {
+    "alignment": "registered",
+    "datasets": ["ronin", "ridi"],
+    "metrics": ["ATE", "RTE"],
+    "mechanism_metrics": ["TLR", "MCS", "rms_speed", "rms_dir", "dtheta_med"],
+    "reporting": ["all four seeds", "mean and sample SD", "same-seed paired differences", "per-sequence ECDF", "median", "P90", "P95", "failed runs retained"]
+  },
+  "tlio_policy": "Evaluate the already frozen A6 and RQ1 convolutional controls only. Keep TLIO post-hoc and separate; do not use it to select RQ2 components."
+}

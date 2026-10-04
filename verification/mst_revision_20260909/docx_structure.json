@@ -1,0 +1,18 @@
+[
+  {
+    "file": "/Users/macbook/Documents/code-data/paper20260829-transformer/paper/mst_revision_20260909/manuscript_en.docx",
+    "native_numbered_equations": 8,
+    "csv_verified_tables": 4,
+    "native_tables": 5,
+    "embedded_figures": 4,
+    "pandoc_warnings": ""
+  },
+  {
+    "file": "/Users/macbook/Documents/code-data/paper20260829-transformer/paper/mst_revision_20260909/supplementary_materials_en.docx",
+    "native_numbered_equations": 6,
+    "csv_verified_tables": 11,
+    "native_tables": 12,
+    "embedded_figures": 1,
+    "pandoc_warnings": ""
+  }
+]

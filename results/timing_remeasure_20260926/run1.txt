@@ -1,0 +1,14 @@
+infer.cpu.ResNet18_v3_hn_gn_s0 = median 1.384 ms (archived 1.445), p95 1.427 (archived 1.552), ratio 0.96
+infer.cpu.Sensors_v4_resnet_gn_s0 = median 1.324 ms (archived 1.370), p95 1.441 (archived 1.459), ratio 0.97
+infer.cpu.A6_v3_nopre_s0 = median 1.468 ms (archived 1.582), p95 1.709 (archived 2.003), ratio 0.93
+infer.cpu.IMUNet2024_v3_hn_gn_s0 = median 37.953 ms (archived 40.756), p95 38.486 (archived 47.347), ratio 0.93
+infer.mps.ResNet18_v3_hn_gn_s0 = median 2.527 ms (archived 2.135), p95 3.309 (archived 2.321), ratio 1.18
+infer.mps.Sensors_v4_resnet_gn_s0 = median 2.302 ms (archived 1.985), p95 2.472 (archived 3.117), ratio 1.16
+infer.mps.A6_v3_nopre_s0 = median 1.399 ms (archived 1.570), p95 1.519 (archived 1.750), ratio 0.89
+infer.mps.IMUNet2024_v3_hn_gn_s0 = median 3.653 ms (archived 2.752), p95 3.950 (archived 2.974), ratio 1.33
+train_step.ResNet18+GN+HN = 0.0432 s/step (4634882 params)
+train_step.EqNIO SO(2) = 0.6010 s/step (6456194 params)
+train_step.EqNIO O(2) = 0.6369 s/step (5230466 params)
+train_step.ratio_so2_over_resnet = 13.9
+train_step.ratio_o2_over_resnet = 14.8
+train_step.o2_faster_than_so2 = False

@@ -1,0 +1,26 @@
+{
+ "source": "data/eval/imunet_owndata/*.npz",
+ "definition": "duration = last minus first timestamp; path length = sum of ground-truth step lengths",
+ "devices": {
+  "S10": {
+   "sequences": 12,
+   "minutes": 39.217139061811984,
+   "km": 2.640528632272464
+  },
+  "S21": {
+   "sequences": 8,
+   "minutes": 37.88790656004682,
+   "km": 2.3769765472714472
+  },
+  "Tango": {
+   "sequences": 13,
+   "minutes": 49.780420991383764,
+   "km": 3.2241736988687126
+  },
+  "Xiaomi": {
+   "sequences": 3,
+   "minutes": 15.70861149268312,
+   "km": 1.2149633258982955
+  }
+ }
+}

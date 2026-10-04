@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "coordinate_huber_example": [
+    0.049275,
+    0.05900941546018392
+  ],
+  "sequence": "a006_2",
+  "window_starts": [
+    0,
+    5399,
+    10798,
+    16197,
+    21596,
+    26995,
+    32394,
+    37793,
+    43192,
+    48591,
+    53990,
+    59389,
+    64788,
+    70187,
+    75586,
+    80985,
+    86384,
+    91783,
+    97182,
+    102581,
+    107980,
+    113379,
+    118778,
+    124177,
+    129576,
+    134975,
+    140374,
+    145773,
+    151172,
+    156571,
+    161970,
+    167369
+  ],
+  "window_selection": "32 equally spaced windows from alphabetically first unseen sequence",
+  "mode": "eval with gradients enabled; no parameter updates; MSE diagnostic only",
+  "rows": [
+    {
+      "loss": "huber",
+      "angle_degrees": 0,
+      "value": 0.00625038705766201,
+      "relative_parameter_gradient_change": 0.0
+    },
+    {
+      "loss": "huber",
+      "angle_degrees": 45,
+      "value": 0.0064027560874819756,
+      "relative_parameter_gradient_change": 0.15308234095573425
+    },
+    {
+      "loss": "huber",
+      "angle_degrees": 90,
+      "value": 0.00625038705766201,
+      "relative_parameter_gradient_change": 7.514370281569427e-07
+    },
+    {
+      "loss": "mse",
+      "angle_degrees": 0,
+      "value": 0.012945227324962616,
+      "relative_parameter_gradient_change": 0.0
+    },
+    {
+      "loss": "mse",
+      "angle_degrees": 45,
+      "value": 0.012945232912898064,
+      "relative_parameter_gradient_change": 6.876925340293383e-07
+    },
+    {
+      "loss": "mse",
+      "angle_degrees": 90,
+      "value": 0.012945225462317467,
+      "relative_parameter_gradient_change": 6.811110893067962e-07
+    }
+  ],
+  "checkpoint_sha256": "90b6b356f6d35c5c8cc0ba111f96db19f7b244cabf8340527b13ec3fa2388e9f",
+  "script_sha256": "460269d8dcad86e5ec74a23640b343ee7503f7707c141c4271aacd696deb04c5"
+}

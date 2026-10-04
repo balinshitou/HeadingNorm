@@ -1,0 +1,4 @@
+HN backbone,Parameters,CPU median / p95,MPS median / p95
+ResNet18,"4,634,882",1.445 / 1.552,2.135 / 2.321
+Transformer,"3,238,658",1.582 / 2.003,1.570 / 1.750
+IMUNet,"3,661,618",40.756 / 47.347,2.752 / 2.974

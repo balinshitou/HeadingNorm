@@ -1,0 +1,17 @@
+applied_yaw_deg,variant,percent_windows_inconsistent,windows
+0,without sign rule,0.0,72
+45,without sign rule,22.22222222222222,72
+90,without sign rule,48.611111111111114,72
+135,without sign rule,72.22222222222223,72
+180,without sign rule,100.0,72
+225,without sign rule,77.77777777777777,72
+270,without sign rule,51.388888888888886,72
+315,without sign rule,27.77777777777778,72
+0,with sign rule,0.0,72
+45,with sign rule,0.0,72
+90,with sign rule,0.0,72
+135,with sign rule,0.0,72
+180,with sign rule,0.0,72
+225,with sign rule,0.0,72
+270,with sign rule,0.0,72
+315,with sign rule,0.0,72

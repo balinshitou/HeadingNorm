@@ -1,0 +1,681 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 3082425,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              5
+            ]
+          ],
+          "date-time": "2026-09-05T03:50:01Z",
+          "timestamp": 1788580201292,
+          "version": "build-2803163510"
+        },
+        "reference-count": 31,
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "issue": "9",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  9,
+                  1
+                ]
+              ],
+              "date-time": "2025-09-01T00:00:00Z",
+              "timestamp": 1756684800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  9,
+                  1
+                ]
+              ],
+              "date-time": "2025-09-01T00:00:00Z",
+              "timestamp": 1756684800000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  9,
+                  1
+                ]
+              ],
+              "date-time": "2025-09-01T00:00:00Z",
+              "timestamp": 1756684800000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "IEEE Robot. Autom. Lett."
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              9
+            ]
+          ]
+        },
+        "DOI": "10.1109/lra.2025.3581130",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              19
+            ]
+          ],
+          "date-time": "2025-06-19T13:40:24Z",
+          "timestamp": 1750340424000
+        },
+        "page": "9368-9375",
+        "source": "Crossref",
+        "is-referenced-by-count": 12,
+        "title": [
+          "AirIO: Learning Inertial Odometry With Enhanced IMU Feature Observability"
+        ],
+        "prefix": "10.1109",
+        "volume": "10",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2966-8103",
+            "authenticated-orcid": false,
+            "given": "Yuheng",
+            "family": "Qiu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0007-6056-7999",
+            "authenticated-orcid": false,
+            "given": "Can",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8008-9014",
+            "authenticated-orcid": false,
+            "given": "Yutian",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shibo",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6494-6810",
+            "authenticated-orcid": false,
+            "given": "Junyi",
+            "family": "Geng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Aerospace Engineering, Pennsylvania State University, University Park, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8373-4688",
+            "authenticated-orcid": false,
+            "given": "Sebastian",
+            "family": "Scherer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS51168.2021.9635862"
+          },
+          {
+            "key": "ref2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2023.3271520"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2024.3486236"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPR52733.2024.02137"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA46639.2022.9811667"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2023.3252342"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2020.3007421"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA40945.2020.9196860"
+          },
+          {
+            "key": "ref9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2022.3222956"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-030-01261-8_38"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS55552.2023.10342061"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS45743.2020.9341684"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15607/RSS.2015.XI.006"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2022.3189168"
+          },
+          {
+            "key": "ref15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TRO.2018.2853729"
+          },
+          {
+            "key": "ref16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2020.2976308"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1609/aaai.v32i1.12102"
+          },
+          {
+            "key": "ref18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPR52688.2022.00649"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA46639.2022.9811714"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1609/aaai.v35i7.16763"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS55552.2023.10341493"
+          },
+          {
+            "key": "ref22",
+            "first-page": "1575",
+            "article-title": "Learning inertial odometry for dynamic legged robot state estimation",
+            "volume-title": "Proc. 5th Conf. Robot Learn.",
+            "author": "Buchanan",
+            "year": "2022"
+          },
+          {
+            "key": "ref23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPR52688.2022.00650"
+          },
+          {
+            "key": "ref24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS40897.2019.8968593"
+          },
+          {
+            "key": "ref25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA46639.2022.9811989"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2024.3370006"
+          },
+          {
+            "key": "ref27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-030-33950-0_12"
+          },
+          {
+            "key": "ref28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICUAS60882.2024.10556959"
+          },
+          {
+            "issue": "11",
+            "key": "ref29",
+            "first-page": "2579",
+            "article-title": "Visualizing data using t-SNE",
+            "volume": "9",
+            "author": "Maaten",
+            "year": "2008",
+            "journal-title": "J. Mach. Learn. Res."
+          },
+          {
+            "key": "ref30",
+            "article-title": "AirIMU: Learning uncertainty propagation for inertial odometry",
+            "author": "Qiu",
+            "year": "2023"
+          },
+          {
+            "key": "ref31",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0278364915620033"
+          }
+        ],
+        "container-title": [
+          "IEEE Robotics and Automation Letters"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/7083369/11082640/11045120.pdf?arnumber=11045120",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              8
+            ]
+          ],
+          "date-time": "2025-08-08T04:35:51Z",
+          "timestamp": 1754627751000
+        },
+        "score": 77.149475,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/11045120/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9
+            ]
+          ]
+        },
+        "references-count": 31,
+        "journal-issue": {
+          "issue": "9"
+        },
+        "URL": "https://doi.org/10.1109/lra.2025.3581130",
+        "ISSN": [
+          "2377-3766",
+          "2377-3774"
+        ],
+        "issn-type": [
+          {
+            "value": "2377-3766",
+            "type": "electronic"
+          },
+          {
+            "value": "2377-3774",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              9
+            ]
+          ]
+        }
+      },
+      {
+        "institution": [
+          {
+            "name": "Qeios"
+          }
+        ],
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              28
+            ]
+          ],
+          "date-time": "2026-02-28T01:59:21Z",
+          "timestamp": 1772243961833,
+          "version": "3.50.1"
+        },
+        "posted": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              5
+            ]
+          ]
+        },
+        "reference-count": 0,
+        "publisher": "Qeios Ltd",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  2,
+                  5
+                ]
+              ],
+              "date-time": "2025-02-05T00:00:00Z",
+              "timestamp": 1738713600000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "abstract": "<jats:p>This manuscript has been withdrawn.</jats:p>",
+        "DOI": "10.32388/7ic7qd",
+        "type": "posted-content",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              5
+            ]
+          ],
+          "date-time": "2025-02-05T16:34:26Z",
+          "timestamp": 1738773266000
+        },
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "[Withdrawn] AirIO: Learning Inertial Odometry with Enhanced IMU Feature Observability \u2014\u00a0 air-io.github.io"
+        ],
+        "prefix": "10.32388",
+        "author": [
+          {
+            "given": "Yuheng",
+            "family": "Qiu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Can",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0003-5202-0054",
+            "authenticated-orcid": true,
+            "given": "Yutian",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Shibo",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6494-6810",
+            "authenticated-orcid": true,
+            "given": "Junyi",
+            "family": "Geng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8373-4688",
+            "authenticated-orcid": true,
+            "given": "Sebastian",
+            "family": "Scherer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "17262",
+        "link": [
+          {
+            "URL": "https://www.qeios.com/read/7IC7QD/pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "unspecified"
+          },
+          {
+            "URL": "https://www.qeios.com/read/7IC7QD/pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2025-03-01T12:00:17Z",
+          "timestamp": 1740830417000
+        },
+        "score": 69.73123,
+        "resource": {
+          "primary": {
+            "URL": "https://www.qeios.com/read/7IC7QD"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              5
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.32388/7ic7qd",
+        "relation": {
+          "has-review": [
+            {
+              "id-type": "doi",
+              "id": "10.32388/8HW782",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.32388/NJO35U",
+              "asserted-by": "object"
+            },
+            {
+              "id-type": "doi",
+              "id": "10.32388/GR26IV",
+              "asserted-by": "object"
+            }
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              5
+            ]
+          ]
+        },
+        "subtype": "preprint"
+      }
+    ],
+    "items-per-page": 2,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

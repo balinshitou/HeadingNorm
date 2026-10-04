@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "arch": "ronin_resnet18",
+    "gnorm": true,
+    "pre": false,
+    "width": 1.0,
+    "steps": 20000,
+    "bs": 256,
+    "lr": 0.001,
+    "frontend": "heading_nosign",
+    "yaw_augmentation": false,
+    "seed": 2,
+    "tag": "E6_resnet_heading_nosign_s2",
+    "family": "heading_nosign",
+    "phase": "main"
+  },
+  "protocol_sha256": "d59d61a3f93464befbe8a8d110dba424f33ea277646be0c2a595cb4c968c0a5b",
+  "source_sha256": {
+    "tools/run_e6_train.py": "2594f2269bc2ac1a020f78dc6632a9b76f1382553445410e1ffde1592af83057",
+    "src/e6_frontend.py": "dd00e3829ad2f500adb6a5b39323b7af016c3c4c35c70ad751a86601e48e499a",
+    "src/models.py": "4b1d81b90eea0fa15940883b32da43465c73f070dbb832cb2b1b6159f413c07f",
+    "src/pkg_train.py": "cbf3578a2c842f1bedb8d51e4519c3669b09ef641db3f8798dd9ea273cab61c7",
+    "src/pkg_common.py": "ffe3ddea376620e3be8b7c6ba96bd333e612cf5f1781c28826a13be7992d611e",
+    "config/splits_subject_disjoint_v2.json": "f036e40e458a2f0fc05df4eab4dbcb7f2bbb1ede9682174c516ff4116676c673"
+  },
+  "gnorm_mu": [
+    0.0,
+    0.0,
+    -0.0012345310182332312,
+    0.0,
+    0.0,
+    9.81180490321222
+  ],
+  "gnorm_sd": [
+    0.8632386647913857,
+    0.8632386647913857,
+    1.0407804540887449,
+    2.2453415002198502,
+    2.2453415002198502,
+    2.790995418192022
+  ],
+  "train_hours": 11.063751389217094,
+  "val_hours": 2.2679194445663367,
+  "parameters": 4634882,
+  "device": "mps",
+  "torch": "2.13.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "history": [
+    {
+      "step": 2000,
+      "val_loss": 0.018880185158923268,
+      "val_verr": 0.2202430959790945
+    },
+    {
+      "step": 4000,
+      "val_loss": 0.017005795822478832,
+      "val_verr": 0.2068592481315136
+    },
+    {
+      "step": 6000,
+      "val_loss": 0.01452838247641921,
+      "val_verr": 0.1863760132342577
+    },
+    {
+      "step": 8000,
+      "val_loss": 0.014283065521158277,
+      "val_verr": 0.1839679703116417
+    },
+    {
+      "step": 10000,
+      "val_loss": 0.014313735486939549,
+      "val_verr": 0.18395055867731572
+    },
+    {
+      "step": 12000,
+      "val_loss": 0.014127331436611712,
+      "val_verr": 0.1819143697619438
+    },
+    {
+      "step": 14000,
+      "val_loss": 0.013685389515012502,
+      "val_verr": 0.17894693464040756
+    },
+    {
+      "step": 16000,
+      "val_loss": 0.01393148647621274,
+      "val_verr": 0.18004811070859433
+    },
+    {
+      "step": 18000,
+      "val_loss": 0.01375342276878655,
+      "val_verr": 0.17872281111776828
+    },
+    {
+      "step": 20000,
+      "val_loss": 0.013796761282719672,
+      "val_verr": 0.17941429279744625
+    }
+  ],
+  "best_val_loss": 0.013685389515012502,
+  "best_step": 14000,
+  "minutes": 12.613267164583279,
+  "checkpoint_sha256": "3a1b440af76a0fed2122016019ef56a3aaca92c4baec46538d5004e40310e71c",
+  "status": "complete"
+}

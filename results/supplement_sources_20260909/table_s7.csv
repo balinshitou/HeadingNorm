@@ -1,0 +1,5 @@
+ResNet18 frontend,20k validation loss,40k validation loss,Relative reduction
+GN only,0.014805,0.014605,+1.35%
+Yaw augmentation,0.012329,0.012536,-1.68%
+Adapted mixed-sensor PCA,0.013802,0.013807,-0.04%
+HN,0.013690,0.013668,+0.16%

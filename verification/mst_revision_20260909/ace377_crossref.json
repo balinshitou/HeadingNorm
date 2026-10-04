@@ -1,0 +1,722 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        31
+      ]
+    ],
+    "date-time": "2026-03-31T11:32:56Z",
+    "timestamp": 1774956776090,
+    "version": "3.50.1"
+  },
+  "reference-count": 32,
+  "publisher": "IOP Publishing",
+  "issue": "10",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            11
+          ]
+        ],
+        "date-time": "2023-07-11T00:00:00Z",
+        "timestamp": 1689033600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            11
+          ]
+        ],
+        "date-time": "2023-07-11T00:00:00Z",
+        "timestamp": 1689033600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "crossref",
+      "award": [
+        "61973333"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "61973333"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "crossref"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "iopscience.iop.org"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Meas. Sci. Technol."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>The recent research shows that data-driven inertia navigation technology can significantly alleviate the drift error of micro-electro-mechanical system inertial measurement unit (MEMS-IMU) in pedestrian localization. However, most existing methods must rely on attitude information provided by external procedure (such as smartphone API), which violates the original intention of full autonomy of inertial navigation, and attitude information is also inaccurate. To address the problem, we propose a pedestrian indoor neural inertial navigation system that does not rely on external information and is only based on low-cost MEMS-IMU. First, a deep learning based neural inertial network was designed to estimate attitude. Then, in order to obtain position estimation with both global and local accuracy, an invariant extended Kalman filter (IEKF) framework was proposed, where 3D displacement and its uncertainty regressed by a deep residual network are utilized to update IEKF. Extensive experimental results on a public dataset and a self-collected dataset show that the proposed method provides accurate attitude estimation and outperforms state-of-the-art methods in position estimation, demonstrating the superiority of our method in reliability and accuracy.</jats:p>",
+  "DOI": "10.1088/1361-6501/ace377",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        3
+      ]
+    ],
+    "date-time": "2023-07-03T18:25:19Z",
+    "timestamp": 1688408719000
+  },
+  "page": "105116",
+  "update-policy": "https://doi.org/10.1088/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 7,
+  "title": [
+    "Neural inertial navigation system on pedestrian"
+  ],
+  "prefix": "10.1088",
+  "volume": "34",
+  "author": [
+    {
+      "given": "Fengrong",
+      "family": "Huang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Min",
+      "family": "Gao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-9865-3928",
+      "authenticated-orcid": true,
+      "given": "Qinglin",
+      "family": "Liu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Fulin",
+      "family": "Tang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Yihong",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "266",
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        11
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "mstace377bib1",
+      "doi-asserted-by": "publisher",
+      "first-page": "1189",
+      "DOI": "10.1109/TIM.2018.2863478",
+      "type": "journal-article",
+      "article-title": "Indoor localization on smartphones using built-in sensors and map constraints",
+      "volume": "68",
+      "author": "Xia",
+      "year": "2019",
+      "journal-title": "IEEE Trans. Instrum. Meas."
+    },
+    {
+      "key": "mstace377bib2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/1361-6501/ab87ea",
+      "type": "journal-article",
+      "article-title": "WiFi/PDR integrated navigation with robustly constrained Kalman filter",
+      "volume": "31",
+      "author": "Li",
+      "year": "2020",
+      "journal-title": "Meas. Sci. Technol."
+    },
+    {
+      "key": "mstace377bib3",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1109/icc.2018.8422562",
+      "type": "conference-proceedings",
+      "article-title": "DeepML: deep LSTM for indoor localization with smartphone magnetic and light sensors",
+      "author": "Wang",
+      "year": "2018"
+    },
+    {
+      "key": "mstace377bib4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/1361-6501/ab2526",
+      "type": "journal-article",
+      "article-title": "Three-dimensional indoor location estimation using single inertial navigation system with linear regression",
+      "volume": "30",
+      "author": "An",
+      "year": "2019",
+      "journal-title": "Meas. Sci. Technol."
+    },
+    {
+      "key": "mstace377bib5",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "DOI": "10.1109/plans.2008.4569985",
+      "type": "conference-proceedings",
+      "article-title": "Wi-Fi based indoor localization and tracking using sigma-point Kalman filtering methods",
+      "author": "Paul",
+      "year": "2008"
+    },
+    {
+      "key": "mstace377bib6",
+      "doi-asserted-by": "publisher",
+      "first-page": "5376",
+      "DOI": "10.1109/JSEN.2016.2565899",
+      "type": "journal-article",
+      "article-title": "Indoor pedestrian localization with a smartphone: a comparison of inertial and vision-based methods",
+      "volume": "16",
+      "author": "Elloumi",
+      "year": "2016",
+      "journal-title": "IEEE Sens. J."
+    },
+    {
+      "key": "mstace377bib7",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1561/2000000094",
+      "type": "journal-article",
+      "article-title": "Using inertial sensors for position and orientation estimation",
+      "volume": "11",
+      "author": "Kok",
+      "year": "2017",
+      "journal-title": "Found. Trends Signal Process."
+    },
+    {
+      "key": "mstace377bib8",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1109/TIM.2022.3216413",
+      "type": "journal-article",
+      "article-title": "Pedestrian inertial navigation based on full-phase constraints of lower limb kinematics",
+      "volume": "71",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "IEEE Trans. Instrum. Meas."
+    },
+    {
+      "key": "mstace377bib9",
+      "doi-asserted-by": "publisher",
+      "first-page": "2657",
+      "DOI": "10.1109/TBME.2010.2060723",
+      "type": "journal-article",
+      "article-title": "Zero-velocity detection\u2014an algorithm evaluation",
+      "volume": "57",
+      "author": "Skog",
+      "year": "2010",
+      "journal-title": "IEEE Trans. Biomed. Eng."
+    },
+    {
+      "key": "mstace377bib10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/1361-6501/ac471b",
+      "type": "journal-article",
+      "article-title": "A single foot-mounted pedestrian navigation algorithm based on the maximum gait displacement constraint in three-dimensional space",
+      "volume": "33",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "Meas. Sci. Technol."
+    },
+    {
+      "key": "mstace377bib11",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.23919/icins.2018.8405864",
+      "type": "conference-proceedings",
+      "article-title": "The usability of MTI IMU sensor data in PDR indoor positioning",
+      "author": "Guo",
+      "year": "2018"
+    },
+    {
+      "key": "mstace377bib12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/0957-0233/27/1/015702",
+      "type": "journal-article",
+      "article-title": "A pedestrian dead-reckoning system that considers the heel-strike and toe-off phases when using a foot-mounted IMU",
+      "volume": "27",
+      "author": "Ju",
+      "year": "2015",
+      "journal-title": "Meas. Sci. Technol."
+    },
+    {
+      "key": "mstace377bib13",
+      "doi-asserted-by": "publisher",
+      "first-page": "2906",
+      "DOI": "10.1109/JSEN.2014.2382568",
+      "type": "journal-article",
+      "article-title": "SmartPDR: smartphone-based pedestrian dead reckoning for indoor localization",
+      "volume": "15",
+      "author": "Kang",
+      "year": "2015",
+      "journal-title": "IEEE Sens. J."
+    },
+    {
+      "key": "mstace377bib14",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1609/aaai.v32i1.12102",
+      "type": "journal-article",
+      "article-title": "IONet: learning to cure the curse of drift in inertial odometry",
+      "volume": "32",
+      "author": "Chen",
+      "year": "2018",
+      "journal-title": "Proc. AAAI Conf. Artif. Intell."
+    },
+    {
+      "key": "mstace377bib15",
+      "doi-asserted-by": "publisher",
+      "first-page": "4431",
+      "DOI": "10.1109/JIOT.2020.2966773",
+      "type": "journal-article",
+      "article-title": "Deep-learning-based pedestrian inertial navigation: methods, data set, and on-device inference",
+      "volume": "7",
+      "author": "Chen",
+      "year": "2020",
+      "journal-title": "IEEE Internet Things J."
+    },
+    {
+      "key": "mstace377bib16",
+      "doi-asserted-by": "publisher",
+      "first-page": "3146",
+      "DOI": "10.1109/icra40945.2020.9196860",
+      "type": "conference-proceedings",
+      "article-title": "RoNIN: robust neural inertial navigation in the wild: benchmark, evaluations, & new methods",
+      "author": "Herath",
+      "year": "2020"
+    },
+    {
+      "key": "mstace377bib17",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "DOI": "10.1016/j.inffus.2020.10.018",
+      "type": "journal-article",
+      "article-title": "40 years of sensor fusion for orientation tracking via magnetic and inertial measurement units: methods, lessons learned, and future challenges",
+      "volume": "68",
+      "author": "Nazarahari",
+      "year": "2021",
+      "journal-title": "Inf. Fusion"
+    },
+    {
+      "key": "mstace377bib18",
+      "doi-asserted-by": "publisher",
+      "first-page": "5653",
+      "DOI": "10.1109/LRA.2020.3007421",
+      "type": "journal-article",
+      "article-title": "TLIO: tight learned inertial odometry",
+      "volume": "5",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstace377bib19",
+      "doi-asserted-by": "publisher",
+      "first-page": "275",
+      "DOI": "10.1109/ismar52148.2021.00043",
+      "type": "conference-proceedings",
+      "article-title": "RNIN-VIO: robust neural inertial navigation aided visual-inertial odometry in challenging scenes",
+      "author": "Chen",
+      "year": "2021"
+    },
+    {
+      "key": "mstace377bib20",
+      "first-page": "621",
+      "type": "conference-proceedings",
+      "article-title": "RIDI: robust IMU double integration",
+      "author": "Yan",
+      "year": "2018"
+    },
+    {
+      "key": "mstace377bib21",
+      "doi-asserted-by": "publisher",
+      "first-page": "3470",
+      "DOI": "10.3390/s18103470",
+      "type": "journal-article",
+      "article-title": "A MEMS IMU de-noising method using long short term memory recurrent neural networks (LSTM-RNN)",
+      "volume": "18",
+      "author": "Jiang",
+      "year": "2018",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "mstace377bib22",
+      "doi-asserted-by": "publisher",
+      "first-page": "399",
+      "DOI": "10.1109/LRA.2019.2959507",
+      "type": "journal-article",
+      "article-title": "OriNet: robust 3D orientation estimation with a single particular IMU",
+      "volume": "5",
+      "author": "Esfahani",
+      "year": "2020",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstace377bib23",
+      "doi-asserted-by": "publisher",
+      "first-page": "4796",
+      "DOI": "10.1109/LRA.2020.3003256",
+      "type": "journal-article",
+      "article-title": "Denoising IMU gyroscopes with deep learning for open-loop attitude estimation",
+      "volume": "5",
+      "author": "Brossard",
+      "year": "2020",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    },
+    {
+      "key": "mstace377bib24",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1109/TIM.2022.3160538",
+      "type": "journal-article",
+      "article-title": "A MEMS IMU gyroscope calibration method based on deep learning",
+      "volume": "71",
+      "author": "Huang",
+      "year": "2022",
+      "journal-title": "IEEE Trans. Instrum. Meas."
+    },
+    {
+      "key": "mstace377bib25",
+      "article-title": "Multi-scale context aggregation by dilated convolutions",
+      "author": "Yu",
+      "year": "2016",
+      "type": "preprint"
+    },
+    {
+      "key": "mstace377bib26",
+      "doi-asserted-by": "publisher",
+      "first-page": "5745",
+      "DOI": "10.1109/cvpr.2019.00589",
+      "type": "conference-proceedings",
+      "article-title": "On the continuity of rotation representations in neural networks",
+      "author": "Zhou",
+      "year": "2019"
+    },
+    {
+      "key": "mstace377bib27",
+      "doi-asserted-by": "publisher",
+      "first-page": "155",
+      "DOI": "10.1007/s10851-009-0161-2",
+      "type": "journal-article",
+      "article-title": "Metrics for 3D rotations: comparison and analysis",
+      "volume": "35",
+      "author": "Huynh",
+      "year": "2009",
+      "journal-title": "J. Math. Imaging Vis."
+    },
+    {
+      "key": "mstace377bib28",
+      "doi-asserted-by": "publisher",
+      "first-page": "1797",
+      "DOI": "10.1109/TAC.2016.2594085",
+      "type": "journal-article",
+      "article-title": "The invariant extended Kalman filter as a stable observer",
+      "volume": "62",
+      "author": "Barrau",
+      "year": "2017",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "key": "mstace377bib29",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.15607/RSS.2018.XIV.050",
+      "type": "preprint",
+      "article-title": "Contact aided invariant extended Kalman filtering for legged robot state estimation",
+      "author": "Hartley",
+      "year": "2018"
+    },
+    {
+      "key": "mstace377bib30",
+      "doi-asserted-by": "publisher",
+      "first-page": "6128",
+      "DOI": "10.1609/aaai.v35i7.16763",
+      "type": "journal-article",
+      "article-title": "IDOL: inertial deep orientation-estimation and localization",
+      "volume": "35",
+      "author": "Sun",
+      "year": "2021",
+      "journal-title": "Proc. AAAI Conf. Artif. Intell."
+    },
+    {
+      "key": "mstace377bib31",
+      "article-title": "Towards a benchmark for RGB-D SLAM evaluation",
+      "author": "Sturm",
+      "year": "2011",
+      "type": "conference-proceedings"
+    },
+    {
+      "key": "mstace377bib32",
+      "doi-asserted-by": "publisher",
+      "first-page": "10613",
+      "DOI": "10.1109/LRA.2022.3194329",
+      "type": "journal-article",
+      "article-title": "Structural regularity aided visual-inertial odometry with novel coordinate alignment and line triangulation",
+      "volume": "7",
+      "author": "Wei",
+      "year": "2022",
+      "journal-title": "IEEE Robot. Autom. Lett."
+    }
+  ],
+  "container-title": [
+    "Measurement Science and Technology"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377",
+      "content-type": "text/html",
+      "content-version": "am",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "similarity-checking"
+    },
+    {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377/pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        13
+      ]
+    ],
+    "date-time": "2025-09-13T11:25:42Z",
+    "timestamp": 1757762742000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://iopscience.iop.org/article/10.1088/1361-6501/ace377"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        11
+      ]
+    ]
+  },
+  "references-count": 32,
+  "journal-issue": {
+    "issue": "10",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          1
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.1088/1361-6501/ace377",
+  "relation": {},
+  "ISSN": [
+    "0957-0233",
+    "1361-6501"
+  ],
+  "issn-type": [
+    {
+      "value": "0957-0233",
+      "type": "print"
+    },
+    {
+      "value": "1361-6501",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        11
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Neural inertial navigation system on pedestrian",
+      "name": "article_title",
+      "label": "Article Title"
+    },
+    {
+      "value": "Measurement Science and Technology",
+      "name": "journal_title",
+      "label": "Journal Title"
+    },
+    {
+      "value": "paper",
+      "name": "article_type",
+      "label": "Article Type"
+    },
+    {
+      "value": "\u00a9 2023 IOP Publishing Ltd. All rights, including for text and data mining, AI training, and similar technologies, are reserved.",
+      "name": "copyright_information",
+      "label": "Copyright Information"
+    },
+    {
+      "value": "2023-04-15",
+      "name": "date_received",
+      "label": "Date Received",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    },
+    {
+      "value": "2023-07-03",
+      "name": "date_accepted",
+      "label": "Date Accepted",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    },
+    {
+      "value": "2023-07-11",
+      "name": "date_epub",
+      "label": "Online publication date",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    }
+  ]
+}

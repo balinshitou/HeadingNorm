@@ -1,0 +1,621 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 4622078,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              22
+            ]
+          ],
+          "date-time": "2025-10-22T23:35:39Z",
+          "timestamp": 1761176139323,
+          "version": "build-2065373602"
+        },
+        "reference-count": 0,
+        "publisher": "IOS Press",
+        "isbn-type": [
+          {
+            "value": "9781643686318",
+            "type": "electronic"
+          }
+        ],
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  10,
+                  21
+                ]
+              ],
+              "date-time": "2025-10-21T00:00:00Z",
+              "timestamp": 1761004800000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              21
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Neural Inertial Navigation (NIN) plays a pivotal role in self-localization, aiming to infer the position of a mobile entity using noisy data from the onboard inertial measurement unit (IMU). Most existing methods rely on convolutional neural networks (CNNs) to capture dependencies among multiple variables, yet the time-frequency and invariant underlying features of IMU measurements remain underexplored. In this paper, we propose MInF, a Multi-Band Invariant Feature Learning for Efficient Inertial Navigation. The MInF advances mainly in two aspects. First, we design a Wavelet-based Multi-Band Mixer (MBMixer) for neural inertial navigation, which leverages the merits of multi-band 1D wavelet decomposition and Multi-Layer Perceptron (MLP)-based mixing to efficiently extract information in both the time and frequency domains in IMU measurements. Second, we introduce a self-supervised learning (SSL) method for learning invariant underlying features from inertial data without the need for any semantic labels. On the one hand, we learn a multi-task MBMixer via jointly classifying different transformations (i.e., pretext tasks) applied to an input signal for extracting invariant underlying features. On the other hand, we use the learned MBMixer in pretext task as the pre-trained model and fine-tune it to regress velocity in the neural inertial navigation (i.e., downstream task). Extensive experiments conducted on two real-world datasets demonstrate that the proposed MInF achieves SOTA results in neural inertial navigation, leading to 15% performance improvement while maintaining a low memory footprint and computational cost.</jats:p>",
+        "DOI": "10.3233/faia250881",
+        "type": "book-chapter",
+        "created": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              22
+            ]
+          ],
+          "date-time": "2025-10-22T09:44:53Z",
+          "timestamp": 1761126293000
+        },
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "MInF: Multi-Band Invariant Feature Learning for Efficient Inertial Navigation"
+        ],
+        "prefix": "10.3233",
+        "author": [
+          {
+            "given": "Yan",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Systems Science and Engineering, Sun Yat-sen University"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Yingying",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Trustworthy AI and Autonomous Systems Lab, The Hong Kong Polytechnic University"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "7437",
+        "container-title": [
+          "Frontiers in Artificial Intelligence and Applications",
+          "ECAI 2025"
+        ],
+        "link": [
+          {
+            "URL": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA250881",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              22
+            ]
+          ],
+          "date-time": "2025-10-22T09:44:53Z",
+          "timestamp": 1761126293000
+        },
+        "score": 70.495766,
+        "resource": {
+          "primary": {
+            "URL": "https://ebooks.iospress.nl/doi/10.3233/FAIA250881"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              21
+            ]
+          ]
+        },
+        "ISBN": [
+          "9781643686318"
+        ],
+        "references-count": 0,
+        "URL": "https://doi.org/10.3233/faia250881",
+        "ISSN": [
+          "0922-6389",
+          "1879-8314"
+        ],
+        "issn-type": [
+          {
+            "value": "0922-6389",
+            "type": "print"
+          },
+          {
+            "value": "1879-8314",
+            "type": "electronic"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              21
+            ]
+          ]
+        }
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              31
+            ]
+          ],
+          "date-time": "2026-07-31T15:40:12Z",
+          "timestamp": 1785512412015,
+          "version": "3.56.0"
+        },
+        "reference-count": 36,
+        "publisher": "IEEE",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  5,
+                  30
+                ]
+              ],
+              "date-time": "2021-05-30T00:00:00Z",
+              "timestamp": 1622332800000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-029"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  5,
+                  30
+                ]
+              ],
+              "date-time": "2021-05-30T00:00:00Z",
+              "timestamp": 1622332800000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/100006094",
+            "name": "University of Delaware",
+            "doi-asserted-by": "publisher",
+            "id": [
+              {
+                "id": "10.13039/100006094",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              30
+            ]
+          ]
+        },
+        "DOI": "10.1109/icra48506.2021.9561254",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              20
+            ]
+          ],
+          "date-time": "2021-10-20T00:28:35Z",
+          "timestamp": 1634689715000
+        },
+        "page": "5706-5712",
+        "source": "Crossref",
+        "is-referenced-by-count": 28,
+        "title": [
+          "Efficient Multi-sensor Aided Inertial Navigation with Online Calibration"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Woosik",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Delaware,Robot Perception and Navigation Group (RPNG),Newark,DE,USA,19716"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yulin",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Delaware,Robot Perception and Navigation Group (RPNG),Newark,DE,USA,19716"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Guoquan",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Delaware,Robot Perception and Navigation Group (RPNG),Newark,DE,USA,19716"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/LRA.2019.2893803"
+          },
+          {
+            "key": "ref32",
+            "article-title": "Visual-inertial odometry on resource-constrained systems",
+            "author": "li",
+            "year": "2014",
+            "journal-title": "Ph D Dissertation"
+          },
+          {
+            "key": "ref31",
+            "volume": "2",
+            "author": "chirikjian",
+            "year": "2011",
+            "journal-title": "Stochastic Models Information Theory and Lie Groups Volume 2 Analytic Methods and Modern Applications"
+          },
+          {
+            "key": "ref30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.inffus.2011.08.003"
+          },
+          {
+            "key": "ref36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0278364919843996"
+          },
+          {
+            "key": "ref35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS.2018.8594463"
+          },
+          {
+            "key": "ref34",
+            "article-title": "Fitting a plane to noisy points in 3d",
+            "author": "ernerfeldt",
+            "year": "0"
+          },
+          {
+            "key": "ref10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TITS.2016.2595618"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/s17092140"
+          },
+          {
+            "key": "ref12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS40897.2019.8967746"
+          },
+          {
+            "key": "ref13",
+            "article-title": "Lic-fusion 2.0: Lidar-inertial-camera odometry with sliding-window plane-feature tracking",
+            "author": "zuo",
+            "year": "2020",
+            "journal-title": "Proc of the IEEE/RSJ International Conference on Intelligent Robots and Systems"
+          },
+          {
+            "key": "ref14",
+            "article-title": "Visual-inertial localization for skid-steering robots with kinematic constraints",
+            "author": "zuo",
+            "year": "2019",
+            "journal-title": "Proc Of the International Symposium on Robotics Research (ISRR)"
+          },
+          {
+            "key": "ref15",
+            "article-title": "Versatile 3d multi-sensor fusion for lightweight 2d localization",
+            "author": "geneva",
+            "year": "2020",
+            "journal-title": "Proc of the IEEE/RSJ International Conference on Intelligent Robots and Systems"
+          },
+          {
+            "key": "ref16",
+            "article-title": "Fast-lio: A fast, robust lidar-inertial odometry package by tightly-coupled iterated kalman filter",
+            "author": "xu",
+            "year": "2020"
+          },
+          {
+            "key": "ref17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA40945.2020.9197567"
+          },
+          {
+            "key": "ref18",
+            "article-title": "Real-time multi-slam system for agent localization and 3d mapping in dynamic scenarios",
+            "author": "alliez",
+            "year": "2020",
+            "journal-title": "International Conference on Intelligent Robots and Systems (IROS"
+          },
+          {
+            "key": "ref19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA.2015.7139486"
+          },
+          {
+            "key": "ref28",
+            "article-title": "Scene-aware error modeling of li-dar/visual odometry for fusion-based vehicle localization",
+            "author": "ju",
+            "year": "2020"
+          },
+          {
+            "key": "ref4",
+            "article-title": "Hdl-64e: High definition real-time 3d lidar",
+            "author": "lidar",
+            "year": "0"
+          },
+          {
+            "key": "ref27",
+            "first-page": "2560",
+            "article-title": "Codeslam&#x2014;learning a compact, optimisable representation for dense visual slam",
+            "author": "bloesch",
+            "year": "2018",
+            "journal-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA40945.2020.9196524"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS.2013.6696917"
+          },
+          {
+            "key": "ref29",
+            "article-title": "Indirect Kalman filter for 3D attitude estimation",
+            "author": "trawny",
+            "year": "2005",
+            "journal-title": "Tech Rep"
+          },
+          {
+            "key": "ref5",
+            "doi-asserted-by": "crossref",
+            "first-page": "3565",
+            "DOI": "10.1109/ROBOT.2007.364024",
+            "article-title": "A multi-state constraint kalman filter for vision-aided inertial navigation",
+            "author": "mourikis",
+            "year": "2007",
+            "journal-title": "Proceedings 2007 IEEE International Conference on Robotics and Automation"
+          },
+          {
+            "key": "ref8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA.2014.6907588"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA.2016.7487626"
+          },
+          {
+            "key": "ref2",
+            "article-title": "Visual-inertial-wheel odometry with online calibration",
+            "author": "lee",
+            "year": "2020",
+            "journal-title": "Proc of the IEEE/RSJ International Conference on Intelligent Robots and Systems"
+          },
+          {
+            "key": "ref9",
+            "article-title": "A general optimization-based framework for global pose estimation with multiple sensors",
+            "author": "qin",
+            "year": "2019"
+          },
+          {
+            "key": "ref1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICRA40945.2020.9197029"
+          },
+          {
+            "key": "ref20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15607/RSS.2014.X.007"
+          },
+          {
+            "key": "ref22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TRO.2010.2042989"
+          },
+          {
+            "key": "ref21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ROBIO.2016.7866503"
+          },
+          {
+            "key": "ref24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS.2016.7759342"
+          },
+          {
+            "key": "ref23",
+            "article-title": "Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping",
+            "author": "shan",
+            "year": "2020",
+            "journal-title": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+          },
+          {
+            "key": "ref26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/CVPR.2017.695"
+          },
+          {
+            "key": "ref25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICARSC.2018.8374163"
+          }
+        ],
+        "event": {
+          "name": "2021 IEEE International Conference on Robotics and Automation (ICRA)",
+          "location": "Xi'an, China",
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                5,
+                30
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2021,
+                6,
+                5
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2021 IEEE International Conference on Robotics and Automation (ICRA)"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/9560720/9560666/09561254.pdf?arnumber=9561254",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              2
+            ]
+          ],
+          "date-time": "2022-08-02T23:22:08Z",
+          "timestamp": 1659482528000
+        },
+        "score": 28.831266,
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/9561254/"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              30
+            ]
+          ]
+        },
+        "references-count": 36,
+        "URL": "https://doi.org/10.1109/icra48506.2021.9561254",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              30
+            ]
+          ]
+        }
+      }
+    ],
+    "items-per-page": 2,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

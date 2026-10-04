@@ -1,0 +1,325 @@
+{
+  "protocol": "registered",
+  "per_run": [
+    {
+      "model": "official",
+      "source_file": "eval_a5.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 3.711241677541234
+    },
+    {
+      "model": "official",
+      "source_file": "eval_a5.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.140423254300067
+    },
+    {
+      "model": "official",
+      "source_file": "eval_a5.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.74805634796794
+    },
+    {
+      "model": "A6_huber_gnorm",
+      "source_file": "eval_rep.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.092161652326365
+    },
+    {
+      "model": "A6_huber_gnorm",
+      "source_file": "eval_rep.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.417857709160821
+    },
+    {
+      "model": "A6_huber_gnorm",
+      "source_file": "eval_rep.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.591621001100701
+    },
+    {
+      "model": "A6_huber_gnorm_r2",
+      "source_file": "eval_rep.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 4.917989702537915
+    },
+    {
+      "model": "A6_huber_gnorm_r2",
+      "source_file": "eval_rep.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.3959675547963055
+    },
+    {
+      "model": "A6_huber_gnorm_r2",
+      "source_file": "eval_rep.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.7585812900608766
+    },
+    {
+      "model": "A6_huber_gnorm_r3",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 4.973472860906501
+    },
+    {
+      "model": "A6_huber_gnorm_r3",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.556095740239609
+    },
+    {
+      "model": "A6_huber_gnorm_r3",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.726290974581773
+    },
+    {
+      "model": "A6_huber_gnorm_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.037982437410653
+    },
+    {
+      "model": "A6_huber_gnorm_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.311082564059898
+    },
+    {
+      "model": "A6_huber_gnorm_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.63189590225854
+    },
+    {
+      "model": "C_bs256",
+      "source_file": "eval_a5.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.232978975430538
+    },
+    {
+      "model": "C_bs256",
+      "source_file": "eval_a5.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.735145339962721
+    },
+    {
+      "model": "C_bs256",
+      "source_file": "eval_a5.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.8259400677660915
+    },
+    {
+      "model": "C_bs256_r2",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.042071108590977
+    },
+    {
+      "model": "C_bs256_r2",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.542309106418474
+    },
+    {
+      "model": "C_bs256_r2",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.854871072448104
+    },
+    {
+      "model": "C_bs256_r3",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 4.8323138490138895
+    },
+    {
+      "model": "C_bs256_r3",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.91308164823959
+    },
+    {
+      "model": "C_bs256_r3",
+      "source_file": "eval_ctrl.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.9450539326871477
+    },
+    {
+      "model": "C_bs256_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_sequences": 32,
+      "mean_ate": 5.025930391087873
+    },
+    {
+      "model": "C_bs256_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_sequences": 32,
+      "mean_ate": 5.538483389688404
+    },
+    {
+      "model": "C_bs256_r4",
+      "source_file": "eval_paper_reg.json",
+      "dataset": "ridi",
+      "split": "",
+      "n_sequences": 94,
+      "mean_ate": 2.8536321894027723
+    }
+  ],
+  "aggregate": [
+    {
+      "family": "A6",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 5.005401663295359,
+      "sd_across_runs": 0.07582678032652178,
+      "run_values": [
+        5.092161652326365,
+        4.917989702537915,
+        4.973472860906501,
+        5.037982437410653
+      ]
+    },
+    {
+      "family": "A6",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 5.420250892064159,
+      "sd_across_runs": 0.10159880971797869,
+      "run_values": [
+        5.417857709160821,
+        5.3959675547963055,
+        5.556095740239609,
+        5.311082564059898
+      ]
+    },
+    {
+      "family": "A6",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 2.677097292000473,
+      "sd_across_runs": 0.07833479917721152,
+      "run_values": [
+        2.591621001100701,
+        2.7585812900608766,
+        2.726290974581773,
+        2.63189590225854
+      ]
+    },
+    {
+      "family": "internal_baseline",
+      "dataset": "ronin",
+      "split": "seen",
+      "n_runs": 4,
+      "mean_ate": 5.033323581030819,
+      "sd_across_runs": 0.16370539328763062,
+      "run_values": [
+        5.232978975430538,
+        5.042071108590977,
+        4.8323138490138895,
+        5.025930391087873
+      ]
+    },
+    {
+      "family": "internal_baseline",
+      "dataset": "ronin",
+      "split": "unseen",
+      "n_runs": 4,
+      "mean_ate": 5.682254871077298,
+      "sd_across_runs": 0.17919585064090296,
+      "run_values": [
+        5.735145339962721,
+        5.542309106418474,
+        5.91308164823959,
+        5.538483389688404
+      ]
+    },
+    {
+      "family": "internal_baseline",
+      "dataset": "ridi",
+      "split": "",
+      "n_runs": 4,
+      "mean_ate": 2.869874315576029,
+      "sd_across_runs": 0.05186873472713923,
+      "run_values": [
+        2.8259400677660915,
+        2.854871072448104,
+        2.9450539326871477,
+        2.8536321894027723
+      ]
+    }
+  ],
+  "official_reference": [
+    {
+      "dataset": "ronin",
+      "split": "seen",
+      "mean_ate": 3.711241677541234
+    },
+    {
+      "dataset": "ronin",
+      "split": "unseen",
+      "mean_ate": 5.140423254300067
+    },
+    {
+      "dataset": "ridi",
+      "split": "",
+      "mean_ate": 2.74805634796794
+    }
+  ],
+  "warning": "Official weights used the authors' complete non-public corpus; comparisons with local models are not same-data architecture tests."
+}

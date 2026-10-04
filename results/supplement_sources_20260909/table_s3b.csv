@@ -1,0 +1,5 @@
+ResNet18 frontend,Full RIDI ATE,Suffix RIDI ATE
+GN only,4.282,4.524 ± 0.183
+Yaw augmentation,3.122,3.302 ± 0.060
+Adapted mixed-sensor PCA,3.743,3.956 ± 0.112
+HN,3.099,3.278 ± 0.098

@@ -1,0 +1,171 @@
+{
+  "protocol_id": "sensors-revision-v4-20260906",
+  "status": "locked_before_new_training_after_historical_test_exposure",
+  "common": {
+    "arch": "ronin_resnet18",
+    "gnorm": true,
+    "pre": false,
+    "width": 1.0,
+    "steps": 20000,
+    "bs": 256,
+    "lr": 0.001,
+    "frontend": "none",
+    "yaw_augmentation": false
+  },
+  "families": [
+    {
+      "id": "resnet_gn",
+      "phase": "main",
+      "tag_template": "Sensors_v4_resnet_gn_s{seed}",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "args": {}
+    },
+    {
+      "id": "resnet_yaw",
+      "phase": "main",
+      "tag_template": "Sensors_v4_resnet_yaw_s{seed}",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "args": {
+        "yaw_augmentation": true
+      }
+    },
+    {
+      "id": "resnet_mixed_pca",
+      "phase": "main",
+      "tag_template": "Sensors_v4_resnet_mixed_pca_s{seed}",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "args": {
+        "frontend": "mixed_pca"
+      }
+    },
+    {
+      "id": "budget_gn",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_gn_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "steps": 40000
+      }
+    },
+    {
+      "id": "budget_yaw",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_yaw_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "yaw_augmentation": true,
+        "steps": 40000
+      }
+    },
+    {
+      "id": "budget_mixed_pca",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_mixed_pca_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "frontend": "mixed_pca",
+        "steps": 40000
+      }
+    },
+    {
+      "id": "budget_hn",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_hn_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "frontend": "heading",
+        "steps": 40000
+      }
+    },
+    {
+      "id": "budget_imunet_raw",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_imunet_raw_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "arch": "imunet2024",
+        "gnorm": false,
+        "steps": 40000
+      }
+    },
+    {
+      "id": "budget_transformer_full",
+      "phase": "budget",
+      "tag_template": "Sensors_v4_budget_transformer_full_s{seed}",
+      "seeds": [
+        0
+      ],
+      "args": {
+        "arch": "transformer",
+        "frontend": "heading",
+        "pre": true,
+        "width": 2.0,
+        "steps": 40000
+      }
+    }
+  ],
+  "references": {
+    "hn": "ResNet18_v3_hn_gn_s{seed}",
+    "imunet_raw": "IMUNet2024_v21_matched_s{seed}",
+    "transformer_full": "A6_v2_f100_s{seed}"
+  },
+  "primary": [
+    "RoNIN unseen subject-macro ATE",
+    "RIDI subject-macro ATE"
+  ],
+  "secondary": [
+    "RTE",
+    "sequence-macro ATE",
+    "official seen composition",
+    "suffix-only score after prefix alignment"
+  ],
+  "selection": "Same 8-subject validation split, same 10240 validation windows, Huber loss for checkpoint selection every 2000 steps. No test-based model or budget selection. All seeds and failed runs retained.",
+  "augmentation": "Independent NumPy RNG for per-window uniform yaw [-pi, pi); rotate gyro xy, accelerometer xy and velocity labels together, no augmentation of validation.",
+  "pca_control": {
+    "label": "Mixed-sensor PCA frame (adapted)",
+    "reference": "https://github.com/RoyinaJayanth/EqNIO/blob/97b7a60a5e5cc8f0132bba343c83de114211f827/TLIO-master/src/network/model_resnet_frame_pca.py",
+    "shared_construction": "Concatenate horizontal gyro and acceleration into 2T samples, joint centering, two orthonormal PCA directions, transform input and inverse-transform output. Frame is computed before GN.",
+    "adaptations": [
+      "Exact symmetric 2x2 eigensolver on CPU instead of randomized low-rank PCA",
+      "Retain native gyro3/acc3 channel order",
+      "Common ResNet18, GN and 2D velocity loss; no TLIO covariance head or EKF"
+    ],
+    "sign_policy": "Use solver axes, descending eigenvalues, no third-moment sign correction; no claim of exact EqNIO reproduction"
+  },
+  "budget_policy": {
+    "scope": "Six prespecified seed-0 40000-step runs, new OneCycle schedule; sensitivity evidence, not a replacement for four-seed primary results.",
+    "material_change_rule": "Relative reduction of validation Huber loss >5% for any compared family, or change of the best ResNet frontend under validation loss, triggers NEEDS_BUDGET_EXTENSION status; do not label the manuscript submission-ready until the material budget dependence is resolved.",
+    "reason": "Bound the first training batch while exposing rather than hiding unresolved convergence concerns."
+  },
+  "statistics": {
+    "subject_id": "Sequence prefix, cross-check against dataset subject metadata where available",
+    "bootstrap": "10000 paired subject cluster resamples after four-seed average; report conditional uncertainty and seed differences separately",
+    "multiplicity": "Two primary HN contrasts (yaw, mixed PCA) per two primary datasets; Holm adjustment if p-values are used; other contrasts descriptive"
+  },
+  "reporting": "No claim of first PCA/skewness construction, superior data efficiency, state-of-the-art superiority, raw-IMU standalone deployment, or untouched confirmation. Report learned EqNIO as not experimentally reproduced."
+}

@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "sequences": 32,
+  "seeds": 4,
+  "checkpoints": 8,
+  "sequence_model_evaluations": 256,
+  "replayed_metrics": 512,
+  "maximum_replay_difference": 0.0,
+  "checkpoint_sha256": {
+    "Sensors_v4_resnet_yaw_s0": "d562d180ea865a2bd58d7646cbe8c0f8b2a65bbd28c497d88e668d5b62a77475",
+    "ResNet18_v3_hn_gn_s0": "90b6b356f6d35c5c8cc0ba111f96db19f7b244cabf8340527b13ec3fa2388e9f",
+    "Sensors_v4_resnet_yaw_s1": "c12e5e124a3b94488604ebf0f186391c6e229f8ef80d94c63b35272943c11174",
+    "ResNet18_v3_hn_gn_s1": "4fde46ee58e76e435197db0f470d8db73f28bb6fa1a9a55d0d511f0ad2adc88b",
+    "Sensors_v4_resnet_yaw_s2": "09a7d1ec1483d01add1ab7d3c1023f411ca4cf090a9313965d6c459cd4b98e1f",
+    "ResNet18_v3_hn_gn_s2": "c0129a52324d89033a2e9ae5031371711f55fd97c354fa505e4b3566fc972ef6",
+    "Sensors_v4_resnet_yaw_s3": "f61a9915b19dfeeec38abd295c0b960c410b32a8964539e25ad7968566bf2f1e",
+    "ResNet18_v3_hn_gn_s3": "cce22c88395da1e36679a5181c3af93a67798703eda1020b589b9a9bd634c1b9"
+  },
+  "cache_sha256": {
+    "data/eval/benchmark/ronin__a006_2.npz": "9756513270a4c3f085535388ba93c11e184326ebeae379a391b73f7e767d61ec",
+    "data/eval/benchmark/ronin__a019_3.npz": "5051adad36f5143445109a6b9a6e4e5d82822929598fa58dc5522fc9209c5cde",
+    "data/eval/benchmark/ronin__a024_1.npz": "29840599d57befa7a8b09ba3f6edd8479e6b50e123f4b14de986ccd8673287fd",
+    "data/eval/benchmark/ronin__a024_3.npz": "ba9320346fd1cbf298459e91afdf4002ca593524f15c5411ebe2b7d834f47629",
+    "data/eval/benchmark/ronin__a029_1.npz": "bc5eaeb0d9bdeea0a66a08b75c2765c3e79fadfdfbb301f7ba9cd6ae86b544a4",
+    "data/eval/benchmark/ronin__a029_2.npz": "2b4f8c68bca2fcf0ddf3120b449041a0341d71c298519a983cfcc2aee690491e",
+    "data/eval/benchmark/ronin__a032_1.npz": "d158a779aea0fc8f31f4506b077ab85529b60f4ad6990b2e0bfa9461a6216357",
+    "data/eval/benchmark/ronin__a032_3.npz": "4bba7dc40b2382e86969926032a3f5d3dbb7081a1380fd8b87f9884c139f5d89",
+    "data/eval/benchmark/ronin__a042_2.npz": "4699cce473d01d2218dc3a8002c8c34363ac88238decbc9eb02d752df8ba69c9",
+    "data/eval/benchmark/ronin__a049_1.npz": "1693063f5c4ee275845efded332e80abeb1c4644ab6d5a815e3a310db971718d",
+    "data/eval/benchmark/ronin__a049_2.npz": "bb5761ef34bcc057cfe364bec1e8ef246f66952cfaa2a8f9130d65ec7503f794",
+    "data/eval/benchmark/ronin__a049_3.npz": "72f73aec35b342afb34514d0bcce814f9a8d4f804a3050d27c000931b7939b48",
+    "data/eval/benchmark/ronin__a050_1.npz": "188f3d9b7776b183c95ca0a7f7f5cd3a3972c35fa557c07f6906677b643800d9",
+    "data/eval/benchmark/ronin__a050_3.npz": "f447f05ca604cf79cb6fddb4fe948f39b2c04b2242ed914c848b62c48ac42334",
+    "data/eval/benchmark/ronin__a051_1.npz": "5b9c8f048830a59823c00484f60a0ce7a38d942e2b1a9b3b4e9a93d260004679",
+    "data/eval/benchmark/ronin__a051_2.npz": "c980282b14179061e119bfba881f6736c21b8d617d8b6956c53e74875c08db5a",
+    "data/eval/benchmark/ronin__a051_3.npz": "e0d10c6d34939f4eb077f9f742646405285cadec60ddebfa790289b24c76c26b",
+    "data/eval/benchmark/ronin__a052_2.npz": "fc7db6ca1123d094b6c3562c79ca30d028d1c4a956844cabad5b4a4857e40299",
+    "data/eval/benchmark/ronin__a053_1.npz": "68d585facbf1bd5d3c1b5f1b4253077cd7119c641023b38750701b98aee6652d",
+    "data/eval/benchmark/ronin__a053_2.npz": "4f0207579ca3ec9f00fd4da211de560bcca4a3b005b83e0ec78a0a05a45d1d47",
+    "data/eval/benchmark/ronin__a053_3.npz": "02c0baf9fddbf4f9a2689c1434bc23186bd6ed2753a450d5b8d61451898709d1",
+    "data/eval/benchmark/ronin__a054_1.npz": "23f5cb7d3a9da29993526a5e2e0b8e4c03bfedadfcbd00fa55bb766268a14a34",
+    "data/eval/benchmark/ronin__a054_2.npz": "b283c81d94dc811ffeb8710dd0590f7d950460dc7d6c28bdfbf3da6d60c580ee",
+    "data/eval/benchmark/ronin__a054_3.npz": "e61f2f22d48446ee64cef00e1ddd35b83b0537e513b90b6b84bd5e17fa4f9172",
+    "data/eval/benchmark/ronin__a055_2.npz": "f5317a98d39374326004967adc01f73adc0ce7f9860fc59b63edf6e50eb60038",
+    "data/eval/benchmark/ronin__a055_3.npz": "a856bb0d3e2e606752732d2c9e0d446264b0211a991dabbd46ebdc1cfe338fc2",
+    "data/eval/benchmark/ronin__a057_1.npz": "ce13e75aec1b5088a2b2f9952e8558465e4515a1a7e8815c68752123f32c8e8b",
+    "data/eval/benchmark/ronin__a057_2.npz": "85cbcac17ecf90a4a7995ba00725397e89214d8e84d0645e7eba5a37e4d99a79",
+    "data/eval/benchmark/ronin__a057_3.npz": "70b93bf85b3a85bb268c97be72edbca865159e340b9c2b3039ae687c8e519888",
+    "data/eval/benchmark/ronin__a058_1.npz": "72db3237bd9d26adabd5293009bbc38556aea5cfa18c5c713b059a0f15982d24",
+    "data/eval/benchmark/ronin__a058_2.npz": "c820b6453d12c70ffa9d997862d00b83da4af7e1119600e95a95bb797cfa0890",
+    "data/eval/benchmark/ronin__a058_3.npz": "af112a20186db335472edf444e68cc8882f9169df9d71be7b62cfc9afea46602"
+  },
+  "script_sha256": "460269d8dcad86e5ec74a23640b343ee7503f7707c141c4271aacd696deb04c5",
+  "protocol": {
+    "scope": "All 32 RoNIN unseen sequences and four saved ResNet18 seeds, HN and yaw augmentation",
+    "jump_threshold_degrees": 90,
+    "sensitivity_thresholds_degrees": [
+      60,
+      120
+    ],
+    "event_neighbourhood_seconds": 0.5,
+    "frame_change": "atan2(sin(theta[t]-theta[t-1]),cos(theta[t]-theta[t-1]))",
+    "target": "One-second displacement from interpolated evaluation positions, same as original S5",
+    "low_gap": 0.1,
+    "low_kappa": 0.05,
+    "speed_edges": [
+      0,
+      0.3,
+      1,
+      2,
+      null
+    ],
+    "horizons_seconds": [
+      1,
+      5,
+      10,
+      30,
+      60,
+      120
+    ],
+    "acf_lags_seconds": [
+      0.05,
+      0.5,
+      1,
+      5,
+      10,
+      30,
+      60
+    ],
+    "status": "Exploratory post-review protocol fixed before reading new diagnostic results",
+    "causal_scope": "Associations only. No frame smoothing intervention and no retraining."
+  }
+}

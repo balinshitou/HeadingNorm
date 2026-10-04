@@ -1,0 +1,67 @@
+{
+  "protocol_id": "e3-backbone-frontend-20260908",
+  "status": "locked_before_training",
+  "question": "Is the effect of HeadingNorm relative to random yaw augmentation consistent across backbones? The frontend comparison so far exists only on ResNet18, while the Transformer and IMUNet backbones have been trained with HeadingNorm only.",
+  "registered_prediction": "HeadingNorm is predicted to give a lower subject-macro ATE than yaw augmentation on the independent-subject group and on RIDI for both backbones, with the same sign as the ResNet18 result (-0.370 m and -0.023 m) and with paired subject intervals that may again contain zero. The 60 s RTE is predicted to remain lower for yaw augmentation, matching the ResNet18 direction. Exact yaw invariance is predicted to fail for both augmentation arms with a per-sequence cross-angle ATE spread of the same order as the ResNet18 augmentation arm (median 46.9% of the sequence ATE on the independent-subject group).",
+  "decision_rule": "If the sign of the HeadingNorm minus yaw-augmentation ATE difference is the same on both new backbones as on ResNet18 for both primary groups, the manuscript may state that the direction of the effect is consistent across the three backbones, with the paired intervals reported. If the sign differs on any backbone or group, that must be reported and the cross-backbone consistency claim removed from the manuscript. No test metric may be used to select a checkpoint, a seed, or which backbone to report.",
+  "common": {
+    "arch": "transformer",
+    "sources": "ronin",
+    "split_protocol": "subject_disjoint_v2",
+    "data_frac": 1.0,
+    "steps": 20000,
+    "bs": 256,
+    "lr": 0.001,
+    "rate": 200.0,
+    "win_sec": 1.0,
+    "loss": "huber",
+    "delta": 0.27,
+    "optimizer": "adamw",
+    "scheduler": "onecycle",
+    "sampling": "uniform_window",
+    "pre": 0,
+    "hnorm": 0,
+    "gnorm": 1,
+    "width": 2.0,
+    "yaw_augmentation": true
+  },
+  "families": [
+    {
+      "id": "transformer_yaw",
+      "phase": "main",
+      "tag_template": "E3_transformer_yaw_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "reference_arm": "A6_v3_nopre_s{seed}",
+      "single_change_from_reference": "HeadingNorm frontend replaced by random yaw augmentation during training",
+      "args": {"arch": "transformer"}
+    },
+    {
+      "id": "imunet_yaw",
+      "phase": "main",
+      "tag_template": "E3_imunet_yaw_s{seed}",
+      "seeds": [0, 1, 2, 3],
+      "reference_arm": "IMUNet2024_v3_hn_gn_s{seed}",
+      "single_change_from_reference": "HeadingNorm frontend replaced by random yaw augmentation during training",
+      "args": {"arch": "imunet2024"}
+    }
+  ],
+  "primary": [
+    "RoNIN independent-subject group subject-macro ATE",
+    "RIDI subject-macro ATE"
+  ],
+  "secondary": [
+    "60 s RTE",
+    "per-sequence ATE spread across eight yaw angles",
+    "sequence-macro ATE"
+  ],
+  "selection": "Same subject-disjoint split, same 8-subject validation set, same 40x256 validation windows with fixed seed 123, Huber loss for checkpoint selection every 2000 steps. No test-based selection of checkpoint, seed or budget. All seeds and failed runs retained.",
+  "augmentation": "Per-window uniform yaw in [-pi, pi) drawn from an independent NumPy generator seeded by SeedSequence([seed, 20260906]), identical in construction to the ResNet18 yaw arm in config/sensors_revision_v4.json. Horizontal gyroscope, horizontal accelerometer and the 2D velocity label are rotated together. Validation is never augmented.",
+  "recipe_note": "The reference HeadingNorm arms for these two backbones were produced by src/pkg_train.py under config/rq_experiment_matrix_v3.json. tools/run_e3_train.py duplicates that recipe term by term and adds only the augmentation step, so the paired arms differ in exactly one factor.",
+  "frozen_code_note": "src/models.py, src/pkg_train.py and src/sensors_frontend.py are unmodified; the augmented training driver lives in tools/run_e3_train.py and writes to models/e3_backbone_frontend, so every existing frozen run still verifies.",
+  "statistics": {
+    "subject_id": "Sequence name prefix, consistent with config/sensors_revision_v4.json",
+    "bootstrap": "10000 paired subject cluster resamples after averaging the four seeds; conditional on the saved training runs",
+    "multiplicity": "Two primary contrasts (one per backbone) on two primary groups; reported as effect sizes and intervals, no p-values"
+  },
+  "reporting": "This addendum tests only whether the ResNet18 frontend result transfers to two other backbones. It is not an untouched confirmation study: RoNIN and RIDI test results were observed during earlier development."
+}

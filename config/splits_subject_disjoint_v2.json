@@ -1,0 +1,51 @@
+{
+  "protocol_id": "ronin-public-subject-disjoint-v2",
+  "frozen_on": "2026-08-30",
+  "source": "all 88 RoNIN train/val cache sequences in this package",
+  "selection_without_outcomes": true,
+  "subject_parser": "text before first underscore after train__/val__",
+  "validation_selection": {
+    "rule": "eight subjects selected using sequence durations only; total duration matched to the historical 2.2676 h validation budget; lexicographic tie break",
+    "target_hours": 2.267601389,
+    "actual_hours": 2.267919445
+  },
+  "validation_subjects": [
+    "a003", "a004", "a007", "a009", "a011", "a013", "a015", "a016"
+  ],
+  "training_subject_order": [
+    "a036", "a001", "a025", "a044", "a000", "a046", "a034", "a021",
+    "a027", "a012", "a020", "a014", "a037", "a040", "a045", "a039",
+    "a023", "a056", "a026", "a010", "a002", "a028", "a022", "a031",
+    "a033", "a043", "a005", "a047", "a030", "a035", "a059", "a038",
+    "a017", "a018"
+  ],
+  "training_order_rule": "ascending SHA-256 of '20260830:<subject>'",
+  "fraction_definition": "shortest prefix of the frozen subject order reaching the requested fraction of total training duration",
+  "fraction_subjects": {
+    "0.25": [
+      "a036", "a001", "a025", "a044", "a000", "a046", "a034"
+    ],
+    "0.50": [
+      "a036", "a001", "a025", "a044", "a000", "a046", "a034", "a021",
+      "a027", "a012", "a020", "a014", "a037", "a040", "a045", "a039"
+    ],
+    "1.00": [
+      "a036", "a001", "a025", "a044", "a000", "a046", "a034", "a021",
+      "a027", "a012", "a020", "a014", "a037", "a040", "a045", "a039",
+      "a023", "a056", "a026", "a010", "a002", "a028", "a022", "a031",
+      "a033", "a043", "a005", "a047", "a030", "a035", "a059", "a038",
+      "a017", "a018"
+    ]
+  },
+  "actual_training_hours": {
+    "0.25": 2.821701389,
+    "0.50": 5.588372223,
+    "1.00": 11.063751389
+  },
+  "actual_training_fraction": {
+    "0.25": 0.255040202,
+    "0.50": 0.505106453,
+    "1.00": 1.0
+  },
+  "leakage_rule": "intersection(training_subjects, validation_subjects) must be empty"
+}

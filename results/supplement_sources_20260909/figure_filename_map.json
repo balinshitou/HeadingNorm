@@ -1,0 +1,9 @@
+{
+  "fig1_pipeline": "figure_01_pipeline",
+  "fig_trajectory_example": "figure_02_trajectories",
+  "fig2_rotation_range": "figure_03_rotation_range",
+  "fig3_accuracy_contrasts": "figure_04_accuracy",
+  "fig5_temporal_events": "figure_05_frame_events",
+  "fig6_residual_structure": "figure_06_residual_structure",
+  "fig4_elapsed_error": "figure_S01_elapsed_error"
+}

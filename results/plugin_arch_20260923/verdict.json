@@ -1,0 +1,845 @@
+{
+ "criteria": "docs/91",
+ "registry": "V22",
+ "q_main": [
+  0.0125,
+  0.9875
+ ],
+ "bootstrap": {
+  "n": 10000,
+  "seed": 20260906
+ },
+ "selfcheck": {
+  "int_transformer_yaw": {
+   "ours": 5.5444586328341305,
+   "p0": 5.544458620724699,
+   "diff": 1.2109431679618865e-08
+  },
+  "int_imunet_yaw": {
+   "ours": 6.150672464826262,
+   "p0": 6.150672536651446,
+   "diff": -7.18251840226003e-08
+  }
+ },
+ "script_sha256": "969d73524ce8e09ec2856d13d34d0238b2155cffe15ff4a8f02ed6850fbe3fbb",
+ "family": [
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "tlio_c",
+   "metric": "ate_u",
+   "n_subjects": 318,
+   "n_sequences": 318,
+   "treatment_mean": 3.322655266646684,
+   "control_mean": 3.7056517413390346,
+   "difference": -0.38299647469235154,
+   "rel_pct": -10.3354686685683,
+   "subject_ci": [
+    -0.47606979617612477,
+    -0.2943426611850724
+   ],
+   "seq_ci": [
+    -0.47606979617612477,
+    -0.2943426611850724
+   ],
+   "q": [
+    0.0125,
+    0.9875
+   ],
+   "improved_subjects": 242,
+   "improved_sequences": 242,
+   "id": "A1",
+   "call": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "tlio_c",
+   "metric": "ate_u",
+   "n_subjects": 318,
+   "n_sequences": 318,
+   "treatment_mean": 3.8900484045751345,
+   "control_mean": 4.587602303946033,
+   "difference": -0.6975538993708981,
+   "rel_pct": -15.205195506395485,
+   "subject_ci": [
+    -0.8882473313385171,
+    -0.5281426105710137
+   ],
+   "seq_ci": [
+    -0.8882473313385171,
+    -0.5281426105710137
+   ],
+   "q": [
+    0.0125,
+    0.9875
+   ],
+   "improved_subjects": 228,
+   "improved_sequences": 228,
+   "id": "A2",
+   "call": "lower"
+  }
+ ],
+ "calls": {
+  "A1": "lower",
+  "A2": "lower"
+ },
+ "verdict": "成立",
+ "descriptive": [
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "tlio_c",
+   "metric": "ate_shape",
+   "n_subjects": 318,
+   "n_sequences": 318,
+   "treatment_mean": 1.761712871490169,
+   "control_mean": 2.1341610663911497,
+   "difference": -0.3724481949009807,
+   "rel_pct": -17.451737863946125,
+   "subject_ci": [
+    -0.45530189550736916,
+    -0.29388408082831613
+   ],
+   "seq_ci": [
+    -0.45530189550736916,
+    -0.29388408082831613
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 242,
+   "improved_sequences": 242,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "imunet",
+   "metric": "ate_u",
+   "n_subjects": 4,
+   "n_sequences": 36,
+   "treatment_mean": 8.520953129776078,
+   "control_mean": 8.593008254651709,
+   "difference": -0.07205512487563048,
+   "rel_pct": -0.8385320104472659,
+   "subject_ci": [
+    -0.261105137540226,
+    0.113497566594992
+   ],
+   "seq_ci": [
+    -0.29781532690476087,
+    0.10996560825108274
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 2,
+   "improved_sequences": 23,
+   "id": "A1",
+   "call_subject": "ns",
+   "call_seq": "ns"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "imunet",
+   "metric": "ate_shape",
+   "n_subjects": 4,
+   "n_sequences": 36,
+   "treatment_mean": 4.7765311127141645,
+   "control_mean": 4.909772202197553,
+   "difference": -0.13324108948338842,
+   "rel_pct": -2.7137937158011396,
+   "subject_ci": [
+    -0.286458465989325,
+    -0.011294293842458059
+   ],
+   "seq_ci": [
+    -0.37566864097570646,
+    0.05630788833549099
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 3,
+   "improved_sequences": 23,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "ns"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "imunet_c",
+   "metric": "ate_u",
+   "n_subjects": 4,
+   "n_sequences": 87,
+   "treatment_mean": 9.246497069811523,
+   "control_mean": 9.536996562638876,
+   "difference": -0.29049949282735454,
+   "rel_pct": -3.046027026636294,
+   "subject_ci": [
+    -0.64288728811681,
+    -0.04662443035408659
+   ],
+   "seq_ci": [
+    -0.5113905033696529,
+    -0.10841708094269997
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 3,
+   "improved_sequences": 51,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "imunet_c",
+   "metric": "ate_shape",
+   "n_subjects": 4,
+   "n_sequences": 87,
+   "treatment_mean": 4.9246827583056225,
+   "control_mean": 5.27073140939046,
+   "difference": -0.34604865108483773,
+   "rel_pct": -6.5654768609212235,
+   "subject_ci": [
+    -0.6134899672580068,
+    -0.14878272576434215
+   ],
+   "seq_ci": [
+    -0.5528450500999225,
+    -0.13122070721050916
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 4,
+   "improved_sequences": 61,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ronin_seen",
+   "metric": "ate_u",
+   "n_subjects": 31,
+   "n_sequences": 32,
+   "treatment_mean": 4.764127148270882,
+   "control_mean": 4.827358816321569,
+   "difference": -0.06323166805068797,
+   "rel_pct": -1.3098605356804673,
+   "subject_ci": [
+    -0.1967832715156425,
+    0.09510435300343116
+   ],
+   "seq_ci": [
+    -0.1878032321010519,
+    0.09551559253179531
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 20,
+   "improved_sequences": 20,
+   "id": "A1",
+   "call_subject": "ns",
+   "call_seq": "ns"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ronin_seen",
+   "metric": "ate_shape",
+   "n_subjects": 31,
+   "n_sequences": 32,
+   "treatment_mean": 3.781917748898154,
+   "control_mean": 3.8367945999607587,
+   "difference": -0.05487685106260512,
+   "rel_pct": -1.4302785732435712,
+   "subject_ci": [
+    -0.1837407591767688,
+    0.08836282477395752
+   ],
+   "seq_ci": [
+    -0.17349274713116572,
+    0.08998724892685313
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 17,
+   "improved_sequences": 17,
+   "id": "A1",
+   "call_subject": "ns",
+   "call_seq": "ns"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ronin_unseen",
+   "metric": "ate_u",
+   "n_subjects": 15,
+   "n_sequences": 32,
+   "treatment_mean": 5.1189569873585965,
+   "control_mean": 5.581956054299889,
+   "difference": -0.4629990669412926,
+   "rel_pct": -8.294566679446275,
+   "subject_ci": [
+    -0.9028618198988189,
+    -0.1540140768496065
+   ],
+   "seq_ci": [
+    -0.8927419401125195,
+    -0.19336820350026765
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 11,
+   "improved_sequences": 23,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ronin_unseen",
+   "metric": "ate_shape",
+   "n_subjects": 15,
+   "n_sequences": 32,
+   "treatment_mean": 4.542384385374855,
+   "control_mean": 4.863568288983195,
+   "difference": -0.321183903608341,
+   "rel_pct": -6.60387362784392,
+   "subject_ci": [
+    -0.5872805159472817,
+    -0.10870068132740578
+   ],
+   "seq_ci": [
+    -0.5959096316392082,
+    -0.16417018757410506
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 12,
+   "improved_sequences": 24,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ridi",
+   "metric": "ate_u",
+   "n_subjects": 11,
+   "n_sequences": 94,
+   "treatment_mean": 2.5706522010477846,
+   "control_mean": 2.6755382855244103,
+   "difference": -0.10488608447662609,
+   "rel_pct": -3.9201862684640383,
+   "subject_ci": [
+    -0.18217473222630484,
+    -0.030303385536250938
+   ],
+   "seq_ci": [
+    -0.23594122628736838,
+    -0.06692673156039798
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 8,
+   "improved_sequences": 60,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "ridi",
+   "metric": "ate_shape",
+   "n_subjects": 11,
+   "n_sequences": 94,
+   "treatment_mean": 1.5944569827313162,
+   "control_mean": 1.752522802837702,
+   "difference": -0.15806582010638565,
+   "rel_pct": -9.019330296327325,
+   "subject_ci": [
+    -0.2316065261816775,
+    -0.08618662297558523
+   ],
+   "seq_ci": [
+    -0.299349174938757,
+    -0.12904657279443318
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 10,
+   "improved_sequences": 72,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "tlio",
+   "metric": "ate_u",
+   "n_subjects": 36,
+   "n_sequences": 36,
+   "treatment_mean": 3.882666780941993,
+   "control_mean": 4.10315560263462,
+   "difference": -0.22048882169262798,
+   "rel_pct": -5.37364026728728,
+   "subject_ci": [
+    -0.407407541386026,
+    -0.06254419569769648
+   ],
+   "seq_ci": [
+    -0.407407541386026,
+    -0.06254419569769648
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 25,
+   "improved_sequences": 25,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_transformer_yaw_hn",
+   "control": "int_transformer_yaw",
+   "dataset": "tlio",
+   "metric": "ate_shape",
+   "n_subjects": 36,
+   "n_sequences": 36,
+   "treatment_mean": 1.6652050981826838,
+   "control_mean": 2.0159061581592335,
+   "difference": -0.35070105997654977,
+   "rel_pct": -17.39669570218399,
+   "subject_ci": [
+    -0.6334262381788928,
+    -0.1249238918642855
+   ],
+   "seq_ci": [
+    -0.6334262381788928,
+    -0.1249238918642855
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 27,
+   "improved_sequences": 27,
+   "id": "A1",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "tlio_c",
+   "metric": "ate_shape",
+   "n_subjects": 318,
+   "n_sequences": 318,
+   "treatment_mean": 1.906620918515634,
+   "control_mean": 2.758199493344652,
+   "difference": -0.8515785748290182,
+   "rel_pct": -30.874437359727583,
+   "subject_ci": [
+    -1.03731763004664,
+    -0.6783571719158934
+   ],
+   "seq_ci": [
+    -1.03731763004664,
+    -0.6783571719158934
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 254,
+   "improved_sequences": 254,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "imunet",
+   "metric": "ate_u",
+   "n_subjects": 4,
+   "n_sequences": 36,
+   "treatment_mean": 9.880186016275161,
+   "control_mean": 10.336586746382608,
+   "difference": -0.4564007301074482,
+   "rel_pct": -4.415391089008857,
+   "subject_ci": [
+    -1.1037574417010059,
+    -0.07014083820450256
+   ],
+   "seq_ci": [
+    -0.9515082428500236,
+    -0.12705896804979883
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 4,
+   "improved_sequences": 27,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "imunet",
+   "metric": "ate_shape",
+   "n_subjects": 4,
+   "n_sequences": 36,
+   "treatment_mean": 4.870469453594788,
+   "control_mean": 5.678788480667882,
+   "difference": -0.8083190270730944,
+   "rel_pct": -14.23400483791268,
+   "subject_ci": [
+    -1.8346583618643888,
+    -0.10926023039349841
+   ],
+   "seq_ci": [
+    -1.4955979950115876,
+    -0.3922273311930424
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 4,
+   "improved_sequences": 31,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "imunet_c",
+   "metric": "ate_u",
+   "n_subjects": 4,
+   "n_sequences": 87,
+   "treatment_mean": 10.831686772689448,
+   "control_mean": 11.471166640044306,
+   "difference": -0.6394798673548587,
+   "rel_pct": -5.57467158678107,
+   "subject_ci": [
+    -1.0527496602336814,
+    -0.24537773371893934
+   ],
+   "seq_ci": [
+    -0.9195307884277064,
+    -0.3700681819819195
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 4,
+   "improved_sequences": 61,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "imunet_c",
+   "metric": "ate_shape",
+   "n_subjects": 4,
+   "n_sequences": 87,
+   "treatment_mean": 4.952977733705051,
+   "control_mean": 5.983796161724311,
+   "difference": -1.0308184280192596,
+   "rel_pct": -17.226830596485684,
+   "subject_ci": [
+    -1.6226500556769186,
+    -0.6367983019894865
+   ],
+   "seq_ci": [
+    -1.3452392171229024,
+    -0.707157345516185
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 4,
+   "improved_sequences": 75,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ronin_seen",
+   "metric": "ate_u",
+   "n_subjects": 31,
+   "n_sequences": 32,
+   "treatment_mean": 4.7069412917612095,
+   "control_mean": 4.944590949483893,
+   "difference": -0.23764965772268484,
+   "rel_pct": -4.806255161460632,
+   "subject_ci": [
+    -0.41480185285437,
+    -0.04715899965601621
+   ],
+   "seq_ci": [
+    -0.40931069743033666,
+    -0.050347780163282174
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 23,
+   "improved_sequences": 23,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ronin_seen",
+   "metric": "ate_shape",
+   "n_subjects": 31,
+   "n_sequences": 32,
+   "treatment_mean": 3.8284960594661004,
+   "control_mean": 4.056368346121023,
+   "difference": -0.22787228665492307,
+   "rel_pct": -5.617642857134267,
+   "subject_ci": [
+    -0.39603457478854887,
+    -0.05705255991335689
+   ],
+   "seq_ci": [
+    -0.3933648319448681,
+    -0.0588813719237594
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 22,
+   "improved_sequences": 22,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ronin_unseen",
+   "metric": "ate_u",
+   "n_subjects": 15,
+   "n_sequences": 32,
+   "treatment_mean": 5.448970336898459,
+   "control_mean": 6.327156822086819,
+   "difference": -0.8781864851883584,
+   "rel_pct": -13.879638357038786,
+   "subject_ci": [
+    -1.5651867356855338,
+    -0.3871679666826338
+   ],
+   "seq_ci": [
+    -1.4473629465248363,
+    -0.3908773990616076
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 12,
+   "improved_sequences": 23,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ronin_unseen",
+   "metric": "ate_shape",
+   "n_subjects": 15,
+   "n_sequences": 32,
+   "treatment_mean": 4.7686921104175415,
+   "control_mean": 5.509574271894504,
+   "difference": -0.7408821614769624,
+   "rel_pct": -13.447176222968043,
+   "subject_ci": [
+    -1.2361434263070872,
+    -0.34276153258144754
+   ],
+   "seq_ci": [
+    -1.142560594181248,
+    -0.3689782671009673
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 11,
+   "improved_sequences": 22,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ridi",
+   "metric": "ate_u",
+   "n_subjects": 11,
+   "n_sequences": 94,
+   "treatment_mean": 2.8892098084255533,
+   "control_mean": 3.1488158676316473,
+   "difference": -0.2596060592060941,
+   "rel_pct": -8.244561451646723,
+   "subject_ci": [
+    -0.3783406952610134,
+    -0.12916964313592413
+   ],
+   "seq_ci": [
+    -0.38030131151668806,
+    -0.16755575504787304
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 10,
+   "improved_sequences": 66,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "ridi",
+   "metric": "ate_shape",
+   "n_subjects": 11,
+   "n_sequences": 94,
+   "treatment_mean": 1.6299521149119132,
+   "control_mean": 1.9710037792064503,
+   "difference": -0.34105166429453676,
+   "rel_pct": -17.303450551061257,
+   "subject_ci": [
+    -0.4488919820979134,
+    -0.22578017364204653
+   ],
+   "seq_ci": [
+    -0.4756683591075199,
+    -0.24294934803030055
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 10,
+   "improved_sequences": 71,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "tlio",
+   "metric": "ate_u",
+   "n_subjects": 36,
+   "n_sequences": 36,
+   "treatment_mean": 4.053066589433428,
+   "control_mean": 5.131082561088306,
+   "difference": -1.0780159716548776,
+   "rel_pct": -21.00952301625468,
+   "subject_ci": [
+    -1.907861692607305,
+    -0.49701457813618916
+   ],
+   "seq_ci": [
+    -1.907861692607305,
+    -0.49701457813618916
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 31,
+   "improved_sequences": 31,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  },
+  {
+   "treatment": "int_imunet_yaw_hn",
+   "control": "int_imunet_yaw",
+   "dataset": "tlio",
+   "metric": "ate_shape",
+   "n_subjects": 36,
+   "n_sequences": 36,
+   "treatment_mean": 1.8067657432183077,
+   "control_mean": 2.898754052751507,
+   "difference": -1.0919883095332004,
+   "rel_pct": -37.670954129298465,
+   "subject_ci": [
+    -2.104614953627975,
+    -0.4136540560169987
+   ],
+   "seq_ci": [
+    -2.104614953627975,
+    -0.4136540560169987
+   ],
+   "q": [
+    0.025,
+    0.975
+   ],
+   "improved_subjects": 28,
+   "improved_sequences": 28,
+   "id": "A2",
+   "call_subject": "lower",
+   "call_seq": "lower"
+  }
+ ],
+ "harm_descriptive": []
+}

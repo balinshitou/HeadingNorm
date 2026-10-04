@@ -1,0 +1,5 @@
+Frontend,CPU median,CPU p95,MPS median,MPS p95
+GN only,1.370,1.459,1.985,3.117
+Yaw augmentation,1.362,1.472,2.123,2.371
+Adapted mixed-sensor PCA,1.435,1.541,2.553,2.816
+HN,1.445,1.552,2.135,2.321

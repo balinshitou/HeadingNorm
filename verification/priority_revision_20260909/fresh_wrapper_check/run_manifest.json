@@ -1,0 +1,8 @@
+{
+  "mode": "loss",
+  "device": "cpu",
+  "fresh_inference": true,
+  "files": {
+    "loss_report.json": "e619d13b590e79026d22a2bb6ac4402e0216c542f1766dfecdd8f22907c50344"
+  }
+}

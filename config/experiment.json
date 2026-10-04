@@ -1,0 +1,51 @@
+{
+  "experiment_id": "A6-transformer-imu-odometry",
+  "sampling_rate_hz": 200.0,
+  "window_seconds": 1.0,
+  "window_samples": 200,
+  "inference_stride_seconds": 0.05,
+  "input_channels": ["gyro_x", "gyro_y", "gyro_z", "acc_x", "acc_y", "acc_z"],
+  "architecture": {
+    "name": "transformer",
+    "pre_filter": true,
+    "heading_norm": true,
+    "global_norm": true,
+    "width": 2.0,
+    "d_model": 256,
+    "heads": 8,
+    "encoder_layers": 4,
+    "ffn_dim": 1024,
+    "patch_size": 8,
+    "parameters": 3275522
+  },
+  "training": {
+    "loss": "huber",
+    "huber_delta": 0.27,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "OneCycleLR",
+    "pct_start": 0.15,
+    "gradient_clip_norm": 5.0,
+    "batch_size": 256,
+    "steps": 20000,
+    "primary_source": "ronin",
+    "historical_split": "legacy_sequence_split_with_subject_overlap",
+    "prospective_split": "subject_disjoint_v2",
+    "prospective_seeds": [0, 1, 2, 3],
+    "prospective_data_fractions": [0.25, 0.5, 1.0]
+  },
+  "evaluation": {
+    "protocol_version": "2.0-registered-primary",
+    "primary_alignment": "registered",
+    "registered_alignment": {
+      "ronin": "translation_to_ground_truth_start_only",
+      "ridi": "SE2_from_first_10_seconds",
+      "oxiod": "SE2_from_first_5_seconds"
+    },
+    "supplementary_alignment": "start_yaw_full_trajectory_rotation",
+    "allow_scale": false,
+    "allow_reflection": false,
+    "metrics": ["ATE", "RTE", "TLR", "MCS", "R4", "residual_channels"]
+  }
+}

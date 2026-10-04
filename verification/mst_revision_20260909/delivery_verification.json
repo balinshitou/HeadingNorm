@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-09",
+  "saved_matrix_checks": {
+    "main_checkpoints": 36,
+    "main_sequence_angle_rows": 45504,
+    "checks_passed": 19523,
+    "all_seeds_retained": true,
+    "training_performed": false
+  },
+  "direct_velocity_replay": {
+    "status": "pass",
+    "compared_values": 32,
+    "maximum_difference": 0.0
+  },
+  "document_structure": [
+    {
+      "file": "/Users/macbook/Documents/code-data/paper20260829-transformer/paper/mst_revision_20260909/manuscript_en.docx",
+      "native_numbered_equations": 8,
+      "csv_verified_tables": 4,
+      "native_tables": 5,
+      "embedded_figures": 4,
+      "pandoc_warnings": ""
+    },
+    {
+      "file": "/Users/macbook/Documents/code-data/paper20260829-transformer/paper/mst_revision_20260909/supplementary_materials_en.docx",
+      "native_numbered_equations": 6,
+      "csv_verified_tables": 11,
+      "native_tables": 12,
+      "embedded_figures": 1,
+      "pandoc_warnings": ""
+    }
+  ],
+  "visual_review": {
+    "main_pages": 14,
+    "supplement_pages": 12,
+    "all_pages_reviewed": true,
+    "final_render_comparison": {
+      "main": {
+        "pages": 14,
+        "changed_pages": [
+          "page-10.png",
+          "page-13.png",
+          "page-14.png",
+          "page-4.png",
+          "page-9.png"
+        ]
+      },
+      "supplement": {
+        "pages": 12,
+        "changed_pages": []
+      }
+    },
+    "note": "Every prior page was visually reviewed. All five changed final pages were visually reviewed again. Other final page images are byte-identical to reviewed images. No clipping, missing equations, or broken table cells found."
+  },
+  "prose_review": {
+    "main_checked_sentences": 401,
+    "main_maximum_sentence_words": 19,
+    "supplement_checked_sentences": 279,
+    "supplement_maximum_sentence_words": 16,
+    "mechanical_style_errors": 0,
+    "manual_review": "Assertions, subordination, measurement scope, metric interpretation, sign-ablation attribution, and adverse augmentation contrasts reviewed."
+  },
+  "remaining_submission_items": [
+    "Author details and declarations",
+    "Public artifact address",
+    "Closest learned canonicalization comparator remains unreproduced",
+    "No independent fresh-training replication claimed"
+  ],
+  "artifact_sha256": {
+    "manuscript_en.md": "85838a6cfa0b2f84c99b8b2adf9034b24f5802135a4cbd0ddc0f003ab7c6ffd5",
+    "manuscript_en.docx": "d08b07ed11fbbc6dfdb6595c27ca63ebd9a770ad98e5561ed23e8728db237ba1",
+    "supplementary_materials_en.md": "5c322daaf199cd19d3b70d37713c4c27032ca88d9245a170e9e670805f85e13c",
+    "supplementary_materials_en.docx": "3fbac371f03318cca510d3116b6fc0ae59ebebfe45ae6302bb1e128a4439a820",
+    "README.md": "3105f2bf72e98de3bde410636b310413d35c286d8e600916fe9183f86577e4bd",
+    "reproduction_guide_en.md": "1a57e8bd5c2278def024339354cf5c9808df86d2e9b21a6ae8496e48e517e785",
+    "mst_novelty_statement_en.md": "0ea1c6e9dc89fe3a8b71ebf6fd5560e1b8842d338b8d556ac1646882ac06040a",
+    "mst_editorial_notes_en.md": "a41643d0bac8b1940d57450115232a430b1973582f42fb9c922ec784545d360e",
+    "source_data/training_recipes.json": "450a5553d531d3088cd07efe51640738ef3355e5fea4faab4883ba7cc7105061"
+  }
+}

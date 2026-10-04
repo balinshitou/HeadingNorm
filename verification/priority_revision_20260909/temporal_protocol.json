@@ -1,0 +1,39 @@
+{
+  "scope": "All 32 RoNIN unseen sequences and four saved ResNet18 seeds, HN and yaw augmentation",
+  "jump_threshold_degrees": 90,
+  "sensitivity_thresholds_degrees": [
+    60,
+    120
+  ],
+  "event_neighbourhood_seconds": 0.5,
+  "frame_change": "atan2(sin(theta[t]-theta[t-1]),cos(theta[t]-theta[t-1]))",
+  "target": "One-second displacement from interpolated evaluation positions, same as original S5",
+  "low_gap": 0.1,
+  "low_kappa": 0.05,
+  "speed_edges": [
+    0,
+    0.3,
+    1,
+    2,
+    null
+  ],
+  "horizons_seconds": [
+    1,
+    5,
+    10,
+    30,
+    60,
+    120
+  ],
+  "acf_lags_seconds": [
+    0.05,
+    0.5,
+    1,
+    5,
+    10,
+    30,
+    60
+  ],
+  "status": "Exploratory post-review protocol fixed before reading new diagnostic results",
+  "causal_scope": "Associations only. No frame smoothing intervention and no retraining."
+}

@@ -1,0 +1,127 @@
+{
+ "ronin_seen": {
+  "sequences": 32,
+  "groups": 31,
+  "hours": 4.933,
+  "gt_path_km": 13.45,
+  "per_group": {
+   "a000": 2,
+   "a001": 1,
+   "a003": 1,
+   "a004": 1,
+   "a005": 1,
+   "a009": 1,
+   "a010": 1,
+   "a011": 1,
+   "a012": 1,
+   "a013": 1,
+   "a014": 1,
+   "a016": 1,
+   "a017": 1,
+   "a020": 1,
+   "a021": 1,
+   "a022": 1,
+   "a023": 1,
+   "a025": 1,
+   "a026": 1,
+   "a027": 1,
+   "a030": 1,
+   "a031": 1,
+   "a033": 1,
+   "a035": 1,
+   "a036": 1,
+   "a037": 1,
+   "a038": 1,
+   "a044": 1,
+   "a046": 1,
+   "a047": 1,
+   "a059": 1
+  }
+ },
+ "ronin_unseen": {
+  "sequences": 32,
+  "groups": 15,
+  "hours": 5.074,
+  "gt_path_km": 14.58,
+  "per_group": {
+   "a006": 1,
+   "a019": 1,
+   "a024": 2,
+   "a029": 2,
+   "a032": 2,
+   "a042": 1,
+   "a049": 3,
+   "a050": 2,
+   "a051": 3,
+   "a052": 1,
+   "a053": 3,
+   "a054": 3,
+   "a055": 2,
+   "a057": 3,
+   "a058": 3
+  }
+ },
+ "ridi": {
+  "sequences": 94,
+  "groups": 11,
+  "hours": 2.711,
+  "gt_path_km": 10.38,
+  "per_group": {
+   "dan": 9,
+   "hang": 25,
+   "hao": 8,
+   "huayi": 10,
+   "ma": 7,
+   "ruixuan": 8,
+   "shali": 3,
+   "tang": 6,
+   "xiaojing": 5,
+   "yajie": 5,
+   "zhicheng": 8
+  }
+ },
+ "tlio_test": {
+  "sequences": 36,
+  "groups": 1,
+  "hours": 3.176,
+  "gt_path_km": 4.2,
+  "per_group": {
+   "-": 36
+  }
+ },
+ "tlio_confirm": {
+  "sequences": 318,
+  "groups": 1,
+  "hours": 28.428,
+  "gt_path_km": 36.29,
+  "per_group": {
+   "-": 318
+  }
+ },
+ "phone_test": {
+  "sequences": 36,
+  "groups": 4,
+  "hours": 2.377,
+  "gt_path_km": 9.46,
+  "per_group": {
+   "1": 11,
+   "2": 7,
+   "4": 8,
+   "5": 10
+  }
+ },
+ "phone_confirm": {
+  "sequences": 87,
+  "groups": 4,
+  "hours": 6.419,
+  "gt_path_km": 25.9,
+  "per_group": {
+   "1": 29,
+   "2": 17,
+   "4": 19,
+   "5": 22
+  }
+ },
+ "ronin_train_hours": 11.063751389,
+ "ronin_val_hours": 2.267919445
+}

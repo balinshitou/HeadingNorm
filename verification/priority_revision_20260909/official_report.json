@@ -1,0 +1,23 @@
+{
+  "device": "mps",
+  "sequences": 32,
+  "subjects": 15,
+  "checkpoint": "/Users/macbook/Documents/code-data/ronin_zero_shot_analysis/models/ronin_resnet/checkpoint_gsn_latest.pt",
+  "checkpoint_sha256": "5ae5c9e508f2dc9609c25b59d0e3dfd770ecbcde6920cbc5be3c6d9fed8a6346",
+  "official_source": "/Users/macbook/Documents/code-data/ronin/source/model_resnet1d.py",
+  "source_sha256": "24a4859272d2ee469ecaef192dddcaa287d40392de21f6c55b5b9b71c76d8e57",
+  "script_sha256": "460269d8dcad86e5ec74a23640b343ee7503f7707c141c4271aacd696deb04c5",
+  "summary": {
+    "ate": {
+      "sequence_macro": 5.140423254300067,
+      "subject_macro": 5.3086341834071975,
+      "max_abs_archive_difference": 0.0
+    },
+    "rte": {
+      "sequence_macro": 4.376882117211258,
+      "subject_macro": 4.5911452395398324,
+      "max_abs_archive_difference": 8.881784197001252e-16
+    }
+  },
+  "passed": true
+}

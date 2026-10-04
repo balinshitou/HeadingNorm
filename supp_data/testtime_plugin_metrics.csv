@@ -1,0 +1,6 @@
+﻿Test set,Sequences × seeds,"ATE, official protocol","ATE, unified protocol","RTE, unified protocol",TLR,ε_s median,ε_θ median,Shape error,Complex-gain bound
+RoNIN-seen,32×4,4.758,4.711,3.586,0.936,+0.010,5.0°,3.832,−18.7%
+RoNIN-unseen,32×4,5.085,5.029,4.508,0.882,+0.041,6.1°,4.293,−14.6%
+RIDI,94×4,2.923,2.938,3.451,0.903,+0.109,4.0°,1.701,−42.1%
+TLIO-test,36×4,4.510,3.963,3.367,0.644,+0.057,16.7°,1.779,−55.1%
+Phone-test,36×4,10.117,10.470,9.277,0.840,+0.191,7.8°,5.333,−49.1%
