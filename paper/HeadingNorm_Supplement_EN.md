@@ -153,7 +153,7 @@ Another option is to train an ordinary network with random yaw augmentation and 
 
 ### Comparison with the Official Baseline and Metric Conversion
 
-The official checkpoint is evaluated without HN or GN, using the original network code together with our cached measurements and reconstruction protocol. The 32 RoNIN-unseen sequences are those of the main evaluation set.
+The released RoNIN ResNet is evaluated without HN or GN, using the original network code together with our cached measurements and reconstruction protocol. The 32 RoNIN-unseen sequences are those of the main evaluation set.
 
 Following the official RoNIN implementation, ATE is the square root of the mean squared coordinate residual, and RTE uses the same convention for displacement residuals. The Euclidean root-mean-square error (RMSE) equals the reported value multiplied by $\sqrt{2}$. The same factor applies to standard deviations and paired interval endpoints, so percentage reductions and inferential conclusions are unchanged. Table S5 shows this conversion for ResNet18, and the source data give both conventions for every configuration.
 
@@ -167,7 +167,7 @@ Following the official RoNIN implementation, ATE is the square root of the mean 
 | HN w/o sign | 9.756 | 7.327 | 4.952 | 5.967 |
 | HN | 8.238 | 7.195 | 4.383 | 5.121 |
 
-The official checkpoint and our controlled models have different training histories. The released weights confirm that the evaluation pipeline is compatible, but they do not provide a baseline with a matched training budget. The two setups differ in loss, optimizer, normalization, sampling, validation, and aggregation, so the remaining accuracy gap cannot be attributed to any single factor. Table S6 compares the setups; the published training details are not sufficient to reconstruct the unpublished training manifest of the checkpoint.
+The released RoNIN ResNet and our controlled models have different training histories. The released weights confirm that the evaluation pipeline is compatible, but they do not provide a baseline with a matched training budget. The two setups differ in loss, optimizer, normalization, sampling, validation, and aggregation, so the remaining accuracy gap cannot be attributed to any single factor. Table S6 compares the setups; the published training details are not sufficient to reconstruct the unpublished training manifest of the checkpoint.
 
 **Table S6.** Published RoNIN training setup and our controlled front-end protocol.
 
@@ -198,7 +198,7 @@ The RTE values of these two test groups are not directly comparable because thei
 
 ### Self-Check of the Evaluation Pipeline
 
-We re-evaluated the official RoNIN ResNet weights with our data stream, attitude alignment, velocity integration, and ATE computation. The sequence-weighted ATE on RoNIN-unseen is 5.140 m, matching the 5.14 m of the original paper; on RoNIN-seen, it is 3.711 m, 4.8% above the reported 3.54 m. Each group contains the 32 sequences of the official lists (`list_test_seen.txt`, `list_test_unseen.txt`), and 3 further sequences on disk that are not in these lists are excluded. Both groups use the same pipeline and weights. On RoNIN-unseen, the per-sequence differences from the official code are 0, which supports the compatibility of the pipeline.
+We re-evaluated the released RoNIN ResNet weights with our data stream, attitude alignment, velocity integration, and ATE computation. The sequence-weighted ATE on RoNIN-unseen is 5.140 m, matching the 5.14 m of the original paper; on RoNIN-seen, it is 3.711 m, 4.8% above the reported 3.54 m. Each group contains the 32 sequences of the official lists (`list_test_seen.txt`, `list_test_unseen.txt`), and 3 further sequences on disk that are not in these lists are excluded. Both groups use the same pipeline and weights. On RoNIN-unseen, the per-sequence differences from the official code are 0, which supports the compatibility of the pipeline.
 
 The remaining discrepancy on RoNIN-seen reflects differences between the public data and the data of the original study. The official repository states that “due to security concerns we were unable to publish 50% of our dataset” and notes that the released pretrained models were trained on the full dataset. The original paper used 276 sequences from 100 subjects [2]: 85 subjects were divided among training, validation, and seen-subject testing, and the remaining 15 formed the unseen-subject test set. The public release contains 152 sequences and retains all 15 unseen subjects, whose ATE agrees with the original paper, whereas the public seen-subject sequences cover only part of the original test set. Because the reported 3.54 m includes unpublished sequences, direct comparison with the original paper is limited to RoNIN-unseen.
 
@@ -214,7 +214,7 @@ With only 4 subjects, the IMUNet phone data allow limited subject-level inferenc
 
 ### Absolute Accuracy Compared with the Full Weights Released by the Original Authors
 
-The comparisons above assess relative accuracy under a common protocol. Here, we compare our configurations with the official RoNIN ResNet weights in the same evaluation pipeline. The released weights were trained on the original full training split; the original RoNIN dataset contains 42.7 h, 276 sequences, and 100 subjects [2], of which only part was released publicly. We train on 74 public sequences totaling 11.06 h (Section 4.1 of the main text). All values in this subsection use equal sequence weights, as in the original paper; Table S24 gives the subject-weighted results used elsewhere.
+The comparisons above assess relative accuracy under a common protocol. Here, we compare our configurations with the released RoNIN ResNet weights in the same evaluation pipeline. The released weights were trained on the original full training split; the original RoNIN dataset contains 42.7 h, 276 sequences, and 100 subjects [2], of which only part was released publicly. We train on 74 public sequences totaling 11.06 h (Section 4.1 of the main text). All values in this subsection use equal sequence weights, as in the original paper; Table S24 gives the subject-weighted results used elsewhere.
 
 **Table S7.** Absolute accuracy compared with the RoNIN ResNet weights released by the original authors (RoNIN-unseen, sequence-weighted ATE, m).
 
@@ -288,7 +288,7 @@ $$
 \tag{S2}
 $$
 
-Equation (S2) averages medians computed separately for each seed; pooling all (sequence, seed) pairs would give a different statistic. The source data keep the median and maximum of each seed. Each configuration has 4 checkpoints, each evaluated on 158 sequences × 8 angles, and the complete matrix over all configurations contains 45,504 sequence–angle records.
+Equation (S2) averages medians computed separately for each seed. Table 3 of the main text and Table S11 instead take the median over all (sequence, seed) pairs, so their values differ slightly from those in Table S10. The source data keep the median and maximum of each seed. Each configuration has 4 checkpoints, each evaluated on 158 sequences × 8 angles, and the complete matrix over all configurations contains 45,504 sequence–angle records.
 
 **Table S10.** Mean over seeds of the median cross-angle range (m).
 
@@ -385,7 +385,7 @@ The analysis uses seed-0 checkpoints and 72 fixed windows: 8 equally spaced wind
 | IMUNet / GN + HN | 180 | 72 | 1.41e−07 | 5.80e−07 |
 | IMUNet / GN + HN | 300 | 72 | 1.31e−07 | 7.77e−07 |
 
-Window-level inconsistency does not determine the ranking of trajectory-level repeatability. The window-level maximum of the PCA frame is about three times that of yaw augmentation, yet their trajectory-level cross-angle ranges are similar (0.927 and 0.962 m), because window errors partly cancel during integration.
+Window-level inconsistency does not determine the ranking of trajectory-level repeatability. The window-level maximum of the PCA frame is about three times that of yaw augmentation, yet the ranges of their subject-mean ATE across headings are similar (0.927 and 0.962 m on RoNIN-unseen; Table 3 of the main text), because window errors partly cancel during integration.
 
 Figure S3 shows a complete sequence, the first RoNIN-unseen recording in alphabetical order, so the example was not selected by accuracy. The trajectories use the seed-0 checkpoints and four fixed rotations and are shown without additional yaw alignment or scale fitting.
 
