@@ -1,7 +1,7 @@
 """Regenerate every table of the main text and the Supplementary Materials, and the nine numerical tables distributed with
 them as supp_data/*.csv, from the archived results, and compare each cell with the manuscript.
 
-    python reproduce/make_tables.py                 # Tables 1-9, S1-S31 and supp_data/*.csv
+    python reproduce/make_tables.py                 # Tables 1-9, S1-S28 and supp_data/*.csv
     python reproduce/make_tables.py 3 S16           # selected tables
 
 For each table the generated version is written to reproduce/output/tables/Table_<id>.md and .csv (the CSV files to
@@ -21,7 +21,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import tables_lib as L                     # noqa: E402
 import tables_main                         # noqa: E402,F401  (registers Tables 1-9)
-import tables_supp                         # noqa: E402,F401  (registers Tables S1-S31)
+import tables_supp                         # noqa: E402,F401  (registers Tables S1-S28)
 import tables_suppdata                     # noqa: E402,F401  (registers the nine supp_data/*.csv files)
 from tables_registry import TABLES        # noqa: E402
 

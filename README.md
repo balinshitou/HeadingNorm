@@ -34,16 +34,16 @@ The command runs three steps and takes about 15 s on a laptop CPU:
 | Step | Script | What it does |
 |---|---|---|
 | 1 | `reproduce/verify_manifest.py` | checks that every file listed in `MANIFEST.tsv` is present with its recorded SHA-256 |
-| 2 | `reproduce/make_tables.py` | regenerates Tables 1–9, Tables S1–S31 and the nine `supp_data/*.csv` files and compares them with the manuscript cell by cell |
+| 2 | `reproduce/make_tables.py` | regenerates Tables 1–9, Tables S1–S28 and the nine `supp_data/*.csv` files and compares them with the manuscript cell by cell |
 | 3 | `reproduce/make_figures.py` | redraws Figures 1–7 and S1–S3 and compares them with the published figures |
 
 The report is printed and written to `reproduce/output/REPORT.txt`. With the pinned package versions the expected result is:
 
 ```text
 ## Repository integrity (MANIFEST.tsv) (reproduce/verify_manifest.py): exit 0
-files in manifest: 598; missing: 0; changed: 0
+files in manifest: 594; missing: 0; changed: 0
 ## Tables (reproduce/make_tables.py): exit 0
-TOTAL: 49 tables, 5001 cells compared (5001 identical text, 0 equal at the displayed precision), 0 disagreements, 0 tables failed
+TOTAL: 46 tables, 4773 cells compared (4773 identical text, 0 equal at the displayed precision), 0 disagreements, 0 tables failed
 ## Figures (reproduce/make_figures.py): exit 0
 Figure 1   ok       source data identical; image pixel-identical  (v4fig_problem_overview)
 ...
@@ -55,7 +55,7 @@ The generated tables are in `reproduce/output/tables/` (Markdown and CSV, one fi
 
 ## What is regenerated and how it is compared
 
-**Tables.** `reproduce/tables_main.py` (Tables 1–9), `reproduce/tables_supp.py` (Tables S1–S31) and `reproduce/tables_suppdata.py` (`supp_data/*.csv`) contain one function per table. Row and column labels are written in the code; every number is computed from the archived per-sequence records in `results/` with the statistics of the paper (subject means with equal subject weights, 10,000-sample percentile bootstrap with seed 20260906; the interval levels and decision rules are those stated in the table captions). `reproduce/tables_lib.py` holds the shared loaders and the bootstrap. A generated cell agrees with the manuscript (`paper/*.md`) when its text is identical, or when every number in it agrees at the precision shown in the manuscript; with the pinned versions all 5001 cells are textually identical. Tables S29–S31 list files: their paths are checked to exist, and the SHA-256 prefixes of Table S30 are recomputed.
+**Tables.** `reproduce/tables_main.py` (Tables 1–9), `reproduce/tables_supp.py` (Tables S1–S28) and `reproduce/tables_suppdata.py` (`supp_data/*.csv`) contain one function per table. Row and column labels are written in the code; every number is computed from the archived per-sequence records in `results/` with the statistics of the paper (subject means with equal subject weights, 10,000-sample percentile bootstrap with seed 20260906; the interval levels and decision rules are those stated in the table captions). `reproduce/tables_lib.py` holds the shared loaders and the bootstrap. A generated cell agrees with the manuscript (`paper/*.md`) when its text is identical, or when every number in it agrees at the precision shown in the manuscript; with the pinned versions all 4773 cells are textually identical.
 
 **Figures.** `tools/make_figures_terms_20261001.py` is the script that drew the published figures; `reproduce/make_figures.py` runs it with the output directed to `reproduce/output/figures/`, so the archived figures in `figures/v15/` are never overwritten. Every figure is written together with a `*_source_data.csv` file holding the plotted values. A figure passes when its source data are byte-identical to the archived ones; the PNG is also compared pixel by pixel. Pixel identity requires matplotlib 3.11.0 and the Helvetica Neue font of macOS; on other systems another font is substituted, the images differ slightly in their text and anti-aliasing, and the report says so without counting it as a failure (`HN_STRICT_PIXELS=1` counts it).
 
@@ -69,9 +69,9 @@ The generated tables are in `reproduce/output/tables/` (Markdown and CSV, one fi
 | Figure 6 | `results/unified_eval_20260913/`, `results/confirm_20260913/`, `results/plugin_arch_20260923/` | `tools/make_plugin_provenance_figure_20260925.py` |
 | Figure 7 | `results/fig8_shape_example_20261001/`, `results/figure_inputs_20261004/fig07_tlio_confirm_sequence.npz` | `tools/make_fig8_shape_example_20261001.py` |
 | Figures S1–S3 | `results/unified_eval_20260913/`, `results/e6_sign_ablation/`, `figures/v11/figS03_trajectories_source_data.csv` | `tools/make_v2_figures_20260913.py`, `tools/mst_figures.py`, `tools/make_supp_figures_S1_S3_20260926.py` |
-| Tables 1–9, S1–S31, `supp_data/` | see Supplementary Table S31 | `reproduce/tables_*.py` |
+| Tables 1–9, S1–S28, `supp_data/` | per-sequence records in `results/` (table in “Starting from the raw datasets”) | `reproduce/tables_*.py` |
 
-The figure scripts are called through `tools/make_figures_terms_20261001.py`, which applies the final wording of axis labels and legends and routes inputs and outputs; the plotting code itself is unchanged, so the SHA-256 values in Supplementary Table S30 remain valid.
+The figure scripts are called through `tools/make_figures_terms_20261001.py`, which applies the final wording of axis labels and legends and routes inputs and outputs; the plotting code itself is unchanged.
 
 ## Using HeadingNorm with a trained network
 
@@ -149,8 +149,7 @@ A complete re-run of an experiment overwrites its folder in `results/`; afterwar
 | `figures/v15/` | The published figures with their source data |
 | `paper/` | The manuscript and Supplementary Materials (Markdown) used for the comparison |
 | `supp_data/` | The numerical tables that accompany the Supplementary Materials |
-| `verification/` | Replay and audit records cited in the Supplementary Materials |
-| `docs/` | Decision criteria written before the confirmatory runs (Chinese) |
+| `verification/` | Re-evaluation of the released RoNIN checkpoint (Sections S3–S4) and the trajectories of Figure S3 |
 | `provenance/` | Experiment registry and hashes of the training caches |
 | `MANIFEST.tsv` | Size and SHA-256 of every file |
 
@@ -162,5 +161,5 @@ The repository contains the per-sequence results, decision files and figure sour
 
 - `PATCHES.md` lists the only difference from the authors' working copy: one line of `src/hn_paths.py` that searched a directory of the authors' machine for third-party data.
 - Provenance fields inside some archived result files record paths of the authors' machine at the time of the run; they are kept unchanged because the files are archives.
-- Comments in some scripts and the notes in `docs/` are in Chinese, the working language of the project.
+- Comments in some scripts are in Chinese, the working language of the project.
 - License: to be added by the authors before publication.

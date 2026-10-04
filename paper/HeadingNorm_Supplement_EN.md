@@ -4,9 +4,9 @@
 
 Yanlin Li, Xichen Cui and Yu Quan\*
 
-> This document accompanies the main text. Table S31 lists the source data and scripts for all figures and tables.
+> This document accompanies the main text. The code, data, and scripts that regenerate all figures and tables are available at https://github.com/balinshitou/HeadingNorm.
 > Absolute trajectory error (ATE) and relative trajectory error (RTE) use the per-coordinate root-mean-square error (RMSE) convention of the official RoNIN implementation. Section S3 describes the conversion to Euclidean RMSE.
-> Sections S1–S16 and Tables S1–S31 are numbered independently. For example, Section S8 and Table S8 refer to the eighth supplementary section and table, respectively.
+> Sections S1–S16 and Tables S1–S28 are numbered independently. For example, Section S8 and Table S8 refer to the eighth supplementary section and table, respectively.
 
 ## Contents
 
@@ -25,7 +25,7 @@ Yanlin Li, Xichen Cui and Yu Quan\*
 - S13. Error Composition and Shape Error
 - S14. Complete Comparison of Training-Time Front Ends
 - S15. Inference Time
-- S16. Reproducibility: Audit, Scripts, Result Files, and Sources of Figures and Tables
+- S16. Code and Data
 
 ---
 
@@ -35,29 +35,15 @@ The task uses six inertial measurement unit (IMU) input channels and two velocit
 
 RoNIN preprocessing transforms the coordinates with the game rotation vector, initial attitude, and calibration information of the dataset; RIDI uses its supplied rotation vector, and TLIO uses the visual–inertial odometry (VIO) attitude. Preprocessing of the IMUNet phone data is described at the end of this section. All inputs are gravity-aligned before HeadingNorm (HN) is applied; we rely on the supplied attitudes and do not implement an upstream attitude estimator.
 
-GlobalNorm (GN) uses fixed mean and scale vectors computed from the training split. In channel order, these are
-
-$$
-\mu=(0,0,-0.001234531,0,0,9.811804903),
-\tag{S1}
-$$
-
-$$
-s=(0.863238665,0.863238665,1.040780454,2.245341500,2.245341500,2.790995418).
-\tag{S2}
-$$
-
-HN and the principal component analysis (PCA) frame apply these constants after the coordinate transformation. The constants stay fixed on test data, and GN does not normalize individual windows. On non-degenerate windows, any fixed deterministic normalization keeps the canonical input independent of $\psi$, so normalization need not commute with rotations in the original frame. Sharing one scale between the horizontal axes is an implementation choice.
+GlobalNorm (GN) normalizes each input channel with fixed constants computed from the training split.
 
 Training uses uniform window sampling and four seeds, with 20,000 steps per main run. Augmentation draws from an independent NumPy random stream initialized with `SeedSequence([seed, 20260906])`. Validation uses 40 batches of 256 windows, with sampling seed 123 and no augmentation. The loader reconstructs the targets from cached float32 positions as $y_j=(p_{j+200}-p_j)/(t_{j+200}-t_j)$ for input samples $j$ through $j+199$. The cached `targ` array was computed from higher-precision positions and is not read directly, because using it would slightly change the training setup. Training runs on finite-precision Metal Performance Shaders (MPS), and unsupported deterministic operators produce warnings, so identical seeds do not guarantee identical results after retraining.
-
-The Transformer has 4 encoder layers, a hidden dimension of 256, 8 attention heads per layer, and a feed-forward dimension of 1,024. Each input patch contains 8 samples; regression uses a classification token, and dropout is 0.1. ResNet18 has 4,634,882 learnable parameters, the Transformer has 3,238,658, and IMUNet has 3,661,618. HN adds no learnable parameters to any of these backbones.
 
 Let $Q_j$ be the set of sequences of subject $j$. For seed $s$, the main statistic is
 
 $$
 M_s=\frac{1}{J}\sum_{j=1}^{J}\frac{1}{|Q_j|}\sum_{q\in Q_j}E_{q,s}.
-\tag{S3}
+\tag{S1}
 $$
 
 The main text reports the four-seed mean of $M_s$ and its sample standard deviation. Paired differences are first averaged over sequences and seeds within each subject, and subjects are then bootstrapped 10,000 times (NumPy seed 20260906) without resampling training runs. Subject labels come from sequence-name prefixes; the training, validation, and unseen groups share no subjects.
@@ -80,7 +66,7 @@ Table S1 gives descriptive results for sequence-weighted absolute trajectory err
 
 ### Definition and Archived Constants of GlobalNorm
 
-GlobalNorm brings the six IMU channels to a common numerical range while preserving the horizontal rotation structure and the relative amplitudes of windows. The statistics are estimated from the current training subset only, excluding validation, test, and TLIO data, and training and inference use the same fixed constants, without per-window or per-batch normalization. For channel order $(\omega_x,\omega_y,\omega_z,a_x,a_y,a_z)$, the mean and scale vectors are
+GN brings the six IMU channels to a common numerical range while preserving the horizontal rotation structure and the relative amplitudes of windows. Its statistics are estimated from the training split only, excluding validation, test, and TLIO data, and training and inference use the same fixed constants, without per-window or per-batch normalization. Per-sample normalization would change the relative scale between windows and can remove amplitude information that matters for absolute velocity regression [17]. For channel order $(\omega_x,\omega_y,\omega_z,a_x,a_y,a_z)$, the mean and scale vectors are
 
 $$
 \boldsymbol\mu=(0,0,\mu_{\omega z},0,0,\mu_{az}),\qquad
@@ -89,7 +75,7 @@ $$
 
 The vertical channels use the sample mean and standard deviation. The horizontal axes use zero mean and a shared root-mean-square (RMS) scale, for example, $s_{axy}=\sqrt{\frac{1}{2N}\sum_{n}\big[(a_x^{(n)})^2+(a_y^{(n)})^2\big]}$. Because the scale is shared, any horizontal rotation $\mathbf R(\psi)$ satisfies $\mathcal G(\mathcal R_\psi X)=\mathcal R_\psi\mathcal G(X)$; different horizontal scales would generally break this commutation.
 
-This property of GlobalNorm alone does not make the complete network yaw-equivariant, nor is it needed for that purpose. GN acts after the rotation of HN, within the canonical frame. Under the conditions of Section 3.3 of the main text, the exact equivariance of the complete front end does not require this commutation. Velocity labels are not normalized; the model outputs two-dimensional velocity directly in m/s. Table S2 lists the constants of Equations (S1) and (S2), with angular velocity in rad/s and acceleration in m/s².
+This property of GlobalNorm alone does not make the complete network yaw-equivariant, nor is it needed for that purpose. HN and the principal component analysis (PCA) frame apply GN after their rotation, within the canonical frame. On non-degenerate windows, any fixed deterministic normalization keeps the canonical input independent of $\psi$ (Section 3.3 of the main text), so the exact equivariance of the complete front end does not require this commutation, and sharing one horizontal scale is an implementation choice. Velocity labels are not normalized; the model outputs two-dimensional velocity directly in m/s. Table S2 lists the constants, with angular velocity in rad/s and acceleration in m/s².
 
 **Table S2.** Archived GlobalNorm constants of the training set.
 
@@ -99,7 +85,7 @@ This property of GlobalNorm alone does not make the complete network yaw-equivar
 
 ### Front Ends and Backbones
 
-GN constants are computed from the training files only and kept fixed at inference. The horizontal axes are zero-centered with a shared scale, and the vertical channels use the training mean and standard deviation. Per-sample normalization changes the relative scale between windows and can remove amplitude information that matters for absolute velocity regression [17]. We therefore use fixed training-set constants, with the same GN in all five training-time front ends.
+All five training-time front ends use the same GN.
 
 - **GN only** leaves the horizontal reference heading unchanged.
 - **GN + YawAug** applies random yaw augmentation during training, with an angle drawn uniformly from $[-\pi,\pi)$; both horizontal IMU vector groups and the two-dimensional velocity label are rotated together. An independent random stream keeps training-window sampling identical across configurations with the same seed. No augmentation is applied during validation or testing.
@@ -130,11 +116,11 @@ The front end handles the reference heading, and the backbone maps each window t
 
 **IMUNet backbone.** The implementation follows the original paper [39]. A 7-point convolutional stem is followed by depthwise separable and pointwise residual units, whose channel dimension increases to 1024 before a projection to 400. The flattened 1200-dimensional encoding is fused with the original 1200-dimensional window through a learnable affine correction, and the final head predicts two-dimensional velocity. The network has 3,661,618 trainable parameters.
 
-All three backbones share the training data, window length, batch size, number of updates, and random seeds. In the tables, `ResNet18` and `IMUNet` denote networks trained from scratch in this study; the names refer to architectures, not to weights released by the original authors.
+All three backbones share the training data, window length, batch size, number of updates, and random seeds. HN adds no learnable parameters to any of them. In the tables, `ResNet18` and `IMUNet` denote networks trained from scratch in this study; the names refer to architectures, not to weights released by the original authors.
 
 ### Preprocessing of the IMUNet Phone Data
 
-The IMUNet authors provided sequences recorded indoors and outdoors with several phones. We use their test split (`list_test.txt`, 36 sequences) and their training split (90 sequences), of which 87 remain for confirmation after 3 sequences with non-increasing timestamps are excluded. Both splits are converted to this project's cache format in the same way by `tools/build_imunet_cache_20260913.py`:
+The IMUNet authors provided sequences recorded indoors and outdoors with several phones. We use their test split (`list_test.txt`, 36 sequences) and their training split (90 sequences), of which 87 remain for confirmation after 3 sequences with non-increasing timestamps are excluded. Both splits are preprocessed in the same way:
 
 1. **Accelerometer and gyroscope inputs.** Both channel groups are transformed into a world frame with the Android game rotation vector (GAME_ROTATION_VECTOR), which uses only accelerometer and gyroscope readings. Its vertical axis points up, and its horizontal orientation is arbitrary. Magnetometer readings and other sensors are not used as input.
 2. **ARCore pose not used for the inputs.** ARCore provides the camera pose, whose axes differ from the IMU axes by a fixed rotation; using this pose directly would rotate gravity into the horizontal plane.
@@ -167,7 +153,7 @@ Another option is to train an ordinary network with random yaw augmentation and 
 
 ### Comparison with the Official Baseline and Metric Conversion
 
-The official checkpoint is evaluated without HN or GN. Its SHA-256 hash begins with the 16 hexadecimal digits `5ae5c9e508f2dc96`, and the full digest is given in the replay report. All 32 RoNIN-unseen sequence identifiers match the main evaluation set. The original network code loads every checkpoint tensor strictly, and the replay uses our current cached measurements and reconstruction protocol.
+The official checkpoint is evaluated without HN or GN, using the original network code together with our cached measurements and reconstruction protocol. The 32 RoNIN-unseen sequences are those of the main evaluation set.
 
 Following the official RoNIN implementation, ATE is the square root of the mean squared coordinate residual, and RTE uses the same convention for displacement residuals. The Euclidean root-mean-square error (RMSE) equals the reported value multiplied by $\sqrt{2}$. The same factor applies to standard deviations and paired interval endpoints, so percentage reductions and inferential conclusions are unchanged. Table S5 shows this conversion for ResNet18, and the source data give both conventions for every configuration.
 
@@ -195,7 +181,7 @@ The official checkpoint and our controlled models have different training histor
 | Budget | Epoch-based, typically about 100 epochs | 20,000 updates |
 | Batch size | 128 | 256 |
 | Window sampling | Shuffled strided windows with random shifts | Random windows matched across the 4 seeds |
-| Fixed input normalization | No GN in the replay | Same GN constants for all configurations |
+| Fixed input normalization | No GN | Same GN constants for all configurations |
 | Yaw augmentation | Used in the original training | Only as the yaw baseline |
 | Main reporting | Published sequence aggregates | Subject-mean metrics and seed dispersion |
 | Role of RIDI | Separate published benchmark protocol | Transfer from RoNIN without fine-tuning |
@@ -204,19 +190,17 @@ The official checkpoint and our controlled models have different training histor
 
 The official protocol (Section 4.4 of the main text) only translates RoNIN trajectories, whereas it registers RIDI trajectories rigidly over the first 10 s. These choices reflect the input frames of the two datasets. The reference heading of RoNIN is anchored to the Tango ground truth. For ResNet18 + GN + HN, we measure the global rotation $\theta_0$ of the predicted trajectory relative to the ground truth, i.e., the optimal rotation about the start point fitted over the whole trajectory. On RoNIN, its median magnitude is 5.9°, and its mean resultant length is $\bar R=0.988$. RIDI uses the device's own attitude instead, and there the median magnitude of $\theta_0$ is 76.9° ($\bar R=0.166$), with 44.1% of the (seed, sequence) pairs rotated by more than 90°.
 
-The other 5 configurations are ResNet18 with GN only, YawAug, or the PCA frame, and the HN versions of the Transformer and IMUNet. They show the same pattern, with median $|\theta_0|$ of 5.46°–6.38° on RoNIN and 76.64°–83.32° on RIDI. These results support keeping the supplied RoNIN heading and estimating the initial rotation for RIDI under the official protocol. The statistics are recomputed from `theta_opt` at $\psi=0$ in `results/e1b_yaw_aligned/`, pooling the four seeds.
+The other 5 configurations are ResNet18 with GN only, YawAug, or the PCA frame, and the HN versions of the Transformer and IMUNet. They show the same pattern, with median $|\theta_0|$ of 5.46°–6.38° on RoNIN and 76.64°–83.32° on RIDI. These results support keeping the supplied RoNIN heading and estimating the initial rotation for RIDI under the official protocol. The statistics pool the four seeds at $\psi=0$.
 
 ### RTE Scale in the Two Datasets
 
-The RTE values of these two test groups are not directly comparable because their sequence durations differ. RoNIN-unseen sequences last 342–904 s (median 604 s), so the 60 s interval covers about 10% of a recording; RIDI sequences last 44–202 s (median 105 s), so 60 s covers 57% of a typical recording. For the 9 sequences shorter than 60 s, the frozen evaluation code extrapolates RTE in proportion to duration. Comparisons between front ends within RIDI remain valid, but RTE has a different temporal scale in the two datasets.
+The RTE values of these two test groups are not directly comparable because their sequence durations differ. RoNIN-unseen sequences last 342–904 s (median 604 s), so the 60 s interval covers about 10% of a recording; RIDI sequences last 44–202 s (median 105 s), so 60 s covers 57% of a typical recording. For the 9 sequences shorter than 60 s, RTE is extrapolated in proportion to duration. Comparisons between front ends within RIDI remain valid, but RTE has a different temporal scale in the two datasets.
 
 ### Self-Check of the Evaluation Pipeline
 
 We re-evaluated the official RoNIN ResNet weights with our data stream, attitude alignment, velocity integration, and ATE computation. The sequence-weighted ATE on RoNIN-unseen is 5.140 m, matching the 5.14 m of the original paper; on RoNIN-seen, it is 3.711 m, 4.8% above the reported 3.54 m. Each group contains the 32 sequences of the official lists (`list_test_seen.txt`, `list_test_unseen.txt`), and 3 further sequences on disk that are not in these lists are excluded. Both groups use the same pipeline and weights. On RoNIN-unseen, the per-sequence differences from the official code are 0, which supports the compatibility of the pipeline.
 
 The remaining discrepancy on RoNIN-seen reflects differences between the public data and the data of the original study. The official repository states that “due to security concerns we were unable to publish 50% of our dataset” and notes that the released pretrained models were trained on the full dataset. The original paper used 276 sequences from 100 subjects [2]: 85 subjects were divided among training, validation, and seen-subject testing, and the remaining 15 formed the unseen-subject test set. The public release contains 152 sequences and retains all 15 unseen subjects, whose ATE agrees with the original paper, whereas the public seen-subject sequences cover only part of the original test set. Because the reported 3.54 m includes unpublished sequences, direct comparison with the original paper is limited to RoNIN-unseen.
-
-RoNIN-unseen values are recomputed from `verification/priority_revision_20260909/official_replay.csv`, and RoNIN-seen values are the official-protocol ATE in `results/unified_eval_20260913/ext_resnet.json`.
 
 ### Resolution with Four Subjects
 
@@ -245,8 +229,6 @@ The comparisons above assess relative accuracy under a common protocol. Here, we
 | ResNet18 + GN | 11.06 h | 7.953±0.248 | +54.7% |
 
 With 11.06 h of public training data and 20,000 updates, the three HN + GN backbones have sequence-weighted ATE 7.0–8.7% above that of the released model (Table S7). The Transformer has the smallest gap. With the same data and backbone, most of this gap is closed by handling the reference heading. ResNet18 with GN only is 2.812 m behind the released model; adding HN reduces the difference to 0.448 m, closing 84.1% of the gap, whereas random yaw augmentation closes 69.0%. With a common front end, the three backbones differ by 1.9% on this test group (Section S14). Training with yaw augmentation and then applying plug-in HN gives a sequence-weighted ATE of 5.085±0.134 m, 1.1% below the released model. Table S14 reports the other test sets, and Section 5.4.2 of the main text reports the confirmatory tests.
-
-Values are recomputed from the sequence-weighted summaries in `results/sensors_v4/analysis.json` and from `verification/priority_revision_20260909/official_replay.csv`. The plug-in row uses official-protocol ATE from `results/unified_eval_20260913/ours_yaw_hn_s{0–3}.json`.
 
 ### Unified Evaluation across Datasets and on Real Phones
 
@@ -303,10 +285,10 @@ For each sequence and seed, let $r_{q,s}$ be the range of ATE across the 8 angle
 
 $$
 \bar r=\frac{1}{4}\sum_{s=0}^{3}\operatorname{median}_{q}(r_{q,s}).
-\tag{S4}
+\tag{S2}
 $$
 
-Equation (S4) averages medians computed separately for each seed; pooling all (sequence, seed) pairs would give a different statistic. The source data keep the median and maximum of each seed. Each configuration has 4 checkpoints, each evaluated on 158 sequences × 8 angles, and the complete matrix over all configurations contains 45,504 sequence–angle records.
+Equation (S2) averages medians computed separately for each seed; pooling all (sequence, seed) pairs would give a different statistic. The source data keep the median and maximum of each seed. Each configuration has 4 checkpoints, each evaluated on 158 sequences × 8 angles, and the complete matrix over all configurations contains 45,504 sequence–angle records.
 
 **Table S10.** Mean over seeds of the median cross-angle range (m).
 
@@ -328,7 +310,7 @@ The small HN values in Table S10 reflect finite-precision inference and trajecto
 
 Under the official protocol, RoNIN trajectories are aligned by translation alone, without estimating a rotation. We tested whether rotational alignment would remove the cross-angle variation of Table 3 of the main text. To this end, we recomputed Table 3 after aligning the start points and applying the closed-form optimal rotation about the start point. The rotation was computed from the entire trajectory, without scaling or reflection.
 
-The criterion was prespecified in `config/e1b_yaw_aligned.md`: the main-text conclusion would be retained if the median relative cross-angle range of GN + YawAug on RoNIN-unseen stayed at or above 10% after rotational alignment. We checked the $\psi=0$ column entry by entry against the frozen results; the largest absolute difference over 1264 rows was 0.
+The criterion was set before the analysis: the conclusion of Table 3 of the main text would be retained if the median relative cross-angle range of GN + YawAug on RoNIN-unseen stayed at or above 10% after rotational alignment.
 
 **Table S11.** Median per-sequence cross-angle range under two alignment protocols (% of the ATE at $\psi=0$ in parentheses).
 
@@ -372,7 +354,7 @@ With sign disambiguation, there were no failures, whereas the unsigned construct
 
 Before integration, the direct velocity analysis compares predictions under the required coordinate transformation through the inconsistency $\|F(R_\psi X)-R_\psi F(X)\|_2$. This quantity measures the response to a coordinate rotation and needs no ground-truth velocity, so it differs from the prediction error with respect to the motion reference.
 
-The analysis uses seed-0 checkpoints and 72 fixed windows: 8 equally spaced windows from each of 9 recordings, 3 each from RoNIN-unseen, RoNIN-seen, and RIDI. For each angle, Table S13 gives the mean and maximum over all 72 windows for the 6 seed-0 checkpoints discussed in Section 5.2 of the main text and Section S14. These pooled values do not estimate subject-mean accuracy, and the source records keep the position of each window. A CPU replay reproduced all 32 summary values of the four ResNet18 front ends exactly.
+The analysis uses seed-0 checkpoints and 72 fixed windows: 8 equally spaced windows from each of 9 recordings, 3 each from RoNIN-unseen, RoNIN-seen, and RIDI. For each angle, Table S13 gives the mean and maximum over all 72 windows for the 6 seed-0 checkpoints discussed in Section 5.2 of the main text and Section S14. These pooled values do not estimate subject-mean accuracy.
 
 **Table S13.** Direct velocity inconsistency under coordinate rotation (m/s; seed-0 checkpoints, 72 windows).
 
@@ -403,9 +385,9 @@ The analysis uses seed-0 checkpoints and 72 fixed windows: 8 equally spaced wind
 | IMUNet / GN + HN | 180 | 72 | 1.41e−07 | 5.80e−07 |
 | IMUNet / GN + HN | 300 | 72 | 1.31e−07 | 7.77e−07 |
 
-Figure S3 illustrates a complete sequence, the first RoNIN-unseen recording in alphabetical order. Seed 0 and 4 fixed rotations were specified before the replay, and all 24 replayed accuracy values matched the archived values exactly. The full trajectory is shown without additional yaw alignment or scale fitting.
+Window-level inconsistency does not determine the ranking of trajectory-level repeatability. The window-level maximum of the PCA frame is about three times that of yaw augmentation, yet their trajectory-level cross-angle ranges are similar (0.927 and 0.962 m), because window errors partly cancel during integration.
 
-The replay script is `tools/replay_mst_illustration_20260909.py`, and its output is in `verification/mst_revision_20260909/illustration/`. The plotting script reads these coordinates; the sequence was selected independently of accuracy.
+Figure S3 shows a complete sequence, the first RoNIN-unseen recording in alphabetical order, so the example was not selected by accuracy. The trajectories use the seed-0 checkpoints and four fixed rotations and are shown without additional yaw alignment or scale fitting.
 
 ![Complete trajectories under four initial reference headings](../figures/v15/figS03_trajectories.png)
 
@@ -417,7 +399,7 @@ The replay script is `tools/replay_mst_illustration_20260909.py`, and its output
 
 We compare the two test-time methods of Section 3.4 of the main text with the unmodified ResNet18-YawAug on the same 4 frozen seeds, without retraining or changing any weights. All results on the five test sets are descriptive (Tables S14 and S15); Section 5.4.2 of the main text reports the confirmatory tests.
 
-Before evaluation, we reproduced the existing official-protocol values on RoNIN-unseen, with differences of at most $5\times10^{-5}$ m for all 4 seeds. The phone data include only 4 subjects, so both the subject and the sequence interval must exclude 0. Tables S14 and S15 use 10,000 subject-level cluster bootstrap resamples for CI-B, resampling by sequence for TLIO; sequence-level intervals are also given.
+The phone data include only 4 subjects, so both the subject and the sequence interval must exclude 0. Tables S14 and S15 use 10,000 subject-level cluster bootstrap resamples for CI-B, resampling by sequence for TLIO; sequence-level intervals are also given.
 
 **Table S14.** Plug-in HN for ResNet18-YawAug on the test sets (unified-protocol ATE, subject-mean, m; bold: CI excludes 0).
 
@@ -450,17 +432,15 @@ As a descriptive result, yaw-augmented training followed by two-way frame averag
 
 The complete paired comparisons of plug-in HN and two-way frame averaging (unified-protocol ATE and RTE, official-protocol ATE, unified evaluation metrics, and heading repeatability) are given in `supp_data/testtime_plugin_paired.csv`, `testtime_plugin_metrics.csv`, `testtime_fa2_paired.csv`, `testtime_fa2_repeatability.csv`, and `testtime_fa2_metrics.csv`.
 
-In the implementation, two-way frame averaging makes one forward pass for each principal-axis direction $\{\phi_0,\phi_0+\pi\}$, rotates the results back to the original frame, and averages them before integration. Each branch uses the same rotation implementation as plug-in HN.
-
 ---
 
 ## S9. Extension of Plug-in HN to Transformer-YawAug and IMUNet-YawAug
 
-The decision criteria were specified before the new inference runs (`docs/91`), and the results and decisions are recorded in `docs/92`. The inference script is `tools/plugin_arch_eval_20260923.py`, and the decision script `tools/plugin_arch_verdict_20260923.py` was run only once. We evaluated Transformer-YawAug and IMUNet-YawAug, trained in this study under the same setup with 4 seeds each; inference and metric computation followed the unified protocol.
+We evaluated Transformer-YawAug and IMUNet-YawAug, trained in this study under the same setup with 4 seeds each; inference and metric computation followed the unified protocol. The decision criteria were set before these inference runs.
 
 The main test family compared unified-protocol ATE with and without plug-in HN for both networks on TLIO-confirm (318 sequences), with Bonferroni correction over 2 tests and 97.5% sequence intervals. Both comparisons showed significant reductions, supporting the hypothesis.
 
-Before the decision, we checked the official-protocol ATE of the unmodified networks on RoNIN-unseen against the preliminary plug-in experiment of 12 September 2026; the summary values agreed exactly (difference 0). That preliminary experiment had already evaluated plug-in HN for both networks on RoNIN-seen, RoNIN-unseen, RIDI, and TLIO-test under the official protocol. The results on these four datasets are therefore descriptive. In Table S16, the first two rows form the main test family, with 97.5% sequence intervals; all other rows are descriptive results with 95% intervals.
+Plug-in HN had already been evaluated for both networks on RoNIN-seen, RoNIN-unseen, RIDI, and TLIO-test in an earlier experiment, so the results on these four datasets are descriptive. In Table S16, the first two rows form the main test family, with 97.5% sequence intervals; all other rows are descriptive results with 95% intervals.
 
 **Table S16.** Differences with and without plug-in HN for Transformer-YawAug and IMUNet-YawAug (plug-in HN − unmodified, m).
 
@@ -503,9 +483,9 @@ Error decreased after HN was added in all 26 descriptive comparisons. TLIO has n
 
 Table 7 of the main text compares plug-in HN with the canonical-frame convention $\alpha=0$ against the unmodified network at the reference heading $\psi=0$, and both conventions are arbitrary. The input reference heading $\psi$ depends on the device orientation when recording begins. The angle $\alpha$ offsets the canonical heading of HN uniformly ($\phi\to\phi-\alpha$), which preserves exact yaw equivariance under the conditions of Proposition 1. We test whether the plug-in gains persist when both methods are averaged over 8 equally spaced angles.
 
-The decision rule was specified in `results/angle_fair_20260926/PLAN_运行前判定标准.md` before the analysis script was run. For the released RoNIN ResNet, the primary metric is the mean ATE of plug-in HN over 8 values of $\alpha$ minus the mean ATE of the unmodified network over 8 values of $\psi$. The main test sets are RoNIN-unseen, RIDI, and TLIO-test; RoNIN-seen contains training subjects of the original authors and is descriptive only. We applied Bonferroni correction over 3 tests with 98.33% subject-level cluster intervals, using sequence intervals for TLIO. The hypothesis is supported if at least 2 of the 3 differences are significantly negative and none is significantly positive. This is a supplementary test as defined in Section 4.5 of the main text.
+The decision rule was set before the analysis. For the released RoNIN ResNet, the primary metric is the mean ATE of plug-in HN over 8 values of $\alpha$ minus the mean ATE of the unmodified network over 8 values of $\psi$. The main test sets are RoNIN-unseen, RIDI, and TLIO-test; RoNIN-seen contains training subjects of the original authors and is descriptive only. We applied Bonferroni correction over 3 tests with 98.33% subject-level cluster intervals, using sequence intervals for TLIO. The hypothesis is supported if at least 2 of the 3 differences are significantly negative and none is significantly positive. This is a supplementary test as defined in Section 4.5 of the main text.
 
-We re-analyzed existing per-sequence records without running any model, using `orig_ate_by_psi` and `hn_ate_by_alpha` in `results/hn_plugin_p0_20260912/ext_resnet.json` together with `results/e1_heading_repeatability/` and `results/unified_eval_20260913/ours_yaw_hn_s*.json`. All values use the official protocol and therefore differ from Table 7 of the main text, which uses the unified protocol.
+The analysis reuses existing per-sequence results and runs no model. All values use the official protocol and therefore differ from Table 7 of the main text, which uses the unified protocol.
 
 Table S17 gives relative differences with respect to the mean of the subtracted quantity, with 98.33% intervals for the main test sets and 95% intervals otherwise. For the released RoNIN ResNet, "Seqs improved" counts the sequences that improve when both methods are averaged over angles. For ResNet18-YawAug, it compares plug-in HN at $\alpha=0$ with the mean of the unmodified network over 8 values of $\psi$. The ResNet18-YawAug results are averaged per sequence over 4 seeds and include a $\psi$ sweep but no $\alpha$ sweep; their $\alpha=0$ row uses official-protocol ATE from the unified evaluation files.
 
@@ -527,13 +507,13 @@ Plug-in HN significantly reduced ATE on all three main test sets (3/3), with no 
 
 ## S11. Complete Results of the Confirmatory Tests
 
-The criteria for the main test family were fixed before the confirmation sets were first evaluated (`docs/53`); the results and decisions are recorded in `docs/54`, and `tools/confirm_verdict_20260913.py` was run only once.
+The criteria for the main test family were fixed before the confirmation sets were first evaluated.
 
 The confirmation data are two batches that had not been evaluated before. TLIO-confirm combines the TLIO training and validation splits (318 sequences); because subject information is unavailable, statistics are computed per sequence. Phone-confirm contains 87 sequences from the 4 subjects of the IMUNet phone training split; 3 further sequences were excluded under the prespecified loading rule because their timestamps were not increasing. None of the networks was trained on either batch.
 
 The main family contains 8 tests (4 hypotheses × 2 datasets) with Bonferroni-corrected 99.375% intervals. For the phone data, both the subject and the sequence interval must meet the decision criterion. H2 tests non-inferiority with a margin of +2% of the control mean.
 
-The phone data contain only 4 subjects. For $n=4$, the 99.375% subject interval of the theoretical bootstrap distribution spans the smallest and largest subject differences (Section 4.5 of the main text). A subject interval below 0 therefore corresponds to improvement in all 4 subjects. In Table S18, “Supported” for the phone data means that the prespecified rule was met; in these comparisons all 4/4 subjects improved (two-sided sign test $p=0.125$). This is a check of effect direction, not confirmation at the subject level. Non-inferiority was not demonstrated for the released RoNIN ResNet on Phone-confirm.
+For the phone data, a subject interval below 0 corresponds to improvement in all 4 subjects (Section S3), so “Supported” there checks the direction of the effect rather than confirming it at the subject level. Non-inferiority was not demonstrated for the released RoNIN ResNet on Phone-confirm.
 
 **Table S18.** Main test family of the confirmatory tests (unified-protocol ATE, m; treatment − control).
 
@@ -616,15 +596,15 @@ Training-time HN has 3.5% and 5.9% lower ATE than yaw augmentation on the two co
 
 Section S10 applies eight-angle averaging to the released RoNIN ResNet on the test sets. Here, the analysis is extended to all plug-in networks and to both confirmation sets, TLIO-confirm (318 sequences) and Phone-confirm (87 sequences).
 
-The decision rules were fixed before the inference script was first run (`docs/100_确认集8角公平对照_运行前判定标准_20260927.md`). The main family keeps the 4 hypotheses × 2 datasets and the Bonferroni-corrected 99.375% intervals of the main text; only the metric changes to the eight-angle average. TLIO uses sequence intervals, and for the phone data both the subject and the sequence interval must meet the criterion. The two cross-architecture tests keep their 97.5% intervals.
+The decision rules were fixed before the inference was run. The main family keeps the 4 hypotheses × 2 datasets and the Bonferroni-corrected 99.375% intervals of the main text; only the metric changes to the eight-angle average. TLIO uses sequence intervals, and for the phone data both the subject and the sequence interval must meet the criterion. The two cross-architecture tests keep their 97.5% intervals.
 
 Here, $U(\psi)$ denotes inference with the unmodified network after its horizontal input channels have been rotated by $\psi$, with the output rotated back to the original frame. $T(\alpha)$ denotes plug-in HN or FA-2. For plug-in HN, the canonical heading is offset by $\alpha$, giving $\phi\to\phi-\alpha$. FA-2 averages the velocities obtained under the canonical-frame conventions $\alpha$ and $\alpha+\pi$, so its results are periodic in $\alpha$ with period $\pi$ and 4 values suffice. The angle-averaged ATE values are denoted by $\bar U$ and $\bar T$. For networks trained in this study, the 4 seeds are first averaged within each sequence.
 
-This analysis was added after the fixed-convention tests and uses the same sequences, so it is a supplementary test in the sense of Section 4.5 of the main text. Before specifying it, the authors had seen an eight-angle trial of ResNet18-YawAug (seed 0) on the first 60 TLIO-confirm sequences.
+This analysis was added after the fixed-convention tests and uses the same sequences, so it is a supplementary test in the sense of Section 4.5 of the main text.
 
-As a consistency check, $U(0)$ and $T(0)$ reproduce the original confirmation results sequence by sequence, with a largest difference of $2.7\times10^{-7}$ m. The “Fixed” differences also match, item by item, the fixed-convention results in Tables S18 and S16 and the training-time front-end result in Section 5.3 of the main text.
+$U(0)$ and $T(0)$ reproduce the fixed-convention results of Tables S18 and S16 sequence by sequence, with a largest difference of $2.7\times10^{-7}$ m.
 
-Inference uses `tools/confirm_anglefair_eval_20260927.py`, the decisions use `tools/confirm_anglefair_verdict_20260927.py`, and the table is generated from `results/confirm_anglefair_20260927/verdict.json` by `tools/build_anglefair_tables_20260927.py`. Table S21 contains 95% descriptive intervals that were not used for the decisions. The confirmatory decisions are reported in Tables S18 and S16 and in Section 5.3 of the main text for the training-time front end, and the eight-angle-average tests in Table 8 of the main text. Each difference is followed by its value relative to the control mean; for TLIO, only sequence intervals are listed.
+Table S21 contains 95% descriptive intervals that were not used for the decisions. The confirmatory decisions are reported in Tables S18 and S16 and in Section 5.3 of the main text for the training-time front end, and the eight-angle-average tests in Table 8 of the main text. Each difference is followed by its value relative to the control mean; for TLIO, only sequence intervals are listed.
 
 **Table S21.** Eight-angle-average comparisons on the confirmation sets (unified-protocol ATE, m; 95% CI).
 
@@ -758,7 +738,7 @@ The advantage of HN over yaw augmentation in Table S9 also appears in shape erro
 
 ### Shape Error with and without Plug-in HN
 
-The decision criteria were fixed before the statistical analysis (`docs/89`), and the results and decisions are recorded in `docs/90`. The script `tools/shape_verdict_20260923.py` reads only existing results and was run once. Because these data had already been evaluated for ATE, this test is supplementary in the sense of Section 4.5 of the main text.
+The decision criteria were fixed before the analysis, which reuses existing evaluation results. Because these data had already been evaluated for ATE, this test is supplementary in the sense of Section 4.5 of the main text.
 
 Shape error is the unified-protocol ATE that remains after the optimal global scale and rotation about the start point have been fitted with the ground truth. The main family contains 2 comparisons × 4 datasets with Bonferroni-corrected 99.375% intervals. RIDI uses subject-level cluster intervals; both TLIO batches and Phone-test use sequence intervals, because the phone subject interval degenerates at $n=4$ (Section 4.5 of the main text). A comparison is supported if the error decreases significantly on at least 2 datasets and increases significantly on none. Both comparisons, for ResNet18-YawAug and for the released RoNIN ResNet, meet this rule.
 
@@ -779,7 +759,7 @@ Further descriptive comparisons use 95% intervals and were not used for the deci
 
 ### Plug-in Gain and the Heading Sensitivity of the Unmodified Network
 
-The decision criteria were fixed before computation (`docs/114`), and the results and decisions are recorded in `docs/115`. The script `tools/mechanism_doseresponse_20261001.py` reads only the per-sequence, per-angle results behind Table 8 of the main text (`results/confirm_anglefair_20260927/`); it was run once, and its results are saved in `results/mechanism_doseresponse_20261001/verdict.json`. Because this analysis defines a new statistic on confirmation data already used for Table 8, it is supplementary in the sense of Section 4.5 of the main text.
+The decision criteria were fixed before computation. The analysis uses only the per-sequence, per-angle results behind Table 8 of the main text; because it defines a new statistic on confirmation data already used for Table 8, it is supplementary in the sense of Section 4.5 of the main text.
 
 Let $U_k$ denote the shape error of the unmodified network at the input heading $\psi_k=45^\circ k$, and $H_k$ the shape error of plug-in HN at the canonical-frame convention $\alpha_k$. We divide the 8 headings into two groups, $\mathcal A=\{0^\circ,90^\circ,180^\circ,270^\circ\}$ and $\mathcal B=\{45^\circ,135^\circ,225^\circ,315^\circ\}$, and define heading sensitivity as $S_{\mathcal A}=(\max_{\mathcal A}U_k-\min_{\mathcal A}U_k)/\overline{U}_{\mathcal A}$ and plug-in gain as $G_{\mathcal B}=(\overline{U}_{\mathcal B}-\overline{H})/\overline{U}_{\mathcal B}$, where $\overline H$ is the mean over the 8 values of $\alpha$.
 
@@ -796,12 +776,6 @@ In descriptive analyses not used for the decisions, $\rho$ is 0.369–0.609 on T
 ---
 
 ## S14. Complete Comparison of Training-Time Front Ends
-
-### Window-Level Rotation Consistency
-
-The rotation consistency check uses 72 fixed windows, four yaw angles, and 6 seed-0 checkpoints and verifies the implementation of the yaw-equivariance guarantee. The mean residual of the three HN backbones is $0.9\text{–}1.4\times10^{-7}$ m/s. The mean errors are 0.046–0.065 m/s for yaw augmentation (maximum 0.559), 0.012–0.132 m/s for the PCA frame (maximum 1.538), and 0.140–0.181 m/s for normalization only.
-
-Window-level inconsistency does not determine the ranking of trajectory-level repeatability. The window-level maximum of the PCA frame is about three times that of yaw augmentation, yet their trajectory-level cross-angle ranges are similar (0.927 and 0.962 m), because window errors partly cancel during integration. Section S7 gives the complete values.
 
 ### Controlled Accuracy Comparison of Training-Time Front Ends
 
@@ -878,136 +852,20 @@ IMUNet took much longer on the CPU (40.756 ms) than on MPS (2.752 ms), possibly 
 
 ---
 
-## S16. Reproducibility: Audit, Scripts, Result Files, and Sources of Figures and Tables
+## S16. Code and Data
 
-The reproducibility audit rebuilt the selected caches from the available raw data and compared 88 training and validation caches and 158 evaluation caches, covering 1,616 fields. Of these, 1,608 matched exactly and 8 differed within the recorded tolerance (largest absolute difference $5.82\times10^{-11}$); no field failed the check.
-
-The audit also checked the hashes and result records of all 36 checkpoints, and the hashes of the available training source code matched the recorded values. Every selected checkpoint had the lowest validation loss in its training records. The loader reproduced the 74-sequence training split and the 14-sequence validation split, the recomputed GN constants matched the archived values, and the target indices followed the 200-sample displacement definition of Section S1.
-
-Inference replay covered every checkpoint. For each main test group, sequences were selected alphabetically, independently of prediction accuracy, and each checkpoint processed two complete sequences at two angles, giving 144 sequence–angle evaluations and 288 metric values. All replayed ATE and RTE values matched the saved values exactly on MPS with PyTorch 2.13.0.
-
-The replay did not repeat training or rerun all 45,504 sequence–angle records; the manuscript-generation scripts aggregated the complete saved matrix independently. Exact agreement on the replayed subset does not guarantee identical retraining, because hardware and numerical kernels can affect a new optimization run.
-
-The audit entry point is `tools/verify_hn_reproducibility_20260908.py`, and its report is `verification/hn_revision_20260908/reproducibility_audit.json`; field comparisons and replayed metric comparisons are stored in the same report directory. The reproduction guide gives the commands and documents the remaining portability limitations.
-
-### Evidence Files for the Controlled Front-End Comparison
-
-Table S29 lists evidence files for the controlled front-end comparison. Paths are relative to the code and data repository root; Table S30 lists additional scripts and result files.
-
-**Table S29.** Evidence files for the controlled front-end comparison.
-
-| Evidence | Location |
-|---|---|
-| Data split and training/validation subject lists | `config/splits_subject_disjoint_v2.json` |
-| Original controlled front-end protocol | `config/sensors_revision_v4.json` |
-| Sign-ablation protocol with the same input | `config/e6_sign_ablation.json` |
-| Yaw sweeps of the original front ends and HN backbones | `results/e1_heading_repeatability/` |
-| Sign-ablation sweeps and analytic canonical-heading check | `results/e6_sign_ablation/` |
-| Additional yaw-alignment analysis | `results/e1b_yaw_aligned/` |
-| Geometry, tail, and budget summaries | `results/sensors_v4/analysis.json` |
-| Hardware, timing, and window-rotation analysis | `results/sensors_v4/diagnostics.json` |
-| Unrounded values of the supplementary tables | `results/supplement_sources_20260909/` |
-
-Unrounded table values are stored in `results/supplement_sources_20260909/`. The script `tools/build_priority_revision_20260909.py` computes them from the result files listed above; it reads saved results and runs no model.
-
-### Scripts and Result Files
-
-Table S30 lists the main scripts and result files behind the reported values. Hashes are the first 16 hexadecimal digits of the directly computed SHA-256 values. All scripts use the project's Python environment (`.venv`), and the experiment and script responsible for each artifact are recorded in `provenance/ARTIFACT_INDEX_20260915.csv`.
-
-**Table S30.** SHA-256 hashes of scripts and result files (first 16 hexadecimal digits).
-
-| Purpose | File | SHA-256 (first 16 digits) |
-|---|---|---|
-| Unified evaluation | `tools/unified_eval_20260913.py` | `93180ad2cd0e3270` |
-| Unified evaluation summary | `tools/unified_analyze_20260913.py` | `4a21b936986d7089` |
-| Unified evaluation significance | `tools/unified_significance_20260913.py` | `b6a714e89f1c264f` |
-| Complex-gain bounds | `tools/complex_gain_oracle_20260913.py` | `91285da07b576678` |
-| Phone data cache | `tools/build_imunet_cache_20260913.py` | `4c054b17693daf50` |
-| Per-window inference and plug-in HN | `tools/hn_plugin_p0_20260912.py` | `3fd60641ef65d042` |
-| ResNet18-YawAug plug-in HN: summary | `tools/yawhn_summary_20260913.py` | `26cc80605ee8f320` |
-| ResNet18-YawAug plug-in HN: decision | `tools/yawhn_verdict_20260913.py` | `3fd1b96982d68395` |
-| Two-way frame averaging: cross-angle repeatability | `tools/fa2_repeat_20260913.py` | `38caae665eafd714` |
-| Two-way frame averaging: decision | `tools/fa2_verdict_20260913.py` | `97e69960495e0a8c` |
-| Confirmatory tests: caches | `tools/build_confirm_caches_20260913.py` | `e19e4da71d343166` |
-| Confirmatory tests: evaluation | `tools/confirm_eval_20260913.py` | `d9f1e008577c248f` |
-| Confirmatory tests: decision | `tools/confirm_verdict_20260913.py` | `95653ca617ee4378` |
-| Plotting | `tools/make_v2_figures_20260913.py` | `2a14b940c96e82b6` |
-| Plotting | `tools/make_v3_figures_20260915.py` | `fc557d870c66dcb2` |
-| Plotting | `tools/mst_figures.py` | `167bdc6192d4353c` |
-| Trajectory overlay | `tools/e0_trajectory_overlay.py` | `6d7f362e0c56e758` |
-| Unified evaluation results | `results/unified_eval_20260913/summary.json` | `bee7325e7fd338dd` |
-| Unified evaluation significance results | `results/unified_eval_20260913/significance.json` | `1d469c040b93a1d5` |
-| ResNet18-YawAug plug-in HN: decision results | `results/unified_eval_20260913/yawhn_verdict.json` | `43f0a8407cb5bd11` |
-| Two-way frame averaging decision results | `results/fa2_repeat_20260913/verdict.json` | `167189339eb5a3fa` |
-| Confirmatory test decision results | `results/confirm_20260913/verdict.json` | `0a6977dd17144822` |
-| Window consistency and timing | `results/sensors_v4/diagnostics.json` | `2e425dbcabc98c8a` |
-| Controlled front-end summary | `results/sensors_v4/analysis.json` | `6cef84263cebd5df` |
-| Summary of 40 training runs | `results/submission_frozen/eval_rq1_rq4_v3_registered_summary.json` | `e5dcbb53575b2a57` |
-| Matrix of 40 training runs | `config/rq_experiment_matrix_v3.json` | `18ed9a983af8451a` |
-| Subject split | `config/splits_subject_disjoint_v2.json` | `f036e40e458a2f0f` |
-| Initial supplement generation script | `tools/build_supplement_v3_20260915.py` | `2736fef8560e7393` |
-| Pre-run decision file | `docs/53_确认性检验_实验前写定的判定标准_20260913.md` | `6a0b6158c1210e7c` |
-| Pre-run decision file | `config/e1b_yaw_aligned.md` | `b519adfb809c5a49` |
-
-### Data Sources of the Figures and Tables
-
-Table S31 lists the source files needed to recompute the values in the figures and tables of the main text and of this document. Paths are relative to the root of the code and data repository, and all scripts use the project's Python environment (`.venv`).
-
-**Table S31.** Source data and scripts for the figures and tables.
-
-| Figure or table | Source data | Generating or decision script |
-|---|---|---|
-| Figure 1 | `results/e0_trajectory_overlay/`; `figures/v15/v4fig_problem_overview_source_data.csv` | `tools/make_figures_terms_20261001.py` (calls `tools/make_v4_figures_20260919.py`; figure text only) |
-| Table 1 (durations) | Evaluation caches in `data/eval/`; training and validation durations from `config/splits_subject_disjoint_v2.json`; output `results/data_stats_20260929/stats.json` | `tools/data_stats_20260929.py` |
-| Figure 2 | `figures/v15/fig02_window_axis_and_sign_source_data.csv` (window taken from `data/eval/benchmark/ronin__*.npz`) | `tools/make_figures_terms_20261001.py` (calls `tools/mst_figures.py`; figure text only) |
-| Figure 3 | Schematic, no data | `tools/make_figures_terms_20261001.py` (calls `tools/make_hn_pipeline_figures_20260929.py`; figure text only) |
-| Figure 4 | `results/e0_plugin_overlay_20260929/` (`summary.json`, `trajectories.csv`) | `tools/e0_plugin_overlay_20260929.py` (inference), `tools/make_figures_terms_20261001.py` (plotting; calls `tools/make_hn_pipeline_figures_20260929.py`) |
-| Table 3 | Per-sequence records in `results/e1_heading_repeatability/` and `results/e6_sign_ablation/` | — |
-| Figure 5 | `figures/v15/v4fig_repeatability_source_data.csv` | `tools/make_figures_terms_20261001.py` (calls `tools/make_v4_figures_20260919.py`; figure text only) |
-| Table 4 | `results/hn_plugin_p0_20260912/ext_{resnet,lstm,tcn}.json` (field `orig_ate_by_psi`) | `tools/hn_plugin_p0_20260912.py` |
-| Table 5 | `results/e6_sign_ablation/analytic_frame_check.json` | `tools/e6_analytic_check.py` |
-| Table 6 | Means: `results/sensors_v4/analysis.json` (HN w/o sign row: `results/e6_sign_ablation/`); differences: `results/sensors_v4/analysis.json`, `results/unified_eval_20260913/significance.json` | — |
-| Table 7 | Per-sequence results in `results/unified_eval_20260913/`, `results/confirm_20260913/`, and `results/plugin_arch_20260923/` | `tools/plugin_by_provenance_recheck_20260925.py` |
-| Figure 6 | `figures/v15/v10fig_plugin_by_provenance_source_data.csv` | `tools/make_figures_terms_20261001.py` (calls `tools/make_plugin_provenance_figure_20260925.py`; figure text only) |
-| Table 8 | `results/confirm_anglefair_20260927/verdict.json` | `tools/confirm_anglefair_verdict_20260927.py` (decision), `tools/build_anglefair_tables_20260927.py` (table) |
-| Table 9 | `results/confirm_anglefair_20260927/verdict.json` (entries `fair_ate_shape` and `fair_Tbar_minus_Ubar` under `descriptive`) | `tools/confirm_anglefair_verdict_20260927.py` |
-| Figure 7 | `figures/v15/fig8_shape_example_source_data.csv` (TLIO-confirm sequence 467106657072642, 224 m, 176 s) | `tools/make_figures_terms_20261001.py` (calls `tools/make_fig8_shape_example_20261001.py`) |
-| Section 6.1 (timing) | `results/sensors_v4/diagnostics.json` (single-window CPU time of ResNet18 with GN + HN and with GN alone) | — |
-| Table S1 | `results/supplement_sources_20260909/accuracy_unrounded.csv` (from `results/sensors_v4/analysis.json` and `results/e3_backbone_frontend/analysis.json`) | `tools/build_priority_revision_20260909.py` |
-| Table S2 | `gnorm_mu` and `gnorm_sd` in `models/submission_frozen/ResNet18_v3_hn_gn_s0.pt` | — |
-| Table S4 | Cached npz files in `data/eval/imunet_owndata/` | — |
-| Table S5 | `results/supplement_sources_20260909/table_euclidean.csv` | `tools/build_priority_revision_20260909.py` |
-| Table S6 | RoNIN paper [2]; `config/sensors_revision_v4.json`; default of `--delta` in `src/pkg_train.py`; AdamW weight decay in `src/sensors_train.py` | — |
-| Table S7 | `results/sensors_v4/analysis.json`; `verification/priority_revision_20260909/official_replay.csv`; official-protocol ATE in `results/unified_eval_20260913/ours_yaw_hn_s{0–3}.json` | — |
-| Table S8 | `results/unified_eval_20260913/summary.json`; `results/unified_eval_20260913/yawhn_summary.json` | — |
-| Table S9, Figure S1 | `results/unified_eval_20260913/significance.json`; `figures/v15/v2fig_unified_paired_source_data.csv` | `tools/make_figures_terms_20261001.py` (Figure S1) |
-| Table S10 | `results/supplement_sources_20260909/table_s2.csv` (from `results/e1_heading_repeatability/`, `results/e3_backbone_frontend/`, and `results/e6_sign_ablation/`) | `tools/build_priority_revision_20260909.py` |
-| Table S11 | `results/e1b_yaw_aligned/` | — |
-| Table S12, Figure S2 | `results/e6_sign_ablation/analytic_frame_check.json`; `figures/v15/fig10_sign_rule_frame_failure_source_data.csv` | `tools/e6_analytic_check.py`; `tools/make_figures_terms_20261001.py` (Figure S2) |
-| Table S13 | `results/sensors_v4/diagnostics.json` | — |
-| Figure S3 | `verification/mst_revision_20260909/illustration/`; `figures/v15/figS03_trajectories_source_data.csv` (trajectories downsampled to 10 Hz) | `tools/replay_mst_illustration_20260909.py` (replay), `tools/make_figures_terms_20261001.py` (plotting) |
-| Tables S14, S15 | `results/unified_eval_20260913/significance.json`; `results/fa2_repeat_20260913/verdict.json` (Table S15) | — |
-| Table S16 | `results/plugin_arch_20260923/verdict.json` | `tools/plugin_arch_verdict_20260923.py` |
-| Table S17 | `results/angle_fair_20260926/output.txt` | `tools/angle_fair_plugin_20260926.py`, `tools/build_s39_angle_fair_20260926.py` |
-| Tables S18–S20 | `results/confirm_20260913/verdict.json` | `tools/confirm_verdict_20260913.py` |
-| Table S21 | `results/confirm_anglefair_20260927/verdict.json` | `tools/confirm_anglefair_verdict_20260927.py`, `tools/build_anglefair_tables_20260927.py` |
-| Table S22 | `results/unified_eval_20260913/summary.json` | — |
-| Table S23 | `results/shape_verdict_20260923/verdict.json` | `tools/shape_verdict_20260923.py` |
-| Tables S24, S26 | `results/sensors_v4/analysis.json` (HN w/o sign row of Table S24: `results/e6_sign_ablation/`) | — |
-| Table S25 | `results/sensors_v4/analysis.json`; `results/unified_eval_20260913/significance.json` | — |
-| Table S27 | $\psi=0$ column of `results/e1_heading_repeatability/analysis.json` | — |
-| Table S28 | `results/sensors_v4/diagnostics.json` | — |
+The code, the trained checkpoints, the per-sequence results, and the source data of all figures and tables are available at https://github.com/balinshitou/HeadingNorm. Running `python reproduce/run_all.py` regenerates every table and figure of the main text and of this document from the archived per-sequence results and compares them with the published values; it needs no raw data and runs on a CPU in less than a minute. With evaluation caches built from the public datasets [1–3,39] and the released RoNIN code, `python reproduce/check_raw_route.py` re-runs inference on selected sequences and compares the results with the archive. For each experiment, the README of the repository lists the result files, the tables and figures they support, and the commands that re-run the experiment.
 
 ### Supplementary Data Files
 
-The following numerical tables accompany the code and data as UTF-8 CSV files with column names in the first row. They are referred to by filename rather than by table number.
+The following numerical tables are provided in the `supp_data/` folder of the repository as UTF-8 CSV files with column names in the first row. They are referred to by filename rather than by table number.
 
-- `supp_data/unified_eval_full_metrics.csv`: Unified evaluation of 8 models × 5 test sets with sequence weights; for networks trained in this study, the 4 seeds are averaged within each sequence. Values come from `results/unified_eval_20260913/summary.json`. The scale error $\varepsilon_s$ is $|a^*|-1$; a positive value means that the predicted trajectory needs an upward global scale correction. The yaw error $\varepsilon_\theta$ is $\arg a^*$. The released networks were trained on different data, so this file does not give a controlled ranking of methods. RIDI includes 94 sequences, grouped into 11 subjects for subject-level statistics.
-- `supp_data/unified_paired_ate.csv`: Unified-protocol ATE from `results/unified_eval_20260913/significance.json`, which also supplies the paired comparisons below. The file reproduces Table S9 and adds the number of improved subjects and the sequence-level intervals.
-- `supp_data/literature_paired_ate.csv`: Official-protocol ATE from `results/unified_eval_20260913/significance.json`. The comparisons of HN with yaw augmentation and with the PCA frame on both RoNIN groups and RIDI match Table S25. This confirms that the unified evaluation and the controlled comparison use the same evaluation pipeline.
-- `supp_data/testtime_plugin_paired.csv`: Paired comparisons from `results/unified_eval_20260913/significance.json`, with the same statistics as `supp_data/unified_paired_ate.csv`: the 4 seeds are averaged first, then sequences within each subject, and subjects are weighted equally. Paired percentile intervals use a subject-level cluster bootstrap with 10,000 resamples (seed 20260906); TLIO is resampled by sequence.
-- `supp_data/testtime_plugin_metrics.csv`: Unified evaluation metrics for ResNet18-YawAug with plug-in HN, using sequence weights and averaging the 4 seeds within each sequence. Values come from `results/unified_eval_20260913/yawhn_summary.json`. Column definitions follow `supp_data/unified_eval_full_metrics.csv`.
-- `supp_data/testtime_fa2_paired.csv`: Paired comparisons from `results/unified_eval_20260913/significance.json`. The statistics follow `supp_data/testtime_plugin_paired.csv`.
-- `supp_data/testtime_fa2_repeatability.csv`: Trajectory repeatability across initial reference headings for 32 RoNIN-unseen sequences × 4 seeds, using official-protocol ATE from `results/fa2_repeat_20260913/verdict.json`. For each (seed, sequence) pair, the range is the largest minus the smallest ATE over the 4 angles; the four rightmost columns give the mean ATE (m) at each angle.
-- `supp_data/testtime_fa2_metrics.csv`: Unified evaluation metrics for two-way frame averaging, using sequence weights and averaging the 4 seeds within each sequence. Values come from `results/unified_eval_20260913/yawhn_summary.json`. Column definitions follow `supp_data/unified_eval_full_metrics.csv`.
-- `supp_data/confirm_anglefair_per_angle.csv`: Mean ATE (m) of each network at each angle on the confirmation sets, using the unified protocol and sequence means from `results/confirm_anglefair_20260927/`. Unmodified networks are indexed by $\psi=0°,45°,\ldots,315°$ and test-time methods by $\alpha$, with 8 values for plug-in HN and $0°,45°,90°,135°$ for FA-2.
+- `supp_data/unified_eval_full_metrics.csv`: Unified evaluation of 8 models × 5 test sets with sequence weights; for networks trained in this study, the 4 seeds are averaged within each sequence. The scale error $\varepsilon_s$ is $|a^*|-1$; a positive value means that the predicted trajectory needs an upward global scale correction. The yaw error $\varepsilon_\theta$ is $\arg a^*$. The released networks were trained on different data, so this file does not give a controlled ranking of methods. RIDI includes 94 sequences, grouped into 11 subjects for subject-level statistics.
+- `supp_data/unified_paired_ate.csv`: Paired comparisons of unified-protocol ATE. The file reproduces Table S9 and adds the number of improved subjects and the sequence-level intervals.
+- `supp_data/literature_paired_ate.csv`: Paired comparisons of official-protocol ATE. The comparisons of HN with yaw augmentation and with the PCA frame on both RoNIN groups and RIDI match Table S25. This confirms that the unified evaluation and the controlled comparison use the same evaluation pipeline.
+- `supp_data/testtime_plugin_paired.csv`: Paired comparisons of ResNet18-YawAug with plug-in HN against the unmodified network and against training-time HN, with the same statistics as `supp_data/unified_paired_ate.csv`: the 4 seeds are averaged first, then sequences within each subject, and subjects are weighted equally. Paired percentile intervals use a subject-level cluster bootstrap with 10,000 resamples (seed 20260906); TLIO is resampled by sequence.
+- `supp_data/testtime_plugin_metrics.csv`: Unified evaluation metrics for ResNet18-YawAug with plug-in HN, using sequence weights and averaging the 4 seeds within each sequence. Column definitions follow `supp_data/unified_eval_full_metrics.csv`.
+- `supp_data/testtime_fa2_paired.csv`: Paired comparisons of two-way frame averaging against the unmodified ResNet18-YawAug, training-time HN, and plug-in HN. The statistics follow `supp_data/testtime_plugin_paired.csv`.
+- `supp_data/testtime_fa2_repeatability.csv`: Trajectory repeatability across initial reference headings for 32 RoNIN-unseen sequences × 4 seeds, using official-protocol ATE. For each (seed, sequence) pair, the range is the largest minus the smallest ATE over the 4 angles; the four rightmost columns give the mean ATE (m) at each angle.
+- `supp_data/testtime_fa2_metrics.csv`: Unified evaluation metrics for two-way frame averaging, using sequence weights and averaging the 4 seeds within each sequence. Column definitions follow `supp_data/unified_eval_full_metrics.csv`.
+- `supp_data/confirm_anglefair_per_angle.csv`: Mean ATE (m) of each network at each angle on the confirmation sets, using the unified protocol and sequence means. Unmodified networks are indexed by $\psi=0°,45°,\ldots,315°$ and test-time methods by $\alpha$, with 8 values for plug-in HN and $0°,45°,90°,135°$ for FA-2.

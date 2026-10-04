@@ -3,7 +3,7 @@
     python reproduce/run_all.py
 
 1. reproduce/verify_manifest.py  every file of the repository present with the SHA-256 recorded in MANIFEST.tsv
-2. reproduce/make_tables.py      Tables 1-9, S1-S31 and the nine supp_data/*.csv regenerated and compared cell by cell
+2. reproduce/make_tables.py      Tables 1-9, S1-S28 and the nine supp_data/*.csv regenerated and compared cell by cell
                                  with the manuscript (paper/*.md, supp_data/)
 3. reproduce/make_figures.py     Figures 1-7 and S1-S3 redrawn; source data compared byte by byte, images pixel by pixel
 

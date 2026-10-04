@@ -1,6 +1,5 @@
-"""Tables S1-S31 of the Supplementary Materials."""
+"""Tables S1-S28 of the Supplementary Materials."""
 import csv
-import hashlib
 import json
 import re
 from collections import defaultdict
@@ -124,7 +123,7 @@ def s6():
             ['Budget', 'Epoch-based, typically about 100 epochs', f"{spec['steps']:,} updates"],
             ['Batch size', '128', str(spec['bs'])],
             ['Window sampling', 'Shuffled strided windows with random shifts', f'Random windows matched across the {len(seeds)} seeds'],
-            ['Fixed input normalization', 'No GN in the replay', 'Same GN constants for all configurations'],
+            ['Fixed input normalization', 'No GN', 'Same GN constants for all configurations'],
             ['Yaw augmentation', 'Used in the original training', 'Only as the yaw baseline'],
             ['Main reporting', 'Published sequence aggregates', 'Subject-mean metrics and seed dispersion'],
             ['Role of RIDI', 'Separate published benchmark protocol', 'Transfer from RoNIN without fine-tuning']]
@@ -518,48 +517,3 @@ def s28():
         assert c['parameters'] == meta(tag)['parameters']
         rows.append([lab, thousands(c['parameters']), f"{num(c['median_ms'])} / {num(c['p95_ms'])}", f"{num(g['median_ms'])} / {num(g['p95_ms'])}"])
     return head, rows
-
-
-# ------------------------------------------------------------------------------------------------- S29-S31 (files)
-def exists(path):
-    p = path.strip('`')
-    if '{' in p:                                   # ours_yaw_hn_s{0–3}.json
-        pre, rest = p.split('{', 1)
-        alts, post = rest.split('}', 1)
-        return all(exists(pre + a + post) for a in re.split(r'[,–]', alts) if a) if ',' in alts else \
-            all(exists(f'{pre}{k}{post}') for k in range(int(alts.split('–')[0]), int(alts.split('–')[1]) + 1))
-    if '*' in p:
-        return any(ROOT.glob(p))
-    return (ROOT / p).exists()
-
-
-def file_table(tid):
-    """Tables that list files: the rows are those of the manuscript; every path named in them must exist in this repository."""
-    import make_tables
-    head, rows = make_tables.manuscript_tables()[tid]
-    missing = sorted({p for r in rows for c in r for p in re.findall(r'`([^`]+)`', c)
-                      if '/' in p and not p.startswith('data/') and not exists(p)})
-    assert not missing, f'paths named in Table {tid} but absent: {missing}'
-    return head, rows
-
-
-@table('S29')
-def s29():
-    return file_table('S29')
-
-
-@table('S30')
-def s30():
-    """Hashes are recomputed from the files in this repository."""
-    import make_tables
-    head, rows = make_tables.manuscript_tables()['S30']
-    out = []
-    for purpose, f, _ in rows:
-        p = ROOT / f.strip('`')
-        out.append([purpose, f, f'`{hashlib.sha256(p.read_bytes()).hexdigest()[:16]}`'])
-    return head, out
-
-
-@table('S31')
-def s31():
-    return file_table('S31')
