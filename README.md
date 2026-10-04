@@ -41,7 +41,7 @@ The report is printed and written to `reproduce/output/REPORT.txt`. With the pin
 
 ```text
 ## Repository integrity (MANIFEST.tsv) (reproduce/verify_manifest.py): exit 0
-files in manifest: 594; missing: 0; changed: 0
+files in manifest: 593; missing: 0; changed: 0
 ## Tables (reproduce/make_tables.py): exit 0
 TOTAL: 46 tables, 4773 cells compared (4773 identical text, 0 equal at the displayed precision), 0 disagreements, 0 tables failed
 ## Figures (reproduce/make_figures.py): exit 0
