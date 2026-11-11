@@ -114,7 +114,7 @@ The front end handles the reference heading, and the backbone maps each window t
 
 **ResNet18 backbone.** A one-dimensional convolution with kernel size 7 and stride 2 is followed by max pooling. The basic residual blocks have counts $[2,2,2,2]$ and channel dimensions $[64,128,256,512]$. A final 512→128 transition convolution is flattened to 896 dimensions (128 × 7), and an 896→512→512→2 fully connected head predicts velocity, giving 4,634,882 trainable parameters. We implemented the public architecture independently and checked both the parameter counts and the tensor shapes.
 
-**IMUNet backbone.** The implementation follows the original paper [39]. A 7-point convolutional stem is followed by depthwise separable and pointwise residual units, whose channel dimension increases to 1024 before a projection to 400. The flattened 1200-dimensional encoding is fused with the original 1200-dimensional window through a learnable affine correction, and the final head predicts two-dimensional velocity. The network has 3,661,618 trainable parameters.
+**IMUNet backbone.** The implementation follows the original paper [34]. A 7-point convolutional stem is followed by depthwise separable and pointwise residual units, whose channel dimension increases to 1024 before a projection to 400. The flattened 1200-dimensional encoding is fused with the original 1200-dimensional window through a learnable affine correction, and the final head predicts two-dimensional velocity. The network has 3,661,618 trainable parameters.
 
 All three backbones share the training data, window length, batch size, number of updates, and random seeds. HN adds no learnable parameters to any of them. In the tables, ResNet18 and IMUNet denote networks trained from scratch in this study; the names refer to architectures, not to weights released by the original authors.
 
@@ -709,7 +709,7 @@ The per-angle mean ATE values are given in `supp_data/confirm_anglefair_per_angl
 
 ## S13. Error Composition and Shape Error
 
-Equation (12) of the main text defines shape error and the complex gain $a^*$. Let the aligned prediction be $\tilde z_t=\tilde p_t-p_1$ and the ground truth be $q_t=p_t-p_1$. Then $a^*=\sum_t\overline{\tilde z_t}\,q_t/\sum_t|\tilde z_t|^2$ is the least-squares solution for a two-dimensional similarity transformation with a fixed origin and no translation. This is Umeyama registration with the start point as the origin [38]. This section reports further properties and per-model values.
+Equation (12) of the main text defines shape error and the complex gain $a^*$. Let the aligned prediction be $\tilde z_t=\tilde p_t-p_1$ and the ground truth be $q_t=p_t-p_1$. Then $a^*=\sum_t\overline{\tilde z_t}\,q_t/\sum_t|\tilde z_t|^2$ is the least-squares solution for a two-dimensional similarity transformation with a fixed origin and no translation. This is Umeyama registration with the start point as the origin [33]. This section reports further properties and per-model values.
 
 The modulus and argument of $a^*$ give the optimal global scale correction $\varepsilon_s=|a^*|-1$ and the global rotation $\varepsilon_\theta=\arg a^*$, which we call **scale error** and **yaw error**. Both correct the whole trajectory and are not the same as velocity calibration error or initial heading error. Because the initial heading has already been aligned over the first 10 m, $\arg a^*$ can absorb heading drift accumulated over time.
 
@@ -854,7 +854,7 @@ IMUNet took much longer on the CPU (40.756 ms) than on MPS (2.752 ms), possibly 
 
 ## S16. Code and Data
 
-The code, the trained checkpoints, the per-sequence results, and the source data of all figures and tables are available at https://github.com/balinshitou/HeadingNorm. Running `python reproduce/run_all.py` regenerates every table and figure of the main text and of this document from the archived per-sequence results and compares them with the published values; it needs no raw data and runs on a CPU in less than a minute. With evaluation caches built from the public datasets [1–3,39] and the released RoNIN code, `python reproduce/check_raw_route.py` re-runs inference on selected sequences and compares the results with the archive. For each experiment, the README of the repository lists the result files, the tables and figures they support, and the commands that re-run the experiment.
+The code, the trained checkpoints, the per-sequence results, and the source data of all figures and tables are available at https://github.com/balinshitou/HeadingNorm. Running `python reproduce/run_all.py` regenerates every table and figure of the main text and of this document from the archived per-sequence results and compares them with the published values; it needs no raw data and runs on a CPU in less than a minute. With evaluation caches built from the public datasets [1–3,34] and the released RoNIN code, `python reproduce/check_raw_route.py` re-runs inference on selected sequences and compares the results with the archive. For each experiment, the README of the repository lists the result files, the tables and figures they support, and the commands that re-run the experiment.
 
 ### Supplementary Data Files
 
